@@ -5,11 +5,11 @@
     y="324.096"
     font-family="Inter, system-ui, -apple-system, sans-serif"
     font-size="194.56"
-    font-weight="600"
+    font-weight="700"
     text-anchor="middle"
-    letter-spacing="-1.2"
+    letter-spacing="-2"
   >
     <tspan fill="#F7F3EE">19</tspan>
-    <tspan fill="#0D7377" font-weight="700" dx="-6.8">.2</tspan>
+    <tspan fill="#0D7377" dx="-33.08">.2</tspan>
   </text>
 </svg>

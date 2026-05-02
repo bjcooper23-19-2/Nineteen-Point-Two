@@ -4,12 +4,12 @@
     y="130"
     font-family="Inter, system-ui, -apple-system, sans-serif"
     font-size="120"
-    font-weight="600"
+    font-weight="700"
     text-anchor="middle"
-    letter-spacing="-5"
+    letter-spacing="-7"
   >
     <tspan fill="#F7F3EE">19</tspan>
-    <tspan fill="#0D7377" font-weight="700" dx="-4">.2</tspan>
+    <tspan fill="#0D7377" dx="-36">.2</tspan>
   </text>
 
   <line
