@@ -7,9 +7,9 @@
     font-size="194.56"
     font-weight="600"
     text-anchor="middle"
-    letter-spacing="-0.5"
+    letter-spacing="-1.2"
   >
     <tspan fill="#F7F3EE">19</tspan>
-    <tspan fill="#0D7377">.2</tspan>
+    <tspan fill="#0D7377" font-weight="700" dx="-6.8">.2</tspan>
   </text>
 </svg>

@@ -6,10 +6,10 @@
     font-size="120"
     font-weight="600"
     text-anchor="middle"
-    letter-spacing="-2"
+    letter-spacing="-5"
   >
     <tspan fill="#F7F3EE">19</tspan>
-    <tspan fill="#0D7377">.2</tspan>
+    <tspan fill="#0D7377" font-weight="700" dx="-4">.2</tspan>
   </text>
 
   <text
