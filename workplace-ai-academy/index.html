@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+      if (location.hostname === "nineteenpointtwo.com") {
+        location.replace(
+          "https://www.nineteenpointtwo.com/workplace-ai-academy/",
+        );
+      }
+    </script>
+    <link
+      rel="canonical"
+      href="https://www.nineteenpointtwo.com/workplace-ai-academy/"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workplace AI Academy | Nineteen Point Two</title>
+    <meta
+      name="description"
+      content="Workplace AI Academy helps organisations build safe, consistent and evidence-led AI adoption through practical learning, role-based pathways and progress visibility."
+    />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <style>
+      :root {
+        --ink: #f7f3ee;
+        --muted: rgba(247, 243, 238, 0.72);
+        --muted-2: rgba(247, 243, 238, 0.54);
+        --soft: rgba(247, 243, 238, 0.1);
+        --softer: rgba(247, 243, 238, 0.055);
+        --charcoal: #1a1a2e;
+        --deep: #10101f;
+        --black: #090914;
+        --cyan: #0d7377;
+        --line: rgba(247, 243, 238, 0.14);
+        --line-strong: rgba(247, 243, 238, 0.24);
+        --max: 1180px;
+        --radius-xl: 36px;
+        --radius-lg: 28px;
+        --radius-md: 18px;
+        --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(
+            circle at 72% 4%,
+            rgba(13, 115, 119, 0.24),
+            transparent 32rem
+          ),
+          radial-gradient(
+            circle at 0% 40%,
+            rgba(247, 243, 238, 0.07),
+            transparent 28rem
+          ),
+          linear-gradient(180deg, var(--charcoal) 0%, #111120 54%, #0b0b15 100%);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .noise {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+        z-index: 0;
+      }
+
+      .site {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(18px);
+        background: rgba(16, 16, 31, 0.76);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        line-height: 0;
+        max-width: 42vw;
+      }
+
+      .brand-logo {
+        display: block;
+        width: auto;
+        height: 36px;
+        max-width: 100%;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+
+      .nav-group {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 0;
+      }
+
+      .nav-group > a::after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-left: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: translateY(-2px) rotate(45deg);
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 8px);
+        min-width: 190px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(16, 16, 31, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 2px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+          opacity 160ms ease,
+          transform 160ms ease,
+          visibility 160ms ease;
+      }
+
+      .nav-group:hover .nav-menu,
+      .nav-group:focus-within .nav-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+
+      .nav-menu a {
+        padding: 9px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+
+      .nav-menu a:hover {
+        background: rgba(247, 243, 238, 0.08);
+      }
+
+      .nav-cta,
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        padding: 12px 18px;
+        border: 1px solid rgba(247, 243, 238, 0.22);
+        font-weight: 700;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+        cursor: pointer;
+      }
+
+      .nav-cta {
+        background: rgba(247, 243, 238, 0.08);
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+
+      .btn.primary {
+        background: var(--ink);
+        color: #111120;
+        border-color: transparent;
+        box-shadow: 0 20px 60px rgba(247, 243, 238, 0.14);
+      }
+
+      .btn.secondary {
+        background: rgba(247, 243, 238, 0.06);
+        color: var(--ink);
+      }
+
+      .btn:hover,
+      .nav-cta:hover {
+        transform: translateY(-2px);
+        border-color: rgba(247, 243, 238, 0.42);
+      }
+
+      main {
+        overflow: hidden;
+      }
+      section {
+        padding: 92px 24px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: calc(100vh - 73px);
+        display: grid;
+        align-items: center;
+        padding-top: 88px;
+        padding-bottom: 70px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.72fr);
+        gap: 56px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 0.84rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--cyan);
+        box-shadow: 0 0 26px var(--cyan);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(3.35rem, 8vw, 7.65rem);
+        line-height: 0.91;
+        letter-spacing: -0.075em;
+        margin-bottom: 28px;
+        max-width: 930px;
+      }
+
+      h2 {
+        font-size: clamp(2.3rem, 4.5vw, 4.6rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+        margin-bottom: 22px;
+      }
+
+      h3 {
+        letter-spacing: -0.025em;
+      }
+
+      .lede,
+      .section-head p,
+      .large-copy {
+        color: var(--muted);
+        font-size: clamp(1.06rem, 1.55vw, 1.25rem);
+        max-width: 760px;
+      }
+
+      .hero p.lede {
+        font-size: clamp(1.15rem, 1.7vw, 1.42rem);
+        max-width: 710px;
+        margin-bottom: 34px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+        margin-bottom: 34px;
+      }
+
+      .trust-line {
+        color: rgba(247, 243, 238, 0.58);
+        font-size: 0.95rem;
+        max-width: 620px;
+      }
+
+      .diagnostic-card,
+      .feature-panel {
+        position: relative;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(247, 243, 238, 0.09),
+            rgba(247, 243, 238, 0.035)
+          ),
+          radial-gradient(
+            circle at 70% 0%,
+            rgba(13, 115, 119, 0.22),
+            transparent 17rem
+          );
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .diagnostic-card::before,
+      .grid-surface::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(247, 243, 238, 0.055) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(247, 243, 238, 0.055) 1px,
+            transparent 1px
+          );
+        background-size: 34px 34px;
+        mask-image: linear-gradient(180deg, black, transparent 82%);
+        pointer-events: none;
+      }
+
+      .card-inner,
+      .feature-panel > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .metric-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+
+      .metric {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px;
+        background: rgba(10, 10, 20, 0.34);
+      }
+
+      .metric span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.78rem;
+        margin-bottom: 8px;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.55rem;
+        letter-spacing: -0.04em;
+      }
+
+      .status {
+        border-radius: 22px;
+        background: rgba(13, 115, 119, 0.16);
+        border: 1px solid rgba(13, 115, 119, 0.46);
+        padding: 18px;
+        margin: 18px 0;
+      }
+
+      .status small {
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .status strong {
+        display: block;
+        font-size: 1.35rem;
+        margin-top: 6px;
+      }
+
+      .signal-list {
+        display: grid;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .signal-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid rgba(247, 243, 238, 0.1);
+        padding-bottom: 10px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .signal-list strong {
+        color: var(--ink);
+        white-space: nowrap;
+      }
+
+      .section-head {
+        max-width: 780px;
+        margin-bottom: 42px;
+      }
+      .section-head.wide {
+        max-width: 940px;
+      }
+
+      .products-grid,
+      .steps-grid,
+      .outcomes-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .product-card,
+      .step-card,
+      .outcome-card,
+      .proof-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: rgba(247, 243, 238, 0.045);
+        padding: 22px;
+      }
+
+      .product-card,
+      .step-card,
+      .outcome-card {
+        min-height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .index {
+        color: rgba(247, 243, 238, 0.38);
+        font-size: 0.85rem;
+      }
+
+      .product-card h3,
+      .step-card h3,
+      .outcome-card h3 {
+        font-size: 1.15rem;
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+
+      .product-card p,
+      .step-card p,
+      .outcome-card p,
+      .proof-card p {
+        color: var(--muted);
+        margin-bottom: 0;
+        font-size: 0.97rem;
+      }
+
+      .product-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 26px;
+      }
+
+      .product-label {
+        color: var(--muted);
+        font-size: 0.86rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .product-price {
+        min-width: 42px;
+        height: 42px;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: var(--softer);
+        display: grid;
+        place-items: center;
+        color: var(--cyan);
+        padding: 0 10px;
+        font-weight: 800;
+        font-size: 0.9rem;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 0.82fr 1.18fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      .sticky-note {
+        position: sticky;
+        top: 112px;
+        border: 1px solid rgba(13, 115, 119, 0.4);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        background: linear-gradient(
+          180deg,
+          rgba(13, 115, 119, 0.17),
+          rgba(247, 243, 238, 0.045)
+        );
+      }
+
+      .sticky-note p {
+        color: var(--muted);
+        margin-bottom: 0;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 14px;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 132px 1fr;
+        gap: 22px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 22px;
+        background: rgba(247, 243, 238, 0.04);
+      }
+
+      .timeline-item span {
+        color: var(--cyan);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .timeline-item h3 {
+        margin-bottom: 7px;
+      }
+      .timeline-item p {
+        color: var(--muted);
+        margin-bottom: 0;
+      }
+
+      .feature-panel {
+        border-radius: var(--radius-xl);
+        padding: clamp(28px, 5vw, 58px);
+      }
+
+      .panel-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.86fr;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 28px 0 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .check-list li {
+        position: relative;
+        padding-left: 28px;
+        color: var(--muted);
+      }
+
+      .check-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.58em;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--cyan);
+        box-shadow: 0 0 18px var(--cyan);
+      }
+
+      .quote {
+        font-size: clamp(1.65rem, 3vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.05em;
+        margin-bottom: 22px;
+      }
+
+      .cta-section {
+        padding-bottom: 108px;
+      }
+
+      .cta-box {
+        text-align: center;
+        border: 1px solid rgba(247, 243, 238, 0.2);
+        border-radius: var(--radius-xl);
+        padding: clamp(34px, 7vw, 76px);
+        background:
+          radial-gradient(
+            circle at 50% 0%,
+            rgba(13, 115, 119, 0.22),
+            transparent 24rem
+          ),
+          rgba(247, 243, 238, 0.055);
+      }
+
+      .cta-box h2 {
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cta-box p {
+        color: var(--muted);
+        max-width: 690px;
+        margin: 0 auto 30px;
+        font-size: 1.12rem;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 34px 24px;
+        color: rgba(247, 243, 238, 0.58);
+      }
+
+      .footer-grid {
+        max-width: var(--max);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 1040px) {
+        .nav-links {
+          gap: 14px;
+          font-size: 0.86rem;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          gap: 12px;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .brand-logo {
+          height: 30px;
+        }
+
+        .nav-links {
+          gap: 10px;
+          font-size: 0.8rem;
+        }
+
+        .nav-cta {
+          padding: 10px 13px;
+          font-size: 0.82rem;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid,
+        .split,
+        .panel-grid {
+          grid-template-columns: 1fr;
+        }
+        .products-grid,
+        .steps-grid,
+        .outcomes-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .diagnostic-card {
+          max-width: 560px;
+        }
+        .sticky-note {
+          position: static;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .nav-links {
+          display: none;
+        }
+        .brand {
+          max-width: 136px;
+        }
+        .brand-logo {
+          height: 32px;
+        }
+        section {
+          padding: 68px 20px;
+        }
+        .hero {
+          padding-top: 58px;
+        }
+        h1 {
+          font-size: clamp(3rem, 16vw, 4.6rem);
+        }
+        .products-grid,
+        .steps-grid,
+        .outcomes-grid,
+        .metric-row {
+          grid-template-columns: 1fr;
+        }
+        .timeline-item {
+          grid-template-columns: 1fr;
+        }
+        .nav {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="site">
+      <header>
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="../" aria-label="Nineteen Point Two home">
+            <img
+              class="brand-logo"
+              src="../assets/logo/logo-horizontal.svg"
+              alt="Nineteen Point Two"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="/#risk">Risk</a>
+            <a href="/#stress-test">Stress Test</a>
+            <a href="/#approach">Approach</a>
+            <a href="/#products">Products</a>
+            <div class="nav-group">
+              <a href="/workplace-ai/">Workplace AI</a>
+              <div class="nav-menu" aria-label="Workplace AI pages">
+                <a href="/workplace-ai/">The Problem</a>
+                <a href="/workplace-ai-academy/">Academy</a>
+                <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+              </div>
+            </div>
+            <a href="/#faq">FAQ</a>
+          </div>
+          <a
+            class="nav-cta"
+            href="mailto:ben@nineteenpointtwo.com?subject=Workplace%20AI%20Academy"
+            >Discuss Academy</a
+          >
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div>
+              <div class="eyebrow">Workplace AI Academy</div>
+              <h1>A practical baseline for safe AI adoption.</h1>
+              <p class="lede">
+                Workplace AI Academy helps organisations give employees and
+                managers a consistent way to use AI safely, apply judgement,
+                protect data and show evidence of progress.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="btn primary"
+                  href="mailto:ben@nineteenpointtwo.com?subject=Workplace%20AI%20Academy"
+                  >Discuss Workplace AI Academy</a
+                >
+                <a class="btn secondary" href="#courses"
+                  >See course architecture</a
+                >
+              </div>
+              <p class="trust-line">
+                For organisations that need adoption to be visible, governed and
+                useful across real work, not left to individual confidence or
+                inconsistent tool access.
+              </p>
+            </div>
+
+            <aside
+              class="diagnostic-card"
+              aria-label="Workplace AI Academy platform summary"
+            >
+              <div class="card-inner">
+                <div class="eyebrow">Platform view</div>
+                <div class="metric-row">
+                  <div class="metric">
+                    <span>Learner baseline</span><strong>Safe</strong>
+                  </div>
+                  <div class="metric">
+                    <span>Pathways</span><strong>Role</strong>
+                  </div>
+                  <div class="metric">
+                    <span>Progress</span><strong>Visible</strong>
+                  </div>
+                  <div class="metric">
+                    <span>Evidence</span><strong>Tracked</strong>
+                  </div>
+                </div>
+                <div class="status">
+                  <small>Operating purpose</small>
+                  <strong
+                    >Create consistent standards before AI use scales.</strong
+                  >
+                </div>
+                <ul class="signal-list">
+                  <li><span>Employees</span><strong>Core use</strong></li>
+                  <li>
+                    <span>Practitioners</span><strong>Applied use</strong>
+                  </li>
+                  <li><span>Managers</span><strong>Governance</strong></li>
+                  <li><span>Admins</span><strong>Visibility</strong></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="platform">
+          <div class="container feature-panel grid-surface">
+            <div class="panel-grid">
+              <div>
+                <div class="eyebrow">What the platform does</div>
+                <h2>
+                  It turns AI adoption from individual experimentation into a
+                  managed baseline.
+                </h2>
+                <p class="large-copy">
+                  Workplace AI Academy provides practical learning, structured
+                  pathways and progress visibility so organisations can set a
+                  common standard for safe and effective AI use.
+                </p>
+                <ul class="check-list">
+                  <li>
+                    Teach employees how to use AI safely in everyday work.
+                  </li>
+                  <li>
+                    Build applied capability for teams using AI in practical
+                    workflows.
+                  </li>
+                  <li>
+                    Help managers govern AI use, review outputs and support
+                    teams.
+                  </li>
+                  <li>
+                    Give organisations evidence of completion, capability and
+                    adoption coverage.
+                  </li>
+                </ul>
+              </div>
+              <aside class="proof-card">
+                <div class="eyebrow">Before the product</div>
+                <p class="quote">Read the problem first.</p>
+                <p>
+                  Workplace AI Academy is designed for the operating model issue
+                  described in the
+                  <a href="/workplace-ai/">Workplace AI overview</a>.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section id="courses">
+          <div class="container">
+            <div class="section-head wide">
+              <div class="eyebrow">Course architecture</div>
+              <h2>Three course areas, one consistent adoption baseline.</h2>
+              <p>
+                The Academy is structured around the practical capabilities
+                organisations need first: safe use, applied use and management
+                of AI in work.
+              </p>
+            </div>
+            <div class="products-grid">
+              <article class="product-card">
+                <div>
+                  <div class="product-top">
+                    <span class="product-label">Core baseline</span
+                    ><span class="product-price">01</span>
+                  </div>
+                  <h3>Workplace AI: Safe &amp; Effective Use</h3>
+                </div>
+                <p>
+                  For employees who need clear standards on appropriate use,
+                  prompting, data protection, output checking and
+                  accountability.
+                </p>
+              </article>
+              <article class="product-card">
+                <div>
+                  <div class="product-top">
+                    <span class="product-label">Practical application</span
+                    ><span class="product-price">02</span>
+                  </div>
+                  <h3>Applied AI</h3>
+                </div>
+                <p>
+                  For teams ready to use AI in defined workflows, with attention
+                  to quality, evidence, handover and repeatable practice.
+                </p>
+              </article>
+              <article class="product-card">
+                <div>
+                  <div class="product-top">
+                    <span class="product-label">Manager pathway</span
+                    ><span class="product-price">03</span>
+                  </div>
+                  <h3>Managing AI in Work</h3>
+                </div>
+                <p>
+                  For managers who need to guide teams, review AI-supported
+                  work, spot risk and keep human accountability clear.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works">
+          <div class="container split">
+            <aside class="sticky-note">
+              <div class="eyebrow">How it works</div>
+              <h2>Simple for learners. Useful for operators.</h2>
+              <p>
+                The Academy is built to create a consistent standard across the
+                organisation, then give leaders enough visibility to manage
+                adoption properly.
+              </p>
+            </aside>
+
+            <div class="timeline">
+              <article class="timeline-item">
+                <span>Assign</span>
+                <div>
+                  <h3>Set the right pathway.</h3>
+                  <p>
+                    Organisations assign baseline, applied or manager learning
+                    depending on role, risk and adoption maturity.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <span>Learn</span>
+                <div>
+                  <h3>Complete practical modules.</h3>
+                  <p>
+                    Learners work through concise lessons focused on safe use,
+                    better prompts, human review, data handling and accountable
+                    decisions.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <span>Evidence</span>
+                <div>
+                  <h3>Make progress visible.</h3>
+                  <p>
+                    Completion and pathway data help leaders understand
+                    coverage, gaps and where additional support is needed.
+                  </p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <span>Improve</span>
+                <div>
+                  <h3>Use the evidence to govern adoption.</h3>
+                  <p>
+                    Admin visibility gives organisations a practical basis for
+                    coaching, reinforcement and governance conversations.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Learner experience</div>
+              <h2>Clear lessons for the way people actually work.</h2>
+              <p>
+                The learner experience is designed to be direct, role-aware and
+                practical. It helps people understand what good AI use looks
+                like before tools become embedded in daily decisions.
+              </p>
+            </div>
+            <div class="steps-grid">
+              <article class="step-card">
+                <span class="index">01</span>
+                <h3>Practical standards.</h3>
+                <p>
+                  Clear guidance on when to use AI, when not to use it, and how
+                  to keep judgement in the loop.
+                </p>
+              </article>
+              <article class="step-card">
+                <span class="index">02</span>
+                <h3>Data and confidentiality.</h3>
+                <p>
+                  Plain rules for handling sensitive information, customer
+                  context, personal data and internal material.
+                </p>
+              </article>
+              <article class="step-card">
+                <span class="index">03</span>
+                <h3>Output review.</h3>
+                <p>
+                  Learners practise checking accuracy, assumptions, bias, tone,
+                  sources and suitability before using AI-supported work.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="admin">
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Organisation value</div>
+              <h2>Admin visibility gives adoption an evidence base.</h2>
+              <p>
+                For organisations, the Academy is not just content delivery. It
+                creates a shared baseline and a clearer view of where
+                capability, confidence and governance need attention.
+              </p>
+            </div>
+            <div class="outcomes-grid">
+              <article class="outcome-card">
+                <span class="index">01</span>
+                <div>
+                  <h3>Consistent standards.</h3>
+                  <p>
+                    Give teams the same baseline language for safe use, review
+                    and accountability.
+                  </p>
+                </div>
+              </article>
+              <article class="outcome-card">
+                <span class="index">02</span>
+                <div>
+                  <h3>Progress visibility.</h3>
+                  <p>
+                    See completion and pathway coverage across teams, cohorts or
+                    organisational groups.
+                  </p>
+                </div>
+              </article>
+              <article class="outcome-card">
+                <span class="index">03</span>
+                <div>
+                  <h3>Manager confidence.</h3>
+                  <p>
+                    Help managers reinforce good practice and intervene where AI
+                    use creates risk.
+                  </p>
+                </div>
+              </article>
+              <article class="outcome-card">
+                <span class="index">04</span>
+                <div>
+                  <h3>Governance support.</h3>
+                  <p>
+                    Turn policy intent into learning evidence, operational
+                    follow-up and clearer adoption conversations.
+                  </p>
+                </div>
+              </article>
+              <article class="outcome-card">
+                <span class="index">05</span>
+                <div>
+                  <h3>Safer scaling.</h3>
+                  <p>
+                    Grow AI capability without relying on informal
+                    experimentation or uneven local standards.
+                  </p>
+                </div>
+              </article>
+              <article class="outcome-card">
+                <span class="index">06</span>
+                <div>
+                  <h3>Decision quality.</h3>
+                  <p>
+                    Keep human judgement, source checking and evidence trails
+                    visible as AI enters more workflows.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="deployment">
+          <div class="container feature-panel grid-surface">
+            <div class="panel-grid">
+              <div>
+                <div class="eyebrow">Deployment options</div>
+                <h2>
+                  Designed for baseline rollout, targeted pathways or managed
+                  adoption programmes.
+                </h2>
+                <p class="large-copy">
+                  Organisations can use Workplace AI Academy as a broad
+                  foundation, a manager readiness programme, or a targeted
+                  pathway for teams already applying AI in operational work.
+                </p>
+                <ul class="check-list">
+                  <li>
+                    Organisation-wide baseline for safe and effective use.
+                  </li>
+                  <li>
+                    Role-based pathways for managers, operators and AI-active
+                    teams.
+                  </li>
+                  <li>Cohort rollout for specific functions or risk areas.</li>
+                  <li>
+                    Evidence-led support for policy adoption and governance
+                    rhythm.
+                  </li>
+                </ul>
+              </div>
+              <aside class="proof-card">
+                <div class="eyebrow">Existing users</div>
+                <p class="quote">
+                  Platform access is separate from the marketing site.
+                </p>
+                <p>
+                  Existing users can sign in at
+                  <a href="https://waia.nineteenpointtwo.com/login"
+                    >waia.nineteenpointtwo.com/login</a
+                  >.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="container cta-box">
+            <div class="eyebrow">Next step</div>
+            <h2>
+              Discuss whether Workplace AI Academy fits your adoption baseline.
+            </h2>
+            <p>
+              Use the conversation to map the right learner groups, course
+              pathways, governance needs and evidence requirements before
+              rollout.
+            </p>
+            <div
+              class="hero-actions"
+              style="justify-content: center; margin-bottom: 0"
+            >
+              <a
+                class="btn primary"
+                href="mailto:ben@nineteenpointtwo.com?subject=Workplace%20AI%20Academy"
+                >Discuss Workplace AI Academy</a
+              >
+              <a class="btn secondary" href="/workplace-ai/"
+                >Review the Workplace AI problem</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-grid">
+          <span>&copy; 2026 Nineteen Point Two</span>
+          <span>Workplace AI Academy</span>
+          <span>Safe | Consistent | Evidence-led</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -3,20 +3,25 @@
   <head>
     <script>
       if (location.hostname === "nineteenpointtwo.com") {
-        location.replace("https://www.nineteenpointtwo.com");
+        location.replace("https://www.nineteenpointtwo.com/workplace-ai/");
       }
     </script>
-    <link rel="canonical" href="https://www.nineteenpointtwo.com/" />
+    <link
+      rel="canonical"
+      href="https://www.nineteenpointtwo.com/workplace-ai/"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Nineteen Point Two | Revenue Integrity Diagnostics for SaaS Leaders
-    </title>
+    <title>Workplace AI | Nineteen Point Two</title>
     <meta
       name="description"
-      content="Nineteen Point Two helps SaaS leaders expose hidden revenue risk across people, process and data before it shows up in churn, weak forecasts or missed expansion."
+      content="AI adoption is becoming an operating model issue. Nineteen Point Two helps organisations understand the People, Process and Data risks behind workplace AI use."
     />
-    <link rel="icon" href="./assets/favicon/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
     <style>
       :root {
         --ink: #f7f3ee;
@@ -28,7 +33,6 @@
         --deep: #10101f;
         --black: #090914;
         --cyan: #0d7377;
-        --cyan-soft: rgba(13, 115, 119, 0.26);
         --line: rgba(247, 243, 238, 0.14);
         --line-strong: rgba(247, 243, 238, 0.24);
         --max: 1180px;
@@ -41,7 +45,6 @@
       * {
         box-sizing: border-box;
       }
-
       html {
         scroll-behavior: smooth;
       }
@@ -230,13 +233,6 @@
         color: var(--ink);
       }
 
-      .btn.ghost {
-        border-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        color: var(--muted);
-      }
-
       .btn:hover,
       .nav-cta:hover {
         transform: translateY(-2px);
@@ -246,7 +242,6 @@
       main {
         overflow: hidden;
       }
-
       section {
         padding: 92px 24px;
       }
@@ -304,7 +299,7 @@
         line-height: 0.91;
         letter-spacing: -0.075em;
         margin-bottom: 28px;
-        max-width: 900px;
+        max-width: 930px;
       }
 
       h2 {
@@ -346,7 +341,8 @@
         max-width: 620px;
       }
 
-      .diagnostic-card {
+      .diagnostic-card,
+      .feature-panel {
         position: relative;
         border: 1px solid var(--line);
         border-radius: var(--radius-lg);
@@ -383,7 +379,8 @@
         pointer-events: none;
       }
 
-      .card-inner {
+      .card-inner,
+      .feature-panel > * {
         position: relative;
         z-index: 1;
       }
@@ -466,27 +463,27 @@
         max-width: 940px;
       }
 
-      .problem-grid {
+      .problem-grid,
+      .steps-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 14px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
       }
 
       .problem-card,
       .pillar-card,
-      .outcome-card,
-      .proof-card,
-      .faq-item,
-      .product-card,
-      .step-card {
+      .step-card,
+      .proof-card {
         border: 1px solid var(--line);
         border-radius: var(--radius-md);
         background: rgba(247, 243, 238, 0.045);
         padding: 22px;
       }
 
-      .problem-card {
-        min-height: 210px;
+      .problem-card,
+      .pillar-card,
+      .step-card {
+        min-height: 230px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -499,8 +496,6 @@
 
       .problem-card h3,
       .pillar-card h3,
-      .outcome-card h3,
-      .product-card h3,
       .step-card h3 {
         font-size: 1.15rem;
         line-height: 1.2;
@@ -509,11 +504,8 @@
 
       .problem-card p,
       .pillar-card p,
-      .outcome-card p,
-      .proof-card p,
-      .product-card p,
       .step-card p,
-      .faq-item p {
+      .proof-card p {
         color: var(--muted);
         margin-bottom: 0;
         font-size: 0.97rem;
@@ -551,7 +543,7 @@
 
       .timeline-item {
         display: grid;
-        grid-template-columns: 108px 1fr;
+        grid-template-columns: 132px 1fr;
         gap: 22px;
         border: 1px solid var(--line);
         border-radius: var(--radius-md);
@@ -574,28 +566,11 @@
       }
 
       .feature-panel {
-        position: relative;
-        border: 1px solid var(--line);
         border-radius: var(--radius-xl);
         padding: clamp(28px, 5vw, 58px);
-        background:
-          linear-gradient(
-            135deg,
-            rgba(247, 243, 238, 0.09),
-            rgba(247, 243, 238, 0.035)
-          ),
-          radial-gradient(
-            circle at 18% 12%,
-            rgba(13, 115, 119, 0.25),
-            transparent 24rem
-          );
-        box-shadow: var(--shadow);
-        overflow: hidden;
       }
 
       .panel-grid {
-        position: relative;
-        z-index: 1;
         display: grid;
         grid-template-columns: 1fr 0.86fr;
         gap: 48px;
@@ -628,90 +603,27 @@
         box-shadow: 0 0 18px var(--cyan);
       }
 
-      .mini-report {
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        background: rgba(9, 9, 18, 0.42);
-        padding: 22px;
-      }
-
-      .mini-report h3 {
-        margin-bottom: 18px;
-      }
-
-      .bar {
-        margin: 18px 0;
-      }
-
-      .bar-label {
-        display: flex;
-        justify-content: space-between;
-        color: var(--muted);
-        font-size: 0.86rem;
-        margin-bottom: 8px;
-      }
-
-      .bar-track {
-        height: 9px;
-        background: rgba(247, 243, 238, 0.1);
-        border-radius: 999px;
-        overflow: hidden;
-      }
-
-      .bar-fill {
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          var(--cyan),
-          rgba(247, 243, 238, 0.8)
-        );
-        border-radius: 999px;
-      }
-
-      .steps-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-        margin-top: 28px;
-      }
-
-      .step-card {
-        min-height: 210px;
-      }
-
-      .pillars,
-      .products-grid {
+      .pillars {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
       }
 
-      .pillar-card,
-      .product-card {
-        min-height: 260px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .pillar-top,
-      .product-top {
+      .pillar-top {
         display: flex;
         justify-content: space-between;
         gap: 18px;
         margin-bottom: 26px;
       }
 
-      .pillar-label,
-      .product-label {
+      .pillar-label {
         color: var(--muted);
         font-size: 0.86rem;
         text-transform: uppercase;
         letter-spacing: 0.08em;
       }
 
-      .pillar-icon,
-      .product-price {
+      .pillar-icon {
         min-width: 42px;
         height: 42px;
         border-radius: 14px;
@@ -725,43 +637,11 @@
         font-size: 0.9rem;
       }
 
-      .outcomes-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-
-      .outcome-card {
-        min-height: 160px;
-      }
-
-      .proof-grid {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 16px;
-        align-items: stretch;
-      }
-
       .quote {
         font-size: clamp(1.65rem, 3vw, 3rem);
         line-height: 1.08;
         letter-spacing: -0.05em;
         margin-bottom: 22px;
-      }
-
-      .proof-card strong {
-        display: block;
-        margin-bottom: 8px;
-      }
-
-      .faq-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-
-      .faq-item h3 {
-        margin-bottom: 10px;
       }
 
       .cta-section {
@@ -842,13 +722,11 @@
       @media (max-width: 980px) {
         .hero-grid,
         .split,
-        .panel-grid,
-        .proof-grid {
+        .panel-grid {
           grid-template-columns: 1fr;
         }
         .problem-grid,
         .pillars,
-        .products-grid,
         .steps-grid {
           grid-template-columns: repeat(2, 1fr);
         }
@@ -881,11 +759,8 @@
         }
         .problem-grid,
         .pillars,
-        .products-grid,
         .steps-grid,
-        .outcomes-grid,
-        .metric-row,
-        .faq-grid {
+        .metric-row {
           grid-template-columns: 1fr;
         }
         .timeline-item {
@@ -903,18 +778,18 @@
     <div class="site">
       <header>
         <nav class="nav" aria-label="Main navigation">
-          <a class="brand" href="#top" aria-label="Nineteen Point Two home">
+          <a class="brand" href="../" aria-label="Nineteen Point Two home">
             <img
               class="brand-logo"
-              src="./assets/logo/logo-horizontal.svg"
+              src="../assets/logo/logo-horizontal.svg"
               alt="Nineteen Point Two"
             />
           </a>
           <div class="nav-links">
-            <a href="#risk">Risk</a>
-            <a href="#stress-test">Stress Test</a>
-            <a href="#approach">Approach</a>
-            <a href="#products">Products</a>
+            <a href="/#risk">Risk</a>
+            <a href="/#stress-test">Stress Test</a>
+            <a href="/#approach">Approach</a>
+            <a href="/#products">Products</a>
             <div class="nav-group">
               <a href="/workplace-ai/">Workplace AI</a>
               <div class="nav-menu" aria-label="Workplace AI pages">
@@ -923,9 +798,13 @@
                 <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
               </div>
             </div>
-            <a href="#faq">FAQ</a>
+            <a href="/#faq">FAQ</a>
           </div>
-          <a class="nav-cta" href="#stress-test">Start diagnostic</a>
+          <a
+            class="nav-cta"
+            href="mailto:ben@nineteenpointtwo.com?subject=AI%20adoption%20readiness"
+            >Discuss readiness</a
+          >
         </nav>
       </header>
 
@@ -933,78 +812,76 @@
         <section class="hero">
           <div class="container hero-grid">
             <div>
-              <div class="eyebrow">Revenue integrity for SaaS leaders</div>
-              <h1>
-                Your revenue target is only as strong as the system underneath
-                it.
-              </h1>
+              <div class="eyebrow">Workplace AI readiness</div>
+              <h1>AI adoption is now an operating model issue.</h1>
               <p class="lede">
-                Nineteen Point Two helps SaaS leaders expose hidden risk across
-                people, process and data before it shows up in churn, weak
-                forecasts or missed expansion.
+                AI is not a strategy, it's a tool. The risk is not that people
+                use it. The risk is that organisations cannot see how it is
+                being used, where judgement is being outsourced, or which
+                decisions are being shaped by weak evidence.
               </p>
               <div class="hero-actions">
-                <a class="btn primary" href="#stress-test"
-                  >Run the Revenue Integrity Stress Test</a
+                <a class="btn primary" href="#point-of-view"
+                  >See the point of view</a
                 >
-                <a class="btn secondary" href="#approach"
-                  >See the operating model</a
+                <a class="btn secondary" href="/workplace-ai-academy/"
+                  >Explore Workplace AI Academy</a
                 >
               </div>
               <p class="trust-line">
-                Built for leaders who need clearer decisions, not more activity,
-                more dashboards or another disconnected improvement initiative.
+                Built for leaders who need safe adoption, clearer governance and
+                better decision quality without turning AI into a disconnected
+                training exercise.
               </p>
             </div>
 
             <aside
               class="diagnostic-card"
-              aria-label="Example revenue diagnostic summary"
+              aria-label="Workplace AI operating risk summary"
             >
               <div class="card-inner">
-                <div class="eyebrow">Live diagnostic view</div>
+                <div class="eyebrow">Operating read</div>
                 <div class="metric-row">
                   <div class="metric">
-                    <span>Target support</span><strong>0.86×</strong>
+                    <span>Policy coverage</span><strong>Partial</strong>
                   </div>
                   <div class="metric">
-                    <span>Forecast confidence</span><strong>Low</strong>
+                    <span>Use visibility</span><strong>Low</strong>
                   </div>
                   <div class="metric">
-                    <span>Lifecycle drag</span><strong>High</strong>
+                    <span>Decision risk</span><strong>Rising</strong>
                   </div>
                   <div class="metric">
-                    <span>Constraint</span><strong>Process</strong>
+                    <span>Constraint</span><strong>Model</strong>
                   </div>
                 </div>
                 <div class="status">
                   <small>Current read</small>
-                  <strong>Revenue plan is structurally exposed.</strong>
+                  <strong
+                    >AI use is ahead of the operating system around it.</strong
+                  >
                 </div>
                 <ul class="signal-list">
-                  <li>
-                    <span>Sales to CS handover</span><strong>Fragile</strong>
-                  </li>
-                  <li>
-                    <span>Adoption evidence</span><strong>Incomplete</strong>
-                  </li>
-                  <li><span>Renewal preparation</span><strong>Late</strong></li>
-                  <li><span>Data confidence</span><strong>Mixed</strong></li>
+                  <li><span>Shared rules</span><strong>Uneven</strong></li>
+                  <li><span>Manager confidence</span><strong>Mixed</strong></li>
+                  <li><span>Data handling</span><strong>Exposed</strong></li>
+                  <li><span>Evidence trail</span><strong>Weak</strong></li>
                 </ul>
               </div>
             </aside>
           </div>
         </section>
 
-        <section id="risk">
+        <section id="hidden-problem">
           <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Where risk actually enters</div>
-              <h2>Most revenue problems are discovered too late.</h2>
+            <div class="section-head wide">
+              <div class="eyebrow">The hidden problem</div>
+              <h2>Most AI risk sits between policy, practice and evidence.</h2>
               <p>
-                Not because teams are not working hard. Because the system is
-                not visible early enough. The warning signs usually appear
-                between teams, not inside one team.
+                People are already experimenting. Some of that use is helpful.
+                Some of it creates quiet exposure. The issue is that leadership
+                often cannot see the difference until quality, confidentiality,
+                compliance or customer trust has already been affected.
               </p>
             </div>
 
@@ -1012,40 +889,60 @@
               <article class="problem-card">
                 <span class="index">01</span>
                 <div>
-                  <h3>Forecasts move late.</h3>
+                  <h3>Use is happening outside the operating rhythm.</h3>
                   <p>
-                    The number changes after confidence has already been
-                    communicated.
+                    Teams adopt tools before ownership, review points and
+                    escalation routes are clear.
                   </p>
                 </div>
               </article>
               <article class="problem-card">
                 <span class="index">02</span>
                 <div>
-                  <h3>Retention risk appears at renewal.</h3>
+                  <h3>Training does not prove safe application.</h3>
                   <p>
-                    But the original failure usually started during handover,
-                    onboarding or adoption.
+                    Completion data shows attendance. It does not show whether
+                    people can apply judgement in context.
                   </p>
                 </div>
               </article>
               <article class="problem-card">
                 <span class="index">03</span>
                 <div>
-                  <h3>More activity does not create more certainty.</h3>
+                  <h3>Policies struggle at the moment of work.</h3>
                   <p>
-                    Teams get busier while the underlying operating model stays
-                    unclear.
+                    Employees need practical decisions on prompts, data,
+                    outputs, review and accountability.
                   </p>
                 </div>
               </article>
               <article class="problem-card">
                 <span class="index">04</span>
                 <div>
-                  <h3>Leadership debates symptoms.</h3>
+                  <h3>Managers become the control point.</h3>
                   <p>
-                    The real constraint is hidden in ownership, timing,
-                    definitions or decision quality.
+                    If managers cannot spot poor use, teams inherit inconsistent
+                    standards and unmanaged risk.
+                  </p>
+                </div>
+              </article>
+              <article class="problem-card">
+                <span class="index">05</span>
+                <div>
+                  <h3>Data exposure is often ordinary.</h3>
+                  <p>
+                    The problem is usually not malicious behaviour. It is
+                    unclear boundaries around routine work.
+                  </p>
+                </div>
+              </article>
+              <article class="problem-card">
+                <span class="index">06</span>
+                <div>
+                  <h3>Decision quality becomes harder to audit.</h3>
+                  <p>
+                    Outputs can look confident while assumptions, sources and
+                    human review remain unclear.
                   </p>
                 </div>
               </article>
@@ -1053,59 +950,58 @@
           </div>
         </section>
 
-        <section>
+        <section id="point-of-view">
           <div class="container split">
             <aside class="sticky-note">
-              <div class="eyebrow">Core belief</div>
-              <h2>Revenue is a system.</h2>
+              <div class="eyebrow">Nineteen Point Two view</div>
+              <h2>Adoption needs an operating model, not just access.</h2>
               <p>
-                Sales, Customer Success, Operations, Product and Finance all
-                shape the commercial outcome. When their assumptions do not
-                connect, risk compounds quietly.
+                The goal is not to slow people down. The goal is to make AI use
+                visible, governed and useful enough that it improves work
+                without weakening the system around it.
               </p>
             </aside>
 
             <div class="timeline">
               <article class="timeline-item">
-                <span>Signal</span>
+                <span>Visibility</span>
                 <div>
-                  <h3>What does the business think is true?</h3>
+                  <h3>What is actually being used?</h3>
                   <p>
-                    Pipeline coverage, adoption health, renewal readiness and
-                    capacity assumptions often look credible until they are
-                    tested together.
+                    Leaders need a practical read of where AI is entering work,
+                    what data is involved, and which outputs influence
+                    decisions.
                   </p>
                 </div>
               </article>
               <article class="timeline-item">
-                <span>Friction</span>
+                <span>Judgement</span>
                 <div>
-                  <h3>Where does confidence break down?</h3>
+                  <h3>Where does human review matter most?</h3>
                   <p>
-                    Weak handovers, unclear ownership and inconsistent
-                    definitions create gaps that reporting can describe but not
-                    fix.
+                    Teams need clear standards for checking outputs, challenging
+                    assumptions and knowing when AI is the wrong tool.
                   </p>
                 </div>
               </article>
               <article class="timeline-item">
-                <span>Constraint</span>
+                <span>Ownership</span>
                 <div>
-                  <h3>What is actually limiting performance?</h3>
+                  <h3>Who is accountable for the result?</h3>
                   <p>
-                    The answer is rarely a single team. It is usually the way
-                    people, process and data interact under commercial pressure.
+                    AI can support work, but it does not own the customer
+                    outcome, commercial decision or compliance obligation.
                   </p>
                 </div>
               </article>
               <article class="timeline-item">
-                <span>Action</span>
+                <span>Evidence</span>
                 <div>
-                  <h3>What should change first?</h3>
+                  <h3>What proves adoption is improving?</h3>
                   <p>
-                    The goal is sharper prioritisation, clearer ownership and
-                    better commercial decisions without adding unnecessary
-                    operational noise.
+                    The organisation needs more than enthusiasm. It needs
+                    evidence of capability, usage standards, manager confidence
+                    and risk control.
                   </p>
                 </div>
               </article>
@@ -1113,138 +1009,63 @@
           </div>
         </section>
 
-        <section id="stress-test">
+        <section id="policy">
           <div class="container feature-panel grid-surface">
             <div class="panel-grid">
               <div>
-                <div class="eyebrow">Primary entry point</div>
-                <h2>Run the Revenue Integrity Stress Test.</h2>
+                <div class="eyebrow">Why policies are not enough</div>
+                <h2>
+                  A policy can set boundaries. It cannot create operating
+                  confidence by itself.
+                </h2>
                 <p class="large-copy">
-                  A structured diagnostic that tests whether your revenue target
-                  is supported by the actual mechanics of the business,
-                  including deal size, win rate, sales cycle, rep capacity,
-                  ramp, attainment and forecast discipline.
+                  AI governance has to survive contact with real work. That
+                  means people understand the rules, managers can reinforce
+                  them, processes include review points, and data use is visible
+                  enough to manage.
                 </p>
                 <ul class="check-list">
                   <li>
-                    Expose whether the revenue plan has enough structural
-                    headroom.
+                    Policies need practical translation into role-based work.
                   </li>
                   <li>
-                    Identify whether pressure sits in people, process, data or
-                    timing.
+                    Training needs evidence that learners can apply safe use
+                    standards.
                   </li>
-                  <li>Separate operational symptoms from the root cause.</li>
                   <li>
-                    Give leadership a clearer decision path before adding
-                    headcount or activity.
+                    Managers need a consistent baseline for coaching and
+                    escalation.
+                  </li>
+                  <li>
+                    Leadership needs visibility before adoption becomes system
+                    risk.
                   </li>
                 </ul>
-                <div
-                  class="hero-actions"
-                  style="margin-top: 32px; margin-bottom: 0"
-                >
-                  <a
-                    class="btn primary"
-                    href="https://rstapp.nineteenpointtwo.com/"
-                    >Start the diagnostic</a
-                  >
-                  <a class="btn secondary" href="#stress-test-details"
-                    >What you get</a
-                  >
-                </div>
               </div>
-
-              <aside
-                class="mini-report"
-                aria-label="Revenue Integrity Stress Test example report"
-              >
-                <h3>Example output</h3>
-                <div class="bar">
-                  <div class="bar-label">
-                    <span>Structural support</span><strong>86%</strong>
-                  </div>
-                  <div class="bar-track">
-                    <div class="bar-fill" style="width: 86%"></div>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="bar-label">
-                    <span>Process confidence</span><strong>54%</strong>
-                  </div>
-                  <div class="bar-track">
-                    <div class="bar-fill" style="width: 54%"></div>
-                  </div>
-                </div>
-                <div class="bar">
-                  <div class="bar-label">
-                    <span>Data confidence</span><strong>61%</strong>
-                  </div>
-                  <div class="bar-track">
-                    <div class="bar-fill" style="width: 61%"></div>
-                  </div>
-                </div>
-                <div class="status">
-                  <small>Recommended focus</small
-                  ><strong
-                    >Fix lifecycle evidence before increasing activity.</strong
-                  >
-                </div>
+              <aside class="proof-card">
+                <div class="eyebrow">Buyer question</div>
+                <p class="quote">
+                  Can we prove people are using AI safely, consistently and with
+                  judgement?
+                </p>
+                <p>
+                  If the answer is unclear, the organisation has an operating
+                  model gap, not just a learning gap.
+                </p>
               </aside>
             </div>
           </div>
         </section>
 
-        <section id="stress-test-details">
-          <div class="container">
-            <div class="section-head wide">
-              <div class="eyebrow">What the diagnostic does</div>
-              <h2>
-                It turns a revenue ambition into an operating reality check.
-              </h2>
-              <p>
-                The point is not to produce a neat score. The point is to expose
-                whether the target is commercially believable, where the
-                pressure sits, and what should be fixed first.
-              </p>
-            </div>
-            <div class="steps-grid">
-              <article class="step-card">
-                <span class="index">01</span>
-                <h3>Model the mechanics.</h3>
-                <p>
-                  Test the target against deal size, win rate, sales cycle, rep
-                  count, ramp and attainment.
-                </p>
-              </article>
-              <article class="step-card">
-                <span class="index">02</span>
-                <h3>Stress the assumptions.</h3>
-                <p>
-                  Identify whether the plan relies on fragile assumptions,
-                  heroic capacity or unrealistic timing.
-                </p>
-              </article>
-              <article class="step-card">
-                <span class="index">03</span>
-                <h3>Read the constraint.</h3>
-                <p>
-                  See whether the issue is people, process, data, handover
-                  quality, forecast discipline or lifecycle evidence.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="approach">
+        <section id="lens">
           <div class="container">
             <div class="section-head">
-              <div class="eyebrow">Operating model</div>
-              <h2>People, process and data, tested together.</h2>
+              <div class="eyebrow">People, Processes and Data</div>
+              <h2>The same lens applies to workplace AI.</h2>
               <p>
-                These are not separate service lines. They are the three places
-                revenue integrity usually breaks down.
+                AI adoption becomes manageable when the organisation can see how
+                capability, workflow and evidence interact. That is where risk
+                forms, and where decision quality improves.
               </p>
             </div>
 
@@ -1255,25 +1076,25 @@
                     <span class="pillar-label">People</span
                     ><span class="pillar-icon">P</span>
                   </div>
-                  <h3>Capability, ownership and accountability.</h3>
+                  <h3>Capability, judgement and accountability.</h3>
                 </div>
                 <p>
-                  Clarify who owns the moments that matter across the lifecycle
-                  and whether the team has the operating confidence to act
-                  early.
+                  Can employees and managers identify appropriate use, protect
+                  sensitive information, check outputs and stay accountable for
+                  decisions?
                 </p>
               </article>
               <article class="pillar-card">
                 <div>
                   <div class="pillar-top">
-                    <span class="pillar-label">Process</span
+                    <span class="pillar-label">Processes</span
                     ><span class="pillar-icon">Pr</span>
                   </div>
-                  <h3>From commercial intent to renewal reality.</h3>
+                  <h3>Controls built into the way work happens.</h3>
                 </div>
                 <p>
-                  Examine handovers, onboarding, value realisation, escalation,
-                  renewal preparation and expansion readiness.
+                  Where should AI be used, reviewed, documented or avoided
+                  across commercial, operational and customer-facing workflows?
                 </p>
               </article>
               <article class="pillar-card">
@@ -1282,146 +1103,11 @@
                     <span class="pillar-label">Data</span
                     ><span class="pillar-icon">D</span>
                   </div>
-                  <h3>Signals that improve decisions.</h3>
+                  <h3>Signals that make adoption visible.</h3>
                 </div>
                 <p>
-                  Assess whether the business is using evidence that predicts
-                  risk and informs action, not just reporting what already
-                  happened.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="outcomes">
-          <div class="container proof-grid">
-            <article class="proof-card">
-              <div class="eyebrow">Commercial outcome</div>
-              <p class="quote">Clearer decisions before the number moves.</p>
-              <p>
-                Nineteen Point Two exists for leadership teams who need to
-                understand what is really limiting revenue performance before
-                committing to more spend, more headcount or more process.
-              </p>
-            </article>
-            <div class="outcomes-grid">
-              <article class="outcome-card">
-                <h3>Expose hidden constraints.</h3>
-                <p>Find the point in the system where confidence is leaking.</p>
-              </article>
-              <article class="outcome-card">
-                <h3>Prioritise with evidence.</h3>
-                <p>Decide what to fix first based on commercial impact.</p>
-              </article>
-              <article class="outcome-card">
-                <h3>Align leadership teams.</h3>
-                <p>
-                  Create shared definitions, sharper ownership and better
-                  operating rhythm.
-                </p>
-              </article>
-              <article class="outcome-card">
-                <h3>Reduce avoidable revenue risk.</h3>
-                <p>
-                  Act before churn, weak forecasts or missed expansion become
-                  the headline.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="products">
-          <div class="container">
-            <div class="section-head wide">
-              <div class="eyebrow">After the diagnostic</div>
-              <h2>Use the result to decide the right intervention.</h2>
-              <p>
-                The free diagnostic should create clarity. The paid products
-                should help someone interpret the result, then act on the right
-                pillar without overbuying.
-              </p>
-            </div>
-            <div class="products-grid">
-              <article class="product-card">
-                <div>
-                  <div class="product-top">
-                    <span class="product-label">Start here</span
-                    ><span class="product-price">£39</span>
-                  </div>
-                  <h3>Module One: Interpret Your Results</h3>
-                </div>
-                <p>
-                  A focused guide for turning the diagnostic output into a
-                  practical read of the commercial constraint.
-                </p>
-              </article>
-              <article class="product-card">
-                <div>
-                  <div class="product-top">
-                    <span class="product-label">Pillar packs</span
-                    ><span class="product-price">£70+</span>
-                  </div>
-                  <h3>People, Process and Data Packs</h3>
-                </div>
-                <p>
-                  Operator-ready resources to help fix the specific area
-                  creating drag in the revenue system.
-                </p>
-              </article>
-              <article class="product-card">
-                <div>
-                  <div class="product-top">
-                    <span class="product-label">Bundle</span
-                    ><span class="product-price">£249</span>
-                  </div>
-                  <h3>Revenue Integrity Pillar Bundle</h3>
-                </div>
-                <p>
-                  The full practical set for leaders who want to work through
-                  the diagnostic properly across all three pillars.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="faq">
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">FAQ</div>
-              <h2>Questions a serious buyer will ask.</h2>
-            </div>
-            <div class="faq-grid">
-              <article class="faq-item">
-                <h3>Who is this for?</h3>
-                <p>
-                  SaaS and recurring revenue leaders who need to understand why
-                  the plan feels harder to execute than it looks on paper.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>Is this consulting?</h3>
-                <p>
-                  Not at the first step. The diagnostic gives structure before
-                  any advisory conversation. That keeps the work sharper and
-                  more evidence-led.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>What makes this different from a dashboard?</h3>
-                <p>
-                  Dashboards report movement. This tests whether the operating
-                  system underneath the number is structurally credible.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>What happens after the test?</h3>
-                <p>
-                  You can use the result yourself, buy a focused module, or
-                  discuss the output if the constraint is material enough to
-                  warrant external support.
+                  What evidence shows safe use, learner progress, manager
+                  readiness and the areas where governance needs attention?
                 </p>
               </article>
             </div>
@@ -1431,21 +1117,23 @@
         <section class="cta-section">
           <div class="container cta-box">
             <div class="eyebrow">Next step</div>
-            <h2>Test whether the revenue plan is structurally supported.</h2>
+            <h2>Build a safer baseline for AI adoption.</h2>
             <p>
-              Run the diagnostic first. Then use the result to decide whether
-              the constraint sits in people, process, data, timing or leadership
-              alignment.
+              Workplace AI Academy gives organisations a practical way to move
+              from policy intent to consistent, evidence-led adoption across
+              teams.
             </p>
             <div
               class="hero-actions"
               style="justify-content: center; margin-bottom: 0"
             >
-              <a class="btn primary" href="https://rstapp.nineteenpointtwo.com/"
-                >Start the Revenue Integrity Stress Test</a
+              <a class="btn primary" href="/workplace-ai-academy/"
+                >Explore Workplace AI Academy</a
               >
-              <a class="btn secondary" href="mailto:ben@nineteenpointtwo.com"
-                >ben@nineteenpointtwo.com</a
+              <a
+                class="btn secondary"
+                href="mailto:ben@nineteenpointtwo.com?subject=Workplace%20AI%20Academy"
+                >Discuss AI adoption readiness</a
               >
             </div>
           </div>
@@ -1454,9 +1142,9 @@
 
       <footer>
         <div class="footer-grid">
-          <span>© 2026 Nineteen Point Two</span>
-          <span>Revenue integrity diagnostics for SaaS leaders</span>
-          <span>People · Process · Data</span>
+          <span>&copy; 2026 Nineteen Point Two</span>
+          <span>Workplace AI readiness for operators</span>
+          <span>People | Processes | Data</span>
         </div>
       </footer>
     </div>
