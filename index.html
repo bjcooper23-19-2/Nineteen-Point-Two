@@ -691,12 +691,38 @@
         gap: 16px;
       }
 
+      .products-grid.entry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .entry-card {
+        justify-content: flex-start;
+      }
+
+      .entry-card p + p {
+        margin-top: 16px;
+      }
+
       .pillar-card,
       .product-card {
         min-height: 260px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+      }
+
+      .product-card .check-list {
+        margin-top: 20px;
+        gap: 10px;
+      }
+
+      .product-card .check-list li {
+        font-size: 0.94rem;
+      }
+
+      .product-actions {
+        margin-top: auto;
+        padding-top: 24px;
       }
 
       .pillar-top,
@@ -887,6 +913,7 @@
         .problem-grid,
         .pillars,
         .products-grid,
+        .products-grid.entry-grid,
         .steps-grid,
         .outcomes-grid,
         .metric-row,
@@ -950,7 +977,9 @@
                 missed expansion.
               </p>
               <div class="hero-actions">
-                <a class="btn primary" href="#stress-test"
+                <a
+                  class="btn primary"
+                  href="https://rstapp.nineteenpointtwo.com/"
                   >Run the Revenue Integrity Stress Test</a
                 >
                 <a
@@ -1358,7 +1387,7 @@
               </article>
               <article class="step-card">
                 <span class="index">03</span>
-                <h3>Talk through the constraint.</h3>
+                <h3>Focused conversation.</h3>
                 <p>
                   If the issue is material enough, use the result as the basis
                   for a focused conversation about what support makes sense.
@@ -1513,13 +1542,13 @@
               <div class="eyebrow">Products</div>
               <h2>Two practical entry points for operating clarity.</h2>
               <p>
-                One tests the commercial system behind the revenue plan. One
-                helps organisations create a safer baseline for AI use in
-                everyday work.
+                One product tests the commercial system behind the revenue plan.
+                The other helps organisations turn AI adoption from informal use
+                into assigned learning, visible progress and practical evidence.
               </p>
             </div>
-            <div class="products-grid">
-              <article class="product-card">
+            <div class="products-grid entry-grid">
+              <article class="product-card entry-card">
                 <div>
                   <div class="product-top">
                     <span class="product-label">Revenue systems</span
@@ -1531,8 +1560,23 @@
                   A structured diagnostic for testing whether the commercial
                   plan is supported by people, process, data and timing.
                 </p>
+                <ul class="check-list">
+                  <li>Test the revenue plan.</li>
+                  <li>Expose hidden commercial constraints.</li>
+                  <li>
+                    Decide what to fix before adding spend, activity or
+                    headcount.
+                  </li>
+                </ul>
+                <div class="product-actions">
+                  <a
+                    class="btn primary"
+                    href="https://rstapp.nineteenpointtwo.com/"
+                    >Run the Revenue Integrity Stress Test</a
+                  >
+                </div>
               </article>
-              <article class="product-card">
+              <article class="product-card entry-card">
                 <div>
                   <div class="product-top">
                     <span class="product-label">Workplace adoption</span
@@ -1544,12 +1588,31 @@
                   A platform for assigning AI learning, inviting learners,
                   tracking completion and evidencing rollout progress.
                 </p>
+                <ul class="check-list">
+                  <li>Create a safe AI adoption baseline.</li>
+                  <li>Assign role-based learning pathways.</li>
+                  <li>Track learner progress and completion evidence.</li>
+                  <li>Support managers with practical standards.</li>
+                </ul>
+                <p>
+                  Workplace AI Academy is handled through a conversation so the
+                  rollout can be mapped to learner groups, manager needs and
+                  evidence requirements.
+                </p>
+                <div class="product-actions">
+                  <a class="btn primary" href="/workplace-ai-academy/"
+                    >Explore Workplace AI Academy</a
+                  >
+                </div>
               </article>
             </div>
 
             <div class="section-head wide spaced">
-              <div class="eyebrow">After the diagnostic</div>
-              <h2>Use the result to decide the right revenue intervention.</h2>
+              <div class="eyebrow">Revenue Integrity follow-on products</div>
+              <h2>
+                After the Revenue Integrity diagnostic, use the result to decide
+                the right revenue intervention.
+              </h2>
               <p>
                 The free diagnostic should create clarity. The paid products
                 should help someone interpret the result, then act on the right
