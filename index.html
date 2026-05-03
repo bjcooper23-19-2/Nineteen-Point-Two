@@ -725,6 +725,20 @@
         padding-top: 24px;
       }
 
+      .responsive-cta-label .hidden {
+        display: none;
+      }
+
+      @media (min-width: 640px) {
+        .responsive-cta-label .sm\:inline {
+          display: inline;
+        }
+
+        .responsive-cta-label .sm\:hidden {
+          display: none;
+        }
+      }
+
       .pillar-top,
       .product-top {
         display: flex;
@@ -1570,10 +1584,14 @@
                 </ul>
                 <div class="product-actions">
                   <a
-                    class="btn primary"
+                    class="btn primary responsive-cta-label"
                     href="https://rstapp.nineteenpointtwo.com/"
-                    >Run the Revenue Integrity Stress Test</a
                   >
+                    <span class="hidden sm:inline">
+                      Run the Revenue Integrity Stress Test
+                    </span>
+                    <span class="sm:hidden">Run the Stress Test</span>
+                  </a>
                 </div>
               </article>
               <article class="product-card entry-card">
