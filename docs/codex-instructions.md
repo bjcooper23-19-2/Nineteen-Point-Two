@@ -4,6 +4,7 @@
 
 Read these files first:
 
+- `/docs/19.2-operating-doctrine.md`
 - `/docs/context.md`
 - `/docs/decisions.md`
 - `/docs/next-steps.md`
@@ -33,6 +34,8 @@ Nineteen Point Two helps leaders make hidden operating risk visible across peopl
 
 Revenue integrity is the lead homepage proposition. Workplace AI readiness is a second application of the same operating risk lens.
 
+Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source. If a request conflicts with the doctrine, flag the conflict before making positioning changes.
+
 Use calm, commercially grounded, operator led copy. Avoid hype, generic future of work language, exaggerated AI claims and broad small business consultancy positioning.
 
 Keep CTAs consultative. The sign in link for Workplace AI Academy is access for existing users, not a primary sales CTA.
@@ -61,4 +64,3 @@ For site changes:
 - Check desktop and mobile layouts locally.
 - Confirm internal routes and external links still work.
 - Confirm no placeholder copy remains.
-

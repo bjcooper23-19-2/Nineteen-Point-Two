@@ -2,6 +2,7 @@
 
 ## Likely future improvements
 
+- Check future positioning work against `/docs/19.2-operating-doctrine.md` before changing public copy.
 - Check deployed GitHub Pages output after each push, especially `/`, `/workplace-ai/` and `/workplace-ai-academy/`.
 - Review the homepage periodically to make sure Workplace AI remains a second application of the operating risk lens, not the main brand story.
 - Keep the Revenue Integrity Stress Test journey clear, including what happens after the diagnostic.
@@ -28,4 +29,3 @@
 - If a future build system is introduced, document the build and deploy commands here.
 - If GitHub Pages settings change from root deployment, document the source branch and directory here.
 - If a contact form replaces mailto CTAs, document the route and required handling.
-
