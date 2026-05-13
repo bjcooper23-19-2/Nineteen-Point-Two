@@ -8,6 +8,8 @@ The homepage is revenue integrity led. It is written for SaaS and recurring reve
 
 Workplace AI readiness is a second application of the same operating risk lens. It should not replace or dilute the revenue integrity proposition.
 
+The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, Revenue Stress Test and Workplace AI Academy aligned.
+
 ## Visible site structure
 
 - `/` is served by `index.html`.
@@ -45,12 +47,11 @@ Workplace AI readiness:
 Workplace AI Academy:
 
 - A product explanation page.
-- Explains the managed learning environment for workplace AI rollout.
-- Covers organisation setup, learner invitations, assigned pathways, learner journey, admin visibility, progress tracking and completion evidence.
+- Explains the practical platform for safe, consistent AI adoption at work.
+- Covers organisation setup, role-aware learner access, organisation guidance, learner acknowledgement, admin visibility, progress tracking, completion evidence and certificates.
 
 ## Brand feel
 
 The site should feel premium, calm, commercial and operator led. It should avoid hype, generic future of work language, exaggerated AI claims and broad small business consultancy language.
 
 The design language is dark, minimal and editorial, with charcoal backgrounds, off white type, muted supporting copy and cyan accents.
-

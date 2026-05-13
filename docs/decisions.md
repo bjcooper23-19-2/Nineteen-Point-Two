@@ -12,6 +12,8 @@ Current routes visible in the repo:
 
 The custom domain is managed through `CNAME`, which contains `www.nineteenpointtwo.com`.
 
+The canonical strategic doctrine is stored at `/docs/19.2-operating-doctrine.md`.
+
 ## Revenue integrity remains the lead story
 
 The homepage should continue to lead with revenue integrity. Workplace AI is included as a second application of the same operating model lens, not as a replacement brand story.
@@ -23,7 +25,7 @@ The main buyer should recognise a recurring revenue business where the target lo
 The Workplace AI pages have distinct jobs:
 
 - `/workplace-ai/` creates problem awareness around AI adoption as an operating model and governance issue.
-- `/workplace-ai-academy/` explains the Workplace AI Academy product, learner and admin experience, deployment options and evidence value.
+- `/workplace-ai-academy/` explains the Workplace AI Academy product, learner and admin experience, organisation guidance, acknowledgement, deployment options and evidence value.
 
 The readiness page should avoid over explaining the Academy. The Academy page should be more concrete and platform specific.
 
@@ -67,5 +69,4 @@ Use UK English. Keep the tone calm, practical, premium and operator led. Avoid e
 
 The exact phrase below is required where it appears and should not be altered:
 
-`AI is not a strategy, it's a tool.`
-
+`AI is not a strategy, it’s a tool.`
