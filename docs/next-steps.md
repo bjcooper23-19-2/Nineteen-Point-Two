@@ -4,9 +4,11 @@
 
 - Check future positioning work against `/docs/19.2-operating-doctrine.md` before changing public copy.
 - Check deployed GitHub Pages output after each push, especially `/`, `/workplace-ai/` and `/workplace-ai-academy/`.
+- Check `/insights/` and individual insight routes after publishing new articles.
 - Review the homepage periodically to make sure Workplace AI remains a second application of the operating risk lens, not the main brand story.
 - Keep the Revenue Integrity Stress Test journey clear, including what happens after the diagnostic.
 - If adding more pages, mirror the existing static route pattern with a folder and `index.html`.
+- If adding Insights articles, update markdown under `src/content/insights/`, run `node scripts/build-insights.mjs`, and commit generated static HTML.
 - If adding assets, preserve existing relative path conventions and check nested route paths carefully.
 
 ## Quality checks before commit

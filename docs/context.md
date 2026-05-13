@@ -13,12 +13,13 @@ The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`
 ## Visible site structure
 
 - `/` is served by `index.html`.
+- `/insights/` is served by `insights/index.html`.
 - `/workplace-ai/` is served by `workplace-ai/index.html`.
 - `/workplace-ai-academy/` is served by `workplace-ai-academy/index.html`.
 - Shared visual assets sit under `assets/`.
 - `CNAME` points the GitHub Pages custom domain to `www.nineteenpointtwo.com`.
 
-The site is static HTML with page level CSS. There is no visible build system, package file or generated output folder in the current repo structure.
+The site is static HTML with page level CSS. Insights pages are generated from markdown content using `node scripts/build-insights.mjs` and committed as static output.
 
 ## Positioning
 
