@@ -589,7 +589,7 @@ const renderIndex = (articles) => {
   return documentShell({
     title: "Insights | Nineteen Point Two",
     description:
-      "Operational insights from Nineteen Point Two on workforce AI adoption, Shadow AI, governance enablement, workflow consistency and revenue operating risk.",
+      "Operational insights from Nineteen Point Two on workforce AI adoption, Shadow AI, governance as enablement, workflow consistency and revenue operating risk.",
     canonical: `${siteUrl}/insights/`,
     body: `
       <main id="top">
@@ -599,11 +599,12 @@ const renderIndex = (articles) => {
             <h1>Operational thinking for hidden risk.</h1>
             <p class="lede">
               A durable home for Nineteen Point Two thinking on workforce AI adoption,
-              Shadow AI, governance as enablement, workflow consistency, management
-              visibility and recurring revenue operating realities.
+              Shadow AI as an operational condition, governance as enablement,
+              workflow consistency, management visibility and recurring revenue
+              operating realities.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="/workplace-ai/">Explore AI Readiness</a>
+              <a class="btn primary" href="/workplace-ai/">Explore AI adoption readiness</a>
               <a class="btn secondary" href="/workplace-ai-academy/">Explore Workplace AI Academy</a>
             </div>
           </div>
@@ -655,9 +656,9 @@ const renderArticle = (article) =>
             <div class="eyebrow">Related work</div>
             <h2>Make AI adoption visible enough to manage.</h2>
             <p>
-              Explore the operating risk behind workplace AI adoption, or see how
-              Workplace AI Academy helps organisations create shared standards,
-              guidance acknowledgement and visible progress.
+              Explore the operating risk behind workforce AI adoption, or see how
+              Workplace AI Academy helps organisations turn policy intent into
+              shared standards, manager support and visible behaviour change.
             </p>
             <div class="hero-actions" style="justify-content: center; margin-bottom: 0">
               <a class="btn primary" href="/workplace-ai/">AI Readiness</a>
