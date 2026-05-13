@@ -7,6 +7,7 @@ The repository is organised as a static site. Routes are represented by folders 
 Current routes visible in the repo:
 
 - `/`
+- `/insights/`
 - `/workplace-ai/`
 - `/workplace-ai-academy/`
 
@@ -62,6 +63,12 @@ The Workplace AI dropdown labels are:
 - Sign in
 
 Keep routes unchanged unless there is an explicit route change request.
+
+## Insights section
+
+Insights is the editorial section for durable operational thought leadership. It is not a CMS and should not be called Blog.
+
+Articles are written in markdown under `src/content/insights/` and rendered into static pages under `insights/` with `node scripts/build-insights.mjs`.
 
 ## Copy constraints
 

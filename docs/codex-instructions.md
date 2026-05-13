@@ -7,6 +7,7 @@ Read these files first:
 - `/docs/19.2-operating-doctrine.md`
 - `/docs/context.md`
 - `/docs/decisions.md`
+- `/docs/insights.md`
 - `/docs/next-steps.md`
 - `/docs/codex-instructions.md`
 
@@ -48,6 +49,7 @@ Keep CTAs consultative. The sign in link for Workplace AI Academy is access for 
 - Do not remove or change `CNAME` unless explicitly requested.
 - Mobile layout can be fragile because each page carries its own CSS.
 - Navigation is duplicated across pages, so update all active pages consistently when navigation changes are requested.
+- Insights content is stored in `src/content/insights/` and rendered to static pages under `insights/` with `node scripts/build-insights.mjs`.
 
 ## Verification
 

@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      if (location.hostname === "nineteenpointtwo.com") {
+        location.replace("https://www.nineteenpointtwo.com/insights/");
+      }
+    </script>
+    <link rel="canonical" href="https://www.nineteenpointtwo.com/insights/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insights | Nineteen Point Two</title>
+    <meta
+      name="description"
+      content="Operational insights from Nineteen Point Two on workforce AI adoption, Shadow AI, governance enablement, workflow consistency and revenue operating risk."
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <style>
+      :root {
+        --charcoal: #1a1a2e;
+        --ink: #f7f3ee;
+        --muted: rgba(247, 243, 238, 0.72);
+        --quiet: rgba(247, 243, 238, 0.52);
+        --cyan: #0d7377;
+        --cyan-soft: rgba(13, 115, 119, 0.26);
+        --line: rgba(247, 243, 238, 0.14);
+        --panel: rgba(247, 243, 238, 0.045);
+        --shadow: 0 28px 80px rgba(0, 0, 0, 0.36);
+        --max: 1180px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(
+            circle at 20% 0%,
+            rgba(13, 115, 119, 0.16),
+            transparent 28%
+          ),
+          linear-gradient(180deg, var(--charcoal) 0%, #111120 54%, #0b0b15 100%);
+        color: var(--ink);
+        letter-spacing: 0;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.18;
+        background-image:
+          linear-gradient(rgba(247, 243, 238, 0.045) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(247, 243, 238, 0.045) 1px,
+            transparent 1px
+          );
+        background-size: 34px 34px;
+        mask-image: linear-gradient(180deg, black, transparent 72%);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(18px);
+        background: rgba(16, 16, 31, 0.76);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        line-height: 0;
+        max-width: 42vw;
+      }
+      .brand-logo {
+        display: block;
+        width: auto;
+        height: 36px;
+        max-width: 100%;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+      .nav-group {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 0;
+      }
+      .nav-group > a::after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-left: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: translateY(-2px) rotate(45deg);
+      }
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 8px);
+        min-width: 190px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(16, 16, 31, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 2px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+          opacity 160ms ease,
+          transform 160ms ease,
+          visibility 160ms ease;
+      }
+      .nav-group:hover .nav-menu,
+      .nav-group:focus-within .nav-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+      .nav-menu a {
+        padding: 9px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+      .nav-menu a:hover {
+        background: rgba(247, 243, 238, 0.08);
+      }
+      .nav-cta,
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        padding: 12px 18px;
+        border: 1px solid rgba(247, 243, 238, 0.22);
+        font-weight: 700;
+      }
+      .nav-cta {
+        background: rgba(247, 243, 238, 0.08);
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+      .btn.primary {
+        background: var(--ink);
+        color: #111120;
+        border-color: transparent;
+      }
+      .btn.secondary {
+        background: rgba(247, 243, 238, 0.06);
+        color: var(--ink);
+      }
+      .site {
+        position: relative;
+        z-index: 1;
+      }
+      main {
+        overflow: hidden;
+      }
+      section {
+        padding: 96px 24px;
+      }
+      .container {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+      .hero {
+        padding-top: 98px;
+        border-bottom: 1px solid var(--line);
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 700;
+        font-size: 0.78rem;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--cyan);
+        box-shadow: 0 0 26px var(--cyan);
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        letter-spacing: 0;
+        line-height: 0.96;
+        color: var(--ink);
+      }
+      h1 {
+        margin-top: 24px;
+        max-width: 980px;
+        font-size: clamp(4rem, 9vw, 8.4rem);
+      }
+      h2 {
+        margin-top: 18px;
+        max-width: 820px;
+        font-size: clamp(2.3rem, 5vw, 4.6rem);
+      }
+      h3 {
+        font-size: 1.35rem;
+        line-height: 1.2;
+      }
+      .lede {
+        max-width: 820px;
+        margin: 28px 0 0;
+        font-size: clamp(1.2rem, 2vw, 1.55rem);
+        line-height: 1.55;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 34px;
+      }
+      .section-head {
+        max-width: 820px;
+        margin-bottom: 40px;
+      }
+      .article-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .article-card,
+      .feature-panel,
+      .cta-box {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: linear-gradient(
+          145deg,
+          rgba(247, 243, 238, 0.07),
+          rgba(247, 243, 238, 0.025)
+        );
+        box-shadow: var(--shadow);
+      }
+      .article-card {
+        min-height: 360px;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .article-meta,
+      .article-meta a {
+        color: var(--quiet);
+        font-size: 0.86rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-weight: 700;
+      }
+      .article-card p {
+        margin: 18px 0 0;
+      }
+      .article-card .btn {
+        align-self: flex-start;
+        margin-top: 28px;
+      }
+      .article-shell {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      .article-header {
+        padding: 92px 24px 64px;
+        border-bottom: 1px solid var(--line);
+      }
+      .article-body {
+        padding: 64px 24px 96px;
+      }
+      .article-body h2 {
+        margin-top: 54px;
+        margin-bottom: 18px;
+        font-size: clamp(2rem, 3.8vw, 3.2rem);
+      }
+      .article-body p {
+        margin: 0 0 24px;
+      }
+      .article-body ul {
+        margin: 0 0 28px;
+        padding-left: 22px;
+      }
+      .article-body a {
+        color: var(--ink);
+        border-bottom: 1px solid rgba(13, 115, 119, 0.7);
+      }
+      .cta-box {
+        padding: 42px;
+        text-align: center;
+      }
+      .cta-box h2,
+      .cta-box p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      footer {
+        padding: 38px 24px;
+        border-top: 1px solid var(--line);
+        color: var(--quiet);
+      }
+      .footer-grid {
+        max-width: var(--max);
+        margin: 0 auto;
+        display: grid;
+        gap: 14px;
+      }
+      footer a {
+        color: var(--muted);
+      }
+      @media (max-width: 1040px) {
+        .nav-links {
+          gap: 12px;
+          font-size: 0.82rem;
+        }
+      }
+      @media (max-width: 900px) {
+        .nav {
+          gap: 12px;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+        .brand-logo {
+          height: 30px;
+        }
+        .nav-links {
+          gap: 9px;
+          font-size: 0.76rem;
+        }
+        .nav-cta {
+          padding: 10px 13px;
+          font-size: 0.82rem;
+        }
+      }
+      @media (max-width: 760px) {
+        .nav-links {
+          display: none;
+        }
+        .brand {
+          max-width: 136px;
+        }
+        .brand-logo {
+          height: 32px;
+        }
+        section {
+          padding: 68px 20px;
+        }
+        .hero {
+          padding-top: 58px;
+        }
+        h1 {
+          font-size: clamp(3rem, 15vw, 4.6rem);
+        }
+        .article-grid {
+          grid-template-columns: 1fr;
+        }
+        .article-card,
+        .cta-box {
+          border-radius: 22px;
+          padding: 24px;
+        }
+        .nav {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <header>
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="/" aria-label="Nineteen Point Two home">
+            <img
+              class="brand-logo"
+              src="/assets/logo/logo-horizontal.svg"
+              alt="Nineteen Point Two"
+            />
+          </a>
+          <div class="nav-links">
+            <a href="/#risk">Risk</a>
+            <a href="/#stress-test">Stress Test</a>
+            <a href="/#approach">Approach</a>
+            <a href="/#products">Products</a>
+            <a href="/insights/">Insights</a>
+            <div class="nav-group">
+              <a href="/workplace-ai/">Workplace AI</a>
+              <div class="nav-menu" aria-label="Workplace AI pages">
+                <a href="/workplace-ai/">AI Readiness</a>
+                <a href="/workplace-ai-academy/">Workplace AI Academy</a>
+                <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+              </div>
+            </div>
+            <a href="/#faq">FAQ</a>
+          </div>
+          <a class="nav-cta" href="/#stress-test">Start diagnostic</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container">
+            <div class="eyebrow">Insights</div>
+            <h1>Operational thinking for hidden risk.</h1>
+            <p class="lede">
+              A durable home for Nineteen Point Two thinking on workforce AI
+              adoption, Shadow AI, governance as enablement, workflow
+              consistency, management visibility and recurring revenue operating
+              realities.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="/workplace-ai/"
+                >Explore AI Readiness</a
+              >
+              <a class="btn secondary" href="/workplace-ai-academy/"
+                >Explore Workplace AI Academy</a
+              >
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Latest thinking</div>
+              <h2>Calm, practical analysis for operators.</h2>
+              <p>
+                These are not generic AI posts. They are working notes on the
+                places where leadership confidence depends on people, process,
+                data, visibility and decision quality.
+              </p>
+            </div>
+            <div class="article-grid">
+              <article class="article-card">
+                <div>
+                  <div class="article-meta">
+                    13 May 2026 | Workforce AI | 5 min read
+                  </div>
+                  <h3>
+                    The operational reality behind workforce AI adoption and
+                    Shadow AI
+                  </h3>
+                  <p>
+                    Shadow AI is not a cyber scare story. It is the operating
+                    condition created when people change how work gets done
+                    faster than leadership can see, guide or support it.
+                  </p>
+                </div>
+                <a
+                  class="btn secondary"
+                  href="/insights/shadow-ai-workforce-ai-adoption/"
+                  >Read insight</a
+                >
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-grid">
+          <span>&copy; 2026 Nineteen Point Two</span>
+          <span
+            >Operating clarity across revenue systems and workplace AI
+            adoption.</span
+          >
+          <span
+            ><a href="/insights/">Insights</a> |
+            <a href="/workplace-ai/">AI Readiness</a> |
+            <a href="/workplace-ai-academy/">Workplace AI Academy</a></span
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
