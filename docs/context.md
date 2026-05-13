@@ -4,9 +4,9 @@
 
 This repository contains the Nineteen Point Two marketing site. It presents Nineteen Point Two as a premium, diagnostic advisory brand that helps leaders make hidden operating risk visible across people, process and data.
 
-The homepage is revenue integrity led. It is written for SaaS and recurring revenue leaders who need to understand whether the revenue plan is structurally supported by the actual mechanics of the business.
+The homepage should be led by the Nineteen Point Two operating thesis. It should show how hidden operating risk appears across workforce AI adoption and revenue systems without turning the brand into a generic AI consultancy or weakening the revenue integrity work.
 
-Workplace AI readiness is a second application of the same operating risk lens. It should not replace or dilute the revenue integrity proposition.
+WAIA is the flagship workforce AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the editorial layer that explains the operating doctrine.
 
 The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, Revenue Stress Test and Workplace AI Academy aligned.
 
@@ -35,9 +35,9 @@ The core lens is:
 
 Revenue Integrity Stress Test:
 
-- The primary homepage diagnostic.
+- The diagnostic visibility layer for revenue systems.
 - Designed to test whether the commercial plan is supported by the operating system underneath it.
-- Should remain the lead proposition on the homepage.
+- Should remain important, but should not outweigh WAIA as the flagship scalable product.
 
 Workplace AI readiness:
 
@@ -48,7 +48,7 @@ Workplace AI readiness:
 Workplace AI Academy:
 
 - A product explanation page.
-- Explains the practical platform for safe, consistent AI adoption at work.
+- Explains the flagship platform for safe, consistent AI adoption at work.
 - Covers organisation setup, role-aware learner access, organisation guidance, learner acknowledgement, admin visibility, progress tracking, completion evidence and certificates.
 
 ## Brand feel

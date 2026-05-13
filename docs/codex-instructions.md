@@ -33,7 +33,7 @@ Then confirm:
 
 Nineteen Point Two helps leaders make hidden operating risk visible across people, process and data.
 
-Revenue integrity is the lead homepage proposition. Workplace AI readiness is a second application of the same operating risk lens.
+WAIA is the flagship workforce AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the public thinking layer. Keep the homepage anchored in the wider operating thesis.
 
 Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source. If a request conflicts with the doctrine, flag the conflict before making positioning changes.
 
