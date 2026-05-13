@@ -15,11 +15,13 @@ The custom domain is managed through `CNAME`, which contains `www.nineteenpointt
 
 The canonical strategic doctrine is stored at `/docs/19.2-operating-doctrine.md`.
 
-## Revenue integrity remains the lead story
+## Product hierarchy
 
-The homepage should continue to lead with revenue integrity. Workplace AI is included as a second application of the same operating model lens, not as a replacement brand story.
+The homepage should now lead with the Nineteen Point Two operating thesis rather than making Revenue Stress Test feel like the main strategic product.
 
-The main buyer should recognise a recurring revenue business where the target looks plausible but confidence is reduced by weak evidence, unclear ownership, process drag or late visibility.
+WAIA is the flagship workforce AI enablement platform. Revenue Stress Test remains important as the diagnostic visibility layer for revenue systems. Insights is the editorial layer for durable operational thinking.
+
+The main buyer should recognise an organisation where work is changing faster than visibility, evidence or management confidence. That may appear in workforce AI adoption, revenue integrity, or both.
 
 ## Workplace AI section separation
 
@@ -40,6 +42,7 @@ Examples visible on the site include:
 - Talk through the constraint
 - Discuss your revenue system
 - Explore Workplace AI readiness
+- Explore Workplace AI Academy
 - Discuss Workplace AI Academy
 - Discuss AI adoption readiness
 

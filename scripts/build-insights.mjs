@@ -14,10 +14,6 @@ const nav = `
     </a>
     <div class="nav-links">
       <a href="/#risk">Risk</a>
-      <a href="/#stress-test">Stress Test</a>
-      <a href="/#approach">Approach</a>
-      <a href="/#products">Products</a>
-      <a href="/insights/">Insights</a>
       <div class="nav-group">
         <a href="/workplace-ai/">Workplace AI</a>
         <div class="nav-menu" aria-label="Workplace AI pages">
@@ -26,9 +22,12 @@ const nav = `
           <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
         </div>
       </div>
+      <a href="/#products">Products</a>
+      <a href="/insights/">Insights</a>
+      <a href="/#stress-test">Stress Test</a>
       <a href="/#faq">FAQ</a>
     </div>
-    <a class="nav-cta" href="/#stress-test">Start diagnostic</a>
+    <a class="nav-cta" href="/workplace-ai-academy/">Explore WAIA</a>
   </nav>
 </header>`;
 
@@ -218,14 +217,15 @@ main {
   overflow: hidden;
 }
 section {
-  padding: 96px 24px;
+  padding: 88px 24px;
 }
 .container {
   max-width: var(--max);
   margin: 0 auto;
 }
 .hero {
-  padding-top: 98px;
+  padding-top: 78px;
+  padding-bottom: 76px;
   border-bottom: 1px solid var(--line);
 }
 .eyebrow {
@@ -255,24 +255,24 @@ h3 {
   color: var(--ink);
 }
 h1 {
-  margin-top: 24px;
-  max-width: 980px;
-  font-size: clamp(4rem, 9vw, 8.4rem);
+  margin-top: 20px;
+  max-width: 880px;
+  font-size: clamp(3rem, 6.8vw, 5.8rem);
 }
 h2 {
   margin-top: 18px;
   max-width: 820px;
-  font-size: clamp(2.3rem, 5vw, 4.6rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
 }
 h3 {
   font-size: 1.35rem;
   line-height: 1.2;
 }
 .lede {
-  max-width: 820px;
-  margin: 28px 0 0;
-  font-size: clamp(1.2rem, 2vw, 1.55rem);
-  line-height: 1.55;
+  max-width: 760px;
+  margin: 24px 0 0;
+  font-size: clamp(1.1rem, 1.55vw, 1.32rem);
+  line-height: 1.65;
 }
 .hero-actions {
   display: flex;
@@ -298,8 +298,8 @@ h3 {
   box-shadow: var(--shadow);
 }
 .article-card {
-  min-height: 360px;
-  padding: 28px;
+  min-height: 300px;
+  padding: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -320,23 +320,24 @@ h3 {
   margin-top: 28px;
 }
 .article-shell {
-  max-width: 860px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .article-header {
-  padding: 92px 24px 64px;
+  padding: 74px 24px 46px;
   border-bottom: 1px solid var(--line);
 }
 .article-body {
-  padding: 64px 24px 96px;
+  padding: 58px 24px 92px;
 }
 .article-body h2 {
-  margin-top: 54px;
-  margin-bottom: 18px;
-  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  margin-top: 46px;
+  margin-bottom: 14px;
+  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+  line-height: 1.1;
 }
 .article-body p {
-  margin: 0 0 24px;
+  margin: 0 0 22px;
 }
 .article-body ul {
   margin: 0 0 28px;
@@ -410,7 +411,17 @@ footer a {
     padding-top: 58px;
   }
   h1 {
-    font-size: clamp(3rem, 15vw, 4.6rem);
+    font-size: clamp(2.55rem, 11vw, 3.7rem);
+  }
+  .hero {
+    padding-top: 54px;
+    padding-bottom: 56px;
+  }
+  .article-header {
+    padding: 52px 20px 34px;
+  }
+  .article-body {
+    padding: 42px 20px 68px;
   }
   .article-grid {
     grid-template-columns: 1fr;
@@ -604,8 +615,8 @@ const renderIndex = (articles) => {
               operating realities.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="/workplace-ai/">Explore AI adoption readiness</a>
-              <a class="btn secondary" href="/workplace-ai-academy/">Explore Workplace AI Academy</a>
+              <a class="btn primary" href="/workplace-ai-academy/">Explore Workplace AI Academy</a>
+              <a class="btn secondary" href="/workplace-ai/">Explore AI adoption readiness</a>
             </div>
           </div>
         </section>
@@ -661,8 +672,8 @@ const renderArticle = (article) =>
               shared standards, manager support and visible behaviour change.
             </p>
             <div class="hero-actions" style="justify-content: center; margin-bottom: 0">
-              <a class="btn primary" href="/workplace-ai/">AI Readiness</a>
-              <a class="btn secondary" href="/workplace-ai-academy/">Workplace AI Academy</a>
+              <a class="btn primary" href="/workplace-ai-academy/">Workplace AI Academy</a>
+              <a class="btn secondary" href="/workplace-ai/">AI Readiness</a>
             </div>
           </div>
         </section>
