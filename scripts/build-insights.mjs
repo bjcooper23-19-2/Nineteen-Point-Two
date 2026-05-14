@@ -298,11 +298,16 @@ h3 {
   box-shadow: var(--shadow);
 }
 .article-card {
-  min-height: 300px;
+  min-height: 318px;
   padding: 26px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 28px;
+  box-shadow: none;
+}
+.article-card-content {
+  display: grid;
+  align-content: start;
 }
 .article-meta,
 .article-meta a {
@@ -312,12 +317,22 @@ h3 {
   letter-spacing: 0.12em;
   font-weight: 700;
 }
+.article-card .article-meta {
+  margin-bottom: 16px;
+}
+.article-title {
+  min-height: 4.55rem;
+  font-size: 1.24rem;
+  line-height: 1.22;
+}
 .article-card p {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
+  max-width: 92%;
 }
 .article-card .btn {
-  align-self: flex-start;
-  margin-top: 28px;
+  align-self: end;
+  justify-self: start;
+  margin-top: 0;
 }
 .article-shell {
   max-width: 760px;
@@ -430,6 +445,12 @@ footer a {
   .cta-box {
     border-radius: 22px;
     padding: 24px;
+  }
+  .article-title {
+    min-height: auto;
+  }
+  .article-card p {
+    max-width: none;
   }
   .nav {
     padding-left: 18px;
@@ -602,9 +623,9 @@ const renderIndex = (articles) => {
     .map(
       (article) => `
         <article class="article-card">
-          <div>
+          <div class="article-card-content">
             <div class="article-meta">${article.formattedDate} | ${escapeHtml(article.category)} | ${article.readingTime}</div>
-            <h3>${escapeHtml(article.title)}</h3>
+            <h3 class="article-title">${escapeHtml(article.title)}</h3>
             <p>${escapeHtml(article.excerpt)}</p>
           </div>
           <a class="btn secondary" href="/insights/${article.slug}/">Read insight</a>
