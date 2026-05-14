@@ -308,11 +308,16 @@
         box-shadow: var(--shadow);
       }
       .article-card {
-        min-height: 300px;
+        min-height: 318px;
         padding: 26px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        gap: 28px;
+        box-shadow: none;
+      }
+      .article-card-content {
+        display: grid;
+        align-content: start;
       }
       .article-meta,
       .article-meta a {
@@ -322,12 +327,22 @@
         letter-spacing: 0.12em;
         font-weight: 700;
       }
+      .article-card .article-meta {
+        margin-bottom: 16px;
+      }
+      .article-title {
+        min-height: 4.55rem;
+        font-size: 1.24rem;
+        line-height: 1.22;
+      }
       .article-card p {
-        margin: 18px 0 0;
+        margin: 14px 0 0;
+        max-width: 92%;
       }
       .article-card .btn {
-        align-self: flex-start;
-        margin-top: 28px;
+        align-self: end;
+        justify-self: start;
+        margin-top: 0;
       }
       .article-shell {
         max-width: 760px;
@@ -441,6 +456,12 @@
           border-radius: 22px;
           padding: 24px;
         }
+        .article-title {
+          min-height: auto;
+        }
+        .article-card p {
+          max-width: none;
+        }
         .nav {
           padding-left: 18px;
           padding-right: 18px;
@@ -512,11 +533,13 @@
             </div>
             <div class="article-grid">
               <article class="article-card">
-                <div>
+                <div class="article-card-content">
                   <div class="article-meta">
                     14 May 2026 | Workplace AI | 4 min read
                   </div>
-                  <h3>The operational strain beneath workplace AI adoption</h3>
+                  <h3 class="article-title">
+                    The operational strain beneath workplace AI adoption
+                  </h3>
                   <p>
                     Workplace AI adoption is exposing management visibility
                     gaps, workflow variation and Shadow AI behaviours inside
@@ -531,11 +554,11 @@
               </article>
 
               <article class="article-card">
-                <div>
+                <div class="article-card-content">
                   <div class="article-meta">
                     13 May 2026 | Workplace AI | 5 min read
                   </div>
-                  <h3>
+                  <h3 class="article-title">
                     The operational reality behind workplace AI adoption and
                     Shadow AI
                   </h3>
