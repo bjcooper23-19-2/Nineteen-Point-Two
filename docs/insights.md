@@ -6,7 +6,7 @@ The Insights section is a lightweight static editorial area for operational thou
 
 Use Insights for durable, indexable writing on:
 
-- Workforce AI adoption.
+- Workplace AI adoption.
 - Shadow AI.
 - Operational readiness.
 - Governance as enablement.
@@ -54,8 +54,8 @@ excerpt: Short editorial summary for listings and metadata.
 
 Use folder-style route slugs. For example:
 
-- Source: `src/content/insights/shadow-ai-workforce-ai-adoption.md`
-- Route: `/insights/shadow-ai-workforce-ai-adoption/`
+- Source: `src/content/insights/shadow-ai-workplace-ai-adoption.md`
+- Route: `/insights/shadow-ai-workplace-ai-adoption/`
 
 ## Editorial rules
 

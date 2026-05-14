@@ -533,8 +533,10 @@ const documentShell = ({
   description,
   canonical,
   body,
+  type = "website",
+  publishedDate = "",
 }) => `<!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <script>
       if (location.hostname === "nineteenpointtwo.com") {
@@ -546,6 +548,19 @@ const documentShell = ({
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
+    <meta property="og:title" content="${escapeHtml(title)}" />
+    <meta property="og:description" content="${escapeHtml(description)}" />
+    <meta property="og:url" content="${canonical}" />
+    <meta property="og:type" content="${type}" />
+    <meta property="og:site_name" content="Nineteen Point Two" />
+    ${
+      publishedDate
+        ? `<meta property="article:published_time" content="${publishedDate}" />`
+        : ""
+    }
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="${escapeHtml(title)}" />
+    <meta name="twitter:description" content="${escapeHtml(description)}" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <style>${styles}</style>
   </head>
@@ -600,7 +615,7 @@ const renderIndex = (articles) => {
   return documentShell({
     title: "Insights | Nineteen Point Two",
     description:
-      "Operational insights from Nineteen Point Two on workforce AI adoption, Shadow AI, governance as enablement, workflow consistency and revenue operating risk.",
+      "Operational insights from Nineteen Point Two on workplace AI adoption, Shadow AI, governance as enablement, workflow consistency and revenue operating risk.",
     canonical: `${siteUrl}/insights/`,
     body: `
       <main id="top">
@@ -609,7 +624,7 @@ const renderIndex = (articles) => {
             <div class="eyebrow">Insights</div>
             <h1>Operational thinking for hidden risk.</h1>
             <p class="lede">
-              A durable home for Nineteen Point Two thinking on workforce AI adoption,
+              A durable home for Nineteen Point Two thinking on workplace AI adoption,
               Shadow AI as an operational condition, governance as enablement,
               workflow consistency, management visibility and recurring revenue
               operating realities.
@@ -645,6 +660,8 @@ const renderArticle = (article) =>
     title: `${article.title} | Nineteen Point Two`,
     description: article.excerpt,
     canonical: `${siteUrl}/insights/${article.slug}/`,
+    type: "article",
+    publishedDate: `${article.date}T00:00:00Z`,
     body: `
       <main id="top">
         <article>
@@ -667,7 +684,7 @@ const renderArticle = (article) =>
             <div class="eyebrow">Related work</div>
             <h2>Make AI adoption visible enough to manage.</h2>
             <p>
-              Explore the operating risk behind workforce AI adoption, or see how
+              Explore the operating risk behind workplace AI adoption, or see how
               Workplace AI Academy helps organisations turn policy intent into
               shared standards, manager support and visible behaviour change.
             </p>
