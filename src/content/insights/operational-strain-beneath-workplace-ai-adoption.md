@@ -38,6 +38,8 @@ Organisations that notice these shifts early, reflect honestly on manager visibi
 
 For others, the strain will continue to build quietly; unsettled, unresolved and painful.
 
+For leadership teams that want to examine this strain in their own operating context, the [Workplace AI Operational Diagnostic](/workplace-ai-academy/#operational-diagnostic) is a consultation-led review of how workplace AI adoption is affecting execution, visibility and consistency.
+
 ## Further exploration
 
 Revenue Stress Test
