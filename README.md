@@ -15,7 +15,7 @@ Before making changes, review:
 - /docs/next-steps.md
 - /docs/codex-instructions.md
 
-Keep the homepage anchored in the Nineteen Point Two operating thesis. WAIA is now the flagship workforce AI enablement platform, while Revenue Stress Test remains the diagnostic visibility layer for revenue systems.
+Keep the homepage anchored in the Nineteen Point Two operating thesis. WAIA is now the flagship workplace AI enablement platform, while Revenue Stress Test remains the diagnostic visibility layer for revenue systems.
 
 Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source for Nineteen Point Two, Revenue Stress Test and Workplace AI Academy.
 
