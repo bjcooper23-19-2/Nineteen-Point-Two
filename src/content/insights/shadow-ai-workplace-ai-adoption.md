@@ -78,4 +78,4 @@ Organisational AI maturity grows from the ground up. Leadership visibility, mana
 
 Managing this reality starts with clear-eyed recognition of what is already happening and practical steps to surface and close the gaps. For organisations still clarifying the readiness problem, the [AI Readiness overview](/workplace-ai/) explains why workplace AI adoption is now an operating model issue.
 
-For leadership teams that need a structured conversation rather than a self-serve assessment, the [Workplace AI Operational Diagnostic](/workplace-ai-academy/#operational-diagnostic) reviews how AI adoption is changing execution, manager visibility and operational consistency.
+For leadership teams that need a structured conversation rather than a self-serve assessment, the [Workplace AI Operational Diagnostic](/workplace-ai-academy/#operational-diagnostic) surfaces how AI adoption is changing execution, manager visibility and operational consistency so WAIA can be shaped around the right enablement gaps.
