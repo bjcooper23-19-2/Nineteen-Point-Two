@@ -17,11 +17,11 @@ The canonical strategic doctrine is stored at `/docs/19.2-operating-doctrine.md`
 
 ## Product hierarchy
 
-The homepage should now lead with the Nineteen Point Two operating thesis rather than making Revenue Stress Test feel like the main strategic product.
+The homepage should now lead with operational clarity and controlled workplace AI adoption rather than making Revenue Stress Test feel like the main strategic product.
 
-WAIA is the flagship workforce AI enablement platform. Revenue Stress Test remains important as the diagnostic visibility layer for revenue systems. Insights is the editorial layer for durable operational thinking.
+WAIA is the flagship workplace AI enablement platform. Revenue Stress Test remains important as the diagnostic visibility layer for revenue systems. Insights is the editorial layer for durable operational thinking.
 
-The main buyer should recognise an organisation where work is changing faster than visibility, evidence or management confidence. That may appear in workforce AI adoption, revenue integrity, or both.
+The main buyer should first recognise Shadow AI: workplace AI adoption moving faster than visibility, evidence, manager confidence or operational consistency. Revenue integrity remains a secondary application of the same people, process and data lens.
 
 ## Workplace AI section separation
 
@@ -41,9 +41,9 @@ Examples visible on the site include:
 - Run the Revenue Integrity Stress Test
 - Talk through the constraint
 - Discuss your revenue system
-- Explore Workplace AI readiness
-- Explore Workplace AI Academy
-- Discuss Workplace AI Academy
+- Explore WAIA
+- Start the diagnostic conversation
+- Discuss WAIA
 - Discuss AI adoption readiness
 
 The Workplace AI sign in link is for existing learners or admins. It should not be treated as the primary prospect CTA.
@@ -52,17 +52,15 @@ The Workplace AI sign in link is for existing learners or admins. It should not 
 
 The current navigation pattern is:
 
-- Risk
-- Stress Test
-- Approach
-- Products
 - Workplace AI
-- FAQ
+- Diagnostics
+- Insights
+- Operating Lens
 
 The Workplace AI dropdown labels are:
 
-- AI Readiness
-- Workplace AI Academy
+- Shadow AI overview
+- WAIA platform
 - Sign in
 
 Keep routes unchanged unless there is an explicit route change request.

@@ -2,11 +2,11 @@
 
 ## Site purpose
 
-This repository contains the Nineteen Point Two marketing site. It presents Nineteen Point Two as a premium, diagnostic advisory brand that helps leaders make hidden operating risk visible across people, process and data.
+This repository contains the Nineteen Point Two marketing site. It presents Nineteen Point Two as a premium, operator-led brand for operational clarity and controlled workplace AI adoption.
 
-The homepage should be led by the Nineteen Point Two operating thesis. It should show how hidden operating risk appears across workforce AI adoption and revenue systems without turning the brand into a generic AI consultancy or weakening the revenue integrity work.
+The homepage should quickly establish the immediate operational problem: unmanaged workplace AI adoption, Shadow AI, weak manager visibility and inconsistent behaviour. Revenue systems remain part of the operating thesis, but Revenue Stress Test should sit as a secondary diagnostic lens rather than the primary homepage story.
 
-WAIA is the flagship workforce AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the editorial layer that explains the operating doctrine.
+WAIA is the flagship workplace AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the editorial layer that explains the operating doctrine.
 
 The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, Revenue Stress Test and Workplace AI Academy aligned.
 
