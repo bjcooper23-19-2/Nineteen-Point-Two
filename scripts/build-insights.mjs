@@ -560,6 +560,8 @@ const documentShell = ({
   body,
   type = "website",
   publishedDate = "",
+  ogTitle = title,
+  ogDescription = description,
 }) => `<!doctype html>
 <html lang="en-GB">
   <head>
@@ -573,8 +575,8 @@ const documentShell = ({
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}" />
-    <meta property="og:title" content="${escapeHtml(title)}" />
-    <meta property="og:description" content="${escapeHtml(description)}" />
+    <meta property="og:title" content="${escapeHtml(ogTitle)}" />
+    <meta property="og:description" content="${escapeHtml(ogDescription)}" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:type" content="${type}" />
     <meta property="og:site_name" content="Nineteen Point Two" />
@@ -584,8 +586,8 @@ const documentShell = ({
         : ""
     }
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="${escapeHtml(title)}" />
-    <meta name="twitter:description" content="${escapeHtml(description)}" />
+    <meta name="twitter:title" content="${escapeHtml(ogTitle)}" />
+    <meta name="twitter:description" content="${escapeHtml(ogDescription)}" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <style>${styles}</style>
   </head>
@@ -615,7 +617,7 @@ const loadArticles = async () => {
       body,
       html: markdownToHtml(body),
       formattedDate: formatDate(data.date),
-      readingTime: readingTime(body),
+      readingTime: data.readingTime || readingTime(body),
     });
   }
 
@@ -682,8 +684,11 @@ const renderIndex = (articles) => {
 
 const renderArticle = (article) =>
   documentShell({
-    title: `${article.title} | Nineteen Point Two`,
-    description: article.excerpt,
+    title: article.metaTitle || `${article.title} | Nineteen Point Two`,
+    description: article.metaDescription || article.excerpt,
+    ogTitle: article.ogTitle || `${article.title} | Nineteen Point Two`,
+    ogDescription:
+      article.ogDescription || article.metaDescription || article.excerpt,
     canonical: `${siteUrl}/insights/${article.slug}/`,
     type: "article",
     publishedDate: `${article.date}T00:00:00Z`,
