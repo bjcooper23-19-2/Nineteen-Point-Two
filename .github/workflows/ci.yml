@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  static-validation:
+    name: Static validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check required root files
+        run: |
+          test -f index.html
+          test -f CNAME
+          test -f robots.txt
+          test -f sitemap.xml
+
+      - name: Check key public routes
+        run: |
+          test -f workplace-ai/index.html
+          test -f workplace-ai-academy/index.html
+          test -f insights/index.html
+          test -f insights/hidden-cost-of-fragmented-ai-adoption/index.html
+          test -f insights/operational-strain-beneath-workplace-ai-adoption/index.html
+          test -f insights/shadow-ai-workplace-ai-adoption/index.html
+
+      - name: Validate sitemap routes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+          import xml.etree.ElementTree as ET
+
+          site = "https://www.nineteenpointtwo.com"
+          sitemap = Path("sitemap.xml")
+          namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          tree = ET.parse(sitemap)
+          urls = [
+              loc.text
+              for loc in tree.findall(".//sm:loc", namespace)
+              if loc.text
+          ]
+
+          if not urls:
+              print("No URLs found in sitemap.xml", file=sys.stderr)
+              sys.exit(1)
+
+          missing = []
+          non_canonical = []
+
+          for url in urls:
+              if not url.startswith(site):
+                  non_canonical.append(url)
+                  continue
+
+              route = url.removeprefix(site)
+              file_path = Path("index.html") if route == "/" else Path(route.strip("/")) / "index.html"
+              if not file_path.exists():
+                  missing.append(f"{url} -> {file_path}")
+
+          if non_canonical:
+              print("Non-canonical sitemap URLs:", *non_canonical, sep="\n", file=sys.stderr)
+              sys.exit(1)
+
+          if missing:
+              print("Sitemap URLs without matching static routes:", *missing, sep="\n", file=sys.stderr)
+              sys.exit(1)
+
+          print(f"Validated {len(urls)} sitemap URLs.")
+          PY
