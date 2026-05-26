@@ -1,14 +1,14 @@
 ---
-title: The Cost of AI Is Becoming Visible. The Answer Is Not to Slow Adoption.
+title: The Cost of AI Is Becoming Visible
 metaTitle: The Cost of AI Is Becoming Visible | Nineteen Point Two
 metaDescription: AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders cannot see where AI is being used, what it costs and whether it creates value.
-ogTitle: The Cost of AI Is Becoming Visible. The Answer Is Not to Slow Adoption.
+ogTitle: The Cost of AI Is Becoming Visible
 ogDescription: The real cost question is not whether AI is worth using. It is whether the business can see enough to know where it is worth using well.
 slug: cost-of-ai-is-becoming-visible
 date: 2026-05-27
 category: Workplace AI
 readingTime: 7 min read
-excerpt: AI cost is becoming more visible, but the answer is not to slow useful adoption. The real issue is unmanaged experimentation: AI use spreading faster than visibility, ownership, review standards and evidence of value.
+excerpt: The answer is not to slow adoption. The real issue is unmanaged experimentation: AI use spreading faster than visibility, ownership, review standards and evidence of value.
 ---
 
 AI cost is starting to move out of the background. For a while, many organisations could treat AI as experimentation: a few licences, a few pilots, some team-level testing and some useful shortcuts. That phase has not disappeared, and it shouldn’t. But the cost profile is changing.
