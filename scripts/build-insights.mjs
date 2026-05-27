@@ -41,6 +41,7 @@ const footer = `
     <span>&copy; 2026 Nineteen Point Two</span>
     <span>Operating clarity across revenue systems and workplace AI adoption.</span>
     <span><a href="/insights/">Insights</a> | <a href="/workplace-ai/">Shadow AI overview</a> | <a href="/workplace-ai-academy/">WAIA platform</a></span>
+    <span><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> | <a href="/cookies/">Cookies</a> | <a href="/website-terms/">Website Terms</a> | <a href="/subprocessors/">Subprocessors</a></span>
   </div>
 </footer>`;
 
