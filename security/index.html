@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAIA Security Summary | Nineteen Point Two</title>
+    <meta
+      name="description"
+      content="Practical security measures Nineteen Point Two Limited uses to protect WAIA and customer data."
+    />
+    <link rel="canonical" href="https://www.nineteenpointtwo.com/security/" />
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --ink: #f7f3ee;
+        --muted: rgba(247, 243, 238, 0.72);
+        --soft: rgba(247, 243, 238, 0.58);
+        --charcoal: #1a1a2e;
+        --line: rgba(247, 243, 238, 0.14);
+        --accent: #7bdff2;
+        --max: 1180px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background: linear-gradient(
+          180deg,
+          var(--charcoal) 0%,
+          #111120 54%,
+          #0b0b15 100%
+        );
+        color: var(--ink);
+        min-height: 100vh;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent);
+      }
+      header,
+      footer {
+        border-bottom: 1px solid var(--line);
+        padding: 24px;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        border-bottom: 0;
+        color: var(--soft);
+      }
+      .wrap,
+      .footer-grid {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+      .brand-logo {
+        height: 36px;
+        width: auto;
+      }
+      main {
+        padding: 84px 24px 116px;
+      }
+      .hero {
+        max-width: 880px;
+        margin-bottom: 52px;
+      }
+      .eyebrow {
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+      h1 {
+        margin: 18px 0 22px;
+        font-size: clamp(2.2rem, 8vw, 4.9rem);
+        line-height: 1.02;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
+      }
+      .standfirst {
+        color: var(--muted);
+        font-size: clamp(1.08rem, 2vw, 1.28rem);
+        line-height: 1.65;
+        max-width: 780px;
+      }
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 28px;
+        color: var(--soft);
+        font-size: 0.92rem;
+      }
+      .legal-content {
+        max-width: 880px;
+      }
+      .legal-content h2 {
+        margin: 42px 0 14px;
+        font-size: clamp(1.35rem, 2.4vw, 2rem);
+        line-height: 1.15;
+      }
+      .legal-content h3 {
+        margin: 28px 0 10px;
+        font-size: 1.05rem;
+        line-height: 1.35;
+        color: var(--ink);
+      }
+      .legal-content p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.75;
+        margin: 0 0 16px;
+      }
+      .legal-content ul {
+        color: var(--muted);
+        margin: 0 0 20px 1.2rem;
+        padding: 0;
+        line-height: 1.72;
+      }
+      .legal-content li {
+        margin: 0 0 8px;
+      }
+      .legal-content strong,
+      .legal-content b {
+        color: var(--ink);
+        font-weight: 650;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 24px 0 32px;
+        border: 1px solid var(--line);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 620px;
+      }
+      td {
+        border: 1px solid var(--line);
+        padding: 14px;
+        color: var(--muted);
+        vertical-align: top;
+        line-height: 1.55;
+      }
+      tr:first-child td {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      td p {
+        margin: 0;
+      }
+      .doc-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 32px 0 44px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        padding: 22px;
+        background: rgba(247, 243, 238, 0.03);
+      }
+      .doc-card h2 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+      .doc-card p {
+        margin: 0 0 16px;
+      }
+      .doc-card a {
+        color: var(--accent);
+        font-weight: 650;
+      }
+      .footer-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-size: 0.92rem;
+      }
+      @media (max-width: 720px) {
+        header,
+        footer {
+          padding: 20px;
+        }
+        main {
+          padding: 64px 20px 88px;
+        }
+        .doc-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a href="/" aria-label="Nineteen Point Two home">
+          <img
+            class="brand-logo"
+            src="/assets/logo/logo-horizontal.svg"
+            alt="Nineteen Point Two"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="hero">
+          <div class="eyebrow">Legal</div>
+          <h1>WAIA Security Summary</h1>
+          <p class="standfirst">
+            Practical security measures Nineteen Point Two Limited uses to
+            protect WAIA and customer data.
+          </p>
+          <div class="meta-row">
+            <span>Last updated: 27 May 2026</span>
+            <span>Version: 1.0</span>
+          </div>
+        </section>
+        <section class="legal-content">
+          <p>
+            This Security Summary explains the practical measures Nineteen Point
+            Two uses to protect WAIA and customer data.
+          </p>
+          <p>
+            It is designed to provide commercial and procurement confidence. It
+            does not represent a formal security certification.
+          </p>
+          <h2>1. Security approach</h2>
+          <p>
+            WAIA is designed around controlled access, role-based permissions,
+            supplier-backed infrastructure and proportionate operational
+            security.
+          </p>
+          <p>
+            The platform is intended to process ordinary workplace learning and
+            adoption data. It is not intended to process special category data,
+            highly sensitive HR casework, medical records, disciplinary records,
+            financial account information or national identifiers.
+          </p>
+          <h2>2. Access controls</h2>
+          <p>WAIA uses role-based access controls. Typical roles include:</p>
+          <ul>
+            <li>platform administrator</li>
+            <li>organisation administrator</li>
+            <li>learner</li>
+          </ul>
+          <p>
+            Organisation administrators should only see users, settings,
+            guidance and reporting connected to their own organisation.
+          </p>
+          <p>
+            Platform administrator access should be restricted to authorised
+            Nineteen Point Two personnel and used only where necessary to
+            operate, support or secure the service.
+          </p>
+          <h2>3. Authentication</h2>
+          <p>
+            WAIA uses authentication services provided through its configured
+            platform and infrastructure providers.
+          </p>
+          <p>
+            Authentication configuration should be reviewed regularly to
+            confirm:
+          </p>
+          <ul>
+            <li>only authorised users can access WAIA</li>
+            <li>administrator access is limited</li>
+            <li>inactive users can be removed</li>
+            <li>access is revoked when no longer required</li>
+            <li>
+              production credentials are not exposed in code or public
+              repositories
+            </li>
+          </ul>
+          <h2>4. Data segregation</h2>
+          <p>
+            WAIA is designed as a multi-tenant platform. Customer data should be
+            logically separated so that organisation administrators and learners
+            access only the records appropriate to their organisation and role.
+          </p>
+          <p>
+            Row-level security and database access rules should be maintained
+            and tested where supported by the database provider.
+          </p>
+          <h2>5. Infrastructure</h2>
+          <p>
+            WAIA uses third-party infrastructure providers for application
+            hosting, database, authentication, storage, deployment and related
+            services.
+          </p>
+          <p>
+            Current providers include Lovable Cloud and Supabase, with GitHub
+            used for code hosting and website deployment where relevant.
+          </p>
+          <p>
+            Nineteen Point Two relies on these providers for parts of the
+            underlying security model, including physical security, core
+            infrastructure security, encryption capabilities and service
+            availability.
+          </p>
+          <h2>6. Encryption</h2>
+          <p>WAIA should use HTTPS for data in transit.</p>
+          <p>
+            Encryption at rest depends on the relevant hosting, database and
+            storage providers. Provider documentation should be retained for
+            procurement review.
+          </p>
+          <h2>7. Logging and monitoring</h2>
+          <p>
+            WAIA and its providers may generate technical logs for security,
+            troubleshooting, reliability and performance.
+          </p>
+          <p>
+            Logs may include IP addresses, user identifiers, device information,
+            timestamps, error details and request metadata.
+          </p>
+          <p>
+            Log access should be limited to authorised personnel and retained
+            only as long as reasonably required.
+          </p>
+          <h2>8. Backups and recovery</h2>
+          <p>
+            Backup and recovery arrangements depend on the configured
+            infrastructure providers.
+          </p>
+          <p>Nineteen Point Two should confirm and document:</p>
+          <ul>
+            <li>whether production data is backed up</li>
+            <li>backup frequency</li>
+            <li>backup retention</li>
+            <li>restore process</li>
+            <li>who can access backups</li>
+            <li>how deleted data is handled in backups</li>
+          </ul>
+          <h2>9. Supplier security</h2>
+          <p>
+            Nineteen Point Two uses suppliers to operate WAIA. Suppliers that
+            process Customer Personal Data should be covered by data processing
+            terms or equivalent contractual commitments.
+          </p>
+          <p>
+            Supplier security documentation should be reviewed and retained
+            where available.
+          </p>
+          <h2>10. Incident handling</h2>
+          <p>
+            Nineteen Point Two will investigate suspected security incidents and
+            take reasonable steps to contain, assess and remediate confirmed
+            issues.
+          </p>
+          <p>
+            Where a confirmed personal data breach affects Customer Personal
+            Data, Nineteen Point Two will notify the affected customer without
+            undue delay in line with the Data Processing Agreement.
+          </p>
+          <h2>11. Customer responsibilities</h2>
+          <p>Customers are responsible for:</p>
+          <ul>
+            <li>choosing appropriate organisation administrators</li>
+            <li>removing users who no longer need access</li>
+            <li>keeping login credentials secure</li>
+            <li>using WAIA in line with internal policies</li>
+            <li>avoiding upload of unnecessary sensitive data</li>
+            <li>deciding how WAIA records are used internally</li>
+          </ul>
+          <h2>12. Security contact</h2>
+          <p>
+            For security questions, contact <b>ben@nineteenpointtwo.com</b>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <span>&copy; 2026 Nineteen Point Two</span>
+        <span
+          ><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> |
+          <a href="/cookies/">Cookies</a> |
+          <a href="/website-terms/">Website Terms</a> |
+          <a href="/subprocessors/">Subprocessors</a></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
