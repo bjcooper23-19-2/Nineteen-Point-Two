@@ -34,6 +34,11 @@ jobs:
           test -f insights/hidden-cost-of-fragmented-ai-adoption/index.html
           test -f insights/operational-strain-beneath-workplace-ai-adoption/index.html
           test -f insights/shadow-ai-workplace-ai-adoption/index.html
+          test -f legal/index.html
+          test -f privacy/index.html
+          test -f cookies/index.html
+          test -f website-terms/index.html
+          test -f subprocessors/index.html
 
       - name: Validate sitemap routes
         run: |
