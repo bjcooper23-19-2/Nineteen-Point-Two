@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Legal | Nineteen Point Two</title>
+    <title>Legal and data protection information | Nineteen Point Two</title>
     <meta
       name="description"
-      content="Legal documentation for Nineteen Point Two is being prepared and will be published shortly."
+      content="Legal, privacy and data protection documents for Nineteen Point Two Limited and WAIA, the Workplace AI Academy."
     />
+    <link rel="canonical" href="https://www.nineteenpointtwo.com/legal/" />
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
     <style>
       :root {
         --ink: #f7f3ee;
         --muted: rgba(247, 243, 238, 0.72);
+        --soft: rgba(247, 243, 238, 0.58);
         --charcoal: #1a1a2e;
         --line: rgba(247, 243, 238, 0.14);
+        --accent: #7bdff2;
         --max: 1180px;
       }
       * {
@@ -44,6 +46,9 @@
         color: inherit;
         text-decoration: none;
       }
+      a:hover {
+        color: var(--accent);
+      }
       header,
       footer {
         border-bottom: 1px solid var(--line);
@@ -52,7 +57,7 @@
       footer {
         border-top: 1px solid var(--line);
         border-bottom: 0;
-        color: rgba(247, 243, 238, 0.58);
+        color: var(--soft);
       }
       .wrap,
       .footer-grid {
@@ -64,10 +69,11 @@
         width: auto;
       }
       main {
-        padding: 96px 24px 120px;
+        padding: 84px 24px 116px;
       }
-      .panel {
-        max-width: 760px;
+      .hero {
+        max-width: 880px;
+        margin-bottom: 52px;
       }
       .eyebrow {
         color: var(--muted);
@@ -77,15 +83,105 @@
         font-weight: 700;
       }
       h1 {
-        margin: 18px 0 20px;
-        font-size: clamp(2.6rem, 7vw, 5rem);
-        line-height: 0.96;
+        margin: 18px 0 22px;
+        font-size: clamp(2.2rem, 8vw, 4.9rem);
+        line-height: 1.02;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
       }
-      p {
+      .standfirst {
         color: var(--muted);
-        font-size: 1.1rem;
-        line-height: 1.7;
+        font-size: clamp(1.08rem, 2vw, 1.28rem);
+        line-height: 1.65;
+        max-width: 780px;
+      }
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 28px;
+        color: var(--soft);
+        font-size: 0.92rem;
+      }
+      .legal-content {
+        max-width: 880px;
+      }
+      .legal-content h2 {
+        margin: 42px 0 14px;
+        font-size: clamp(1.35rem, 2.4vw, 2rem);
+        line-height: 1.15;
+      }
+      .legal-content h3 {
+        margin: 28px 0 10px;
+        font-size: 1.05rem;
+        line-height: 1.35;
+        color: var(--ink);
+      }
+      .legal-content p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.75;
+        margin: 0 0 16px;
+      }
+      .legal-content ul {
+        color: var(--muted);
+        margin: 0 0 20px 1.2rem;
+        padding: 0;
+        line-height: 1.72;
+      }
+      .legal-content li {
+        margin: 0 0 8px;
+      }
+      .legal-content strong,
+      .legal-content b {
+        color: var(--ink);
+        font-weight: 650;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 24px 0 32px;
+        border: 1px solid var(--line);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 620px;
+      }
+      td {
+        border: 1px solid var(--line);
+        padding: 14px;
+        color: var(--muted);
+        vertical-align: top;
+        line-height: 1.55;
+      }
+      tr:first-child td {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      td p {
         margin: 0;
+      }
+      .doc-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 32px 0 44px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        padding: 22px;
+        background: rgba(247, 243, 238, 0.03);
+      }
+      .doc-card h2 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+      .doc-card p {
+        margin: 0 0 16px;
+      }
+      .doc-card a {
+        color: var(--accent);
+        font-weight: 650;
       }
       .footer-grid {
         display: flex;
@@ -94,10 +190,24 @@
         flex-wrap: wrap;
         font-size: 0.92rem;
       }
+      @media (max-width: 720px) {
+        header,
+        footer {
+          padding: 20px;
+        }
+        main {
+          padding: 64px 20px 88px;
+        }
+        .doc-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- Draft legal placeholder. Replace with approved legal content before indexing. -->
     <header>
       <div class="wrap">
         <a href="/" aria-label="Nineteen Point Two home">
@@ -110,12 +220,123 @@
       </div>
     </header>
     <main>
-      <div class="wrap panel">
-        <div class="eyebrow">Legal</div>
-        <h1>Legal</h1>
-        <p>This page is being prepared and will be published shortly.</p>
+      <div class="wrap">
+        <section class="hero">
+          <div class="eyebrow">Legal</div>
+          <h1>Legal and data protection information</h1>
+          <p class="standfirst">
+            Legal, privacy and data protection documents for Nineteen Point Two
+            Limited and WAIA, the Workplace AI Academy.
+          </p>
+          <div class="meta-row">
+            <span>Last updated: 27 May 2026</span>
+            <span>Version: 1.0</span>
+          </div>
+        </section>
+        <section class="legal-content">
+          <p>
+            Nineteen Point Two provides practical operating systems, advisory
+            services and workplace AI adoption tools, including WAIA, the
+            Workplace AI Academy.
+          </p>
+          <p>
+            This page brings together the key legal, privacy and data protection
+            documents that explain how we operate, how we handle personal data,
+            and the terms that apply to WAIA.
+          </p>
+          <div class="doc-grid">
+            <article class="doc-card">
+              <h2>Privacy Notice</h2>
+              <p>
+                Explains how Nineteen Point Two collects, uses, stores and
+                shares personal data across its website, sales activity,
+                advisory work, customer relationships and WAIA.
+              </p>
+              <a href="/privacy/">Read the Privacy Notice</a>
+            </article>
+            <article class="doc-card">
+              <h2>Cookie Notice</h2>
+              <p>
+                Explains how cookies and similar technologies are used on the
+                Nineteen Point Two website and WAIA platform.
+              </p>
+              <a href="/cookies/">Read the Cookie Notice</a>
+            </article>
+            <article class="doc-card">
+              <h2>Website Terms</h2>
+              <p>
+                Sets out the terms that apply to use of the Nineteen Point Two
+                website.
+              </p>
+              <a href="/website-terms/">Read the Website Terms</a>
+            </article>
+            <article class="doc-card">
+              <h2>WAIA Terms of Service</h2>
+              <p>
+                Sets out the commercial and usage terms that apply to customer
+                access to WAIA.
+              </p>
+              <a href="/waia-terms/">Read the WAIA Terms of Service</a>
+            </article>
+            <article class="doc-card">
+              <h2>Data Processing Agreement</h2>
+              <p>
+                Sets out the controller and processor obligations for customer
+                learner data processed through WAIA.
+              </p>
+              <a href="/data-processing-agreement/"
+                >Read the Data Processing Agreement</a
+              >
+            </article>
+            <article class="doc-card">
+              <h2>Subprocessors</h2>
+              <p>
+                Lists the third-party providers used to host, operate, support,
+                secure and improve WAIA where they may process customer personal
+                data.
+              </p>
+              <a href="/subprocessors/">Read the Subprocessor List</a>
+            </article>
+            <article class="doc-card">
+              <h2>WAIA Product and AI Use Statement</h2>
+              <p>
+                Explains what WAIA does, what it does not do, and how AI-related
+                functionality is handled.
+              </p>
+              <a href="/waia-ai-use-statement/"
+                >Read the WAIA Product and AI Use Statement</a
+              >
+            </article>
+            <article class="doc-card">
+              <h2>Security Summary</h2>
+              <p>
+                Explains the practical measures Nineteen Point Two uses to
+                protect WAIA and customer data.
+              </p>
+              <a href="/security/">Read the Security Summary</a>
+            </article>
+          </div>
+          <h2>Contact</h2>
+          <p>
+            For privacy or data protection questions, contact:
+            <b
+              ><a href="mailto:ben@nineteenpointtwo.com"
+                >ben@nineteenpointtwo.com</a
+              ></b
+            >.
+          </p>
+          <p>
+            For commercial or contractual questions, contact:
+            <b
+              ><a href="mailto:ben@nineteenpointtwo.com"
+                >ben@nineteenpointtwo.com</a
+              ></b
+            >.
+          </p>
+        </section>
       </div>
     </main>
+
     <footer>
       <div class="footer-grid">
         <span>&copy; 2026 Nineteen Point Two</span>

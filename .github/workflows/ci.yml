@@ -38,7 +38,11 @@ jobs:
           test -f privacy/index.html
           test -f cookies/index.html
           test -f website-terms/index.html
+          test -f waia-terms/index.html
+          test -f data-processing-agreement/index.html
           test -f subprocessors/index.html
+          test -f waia-ai-use-statement/index.html
+          test -f security/index.html
 
       - name: Validate sitemap routes
         run: |

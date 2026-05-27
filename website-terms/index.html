@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Website Terms | Nineteen Point Two</title>
+    <title>Website Terms of Use | Nineteen Point Two</title>
     <meta
       name="description"
-      content="Website terms for Nineteen Point Two are being prepared and will be published shortly."
+      content="Terms that apply to use of the Nineteen Point Two website."
+    />
+    <link
+      rel="canonical"
+      href="https://www.nineteenpointtwo.com/website-terms/"
     />
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml" />
     <style>
       :root {
         --ink: #f7f3ee;
         --muted: rgba(247, 243, 238, 0.72);
+        --soft: rgba(247, 243, 238, 0.58);
         --charcoal: #1a1a2e;
         --line: rgba(247, 243, 238, 0.14);
+        --accent: #7bdff2;
         --max: 1180px;
       }
       * {
@@ -44,6 +49,9 @@
         color: inherit;
         text-decoration: none;
       }
+      a:hover {
+        color: var(--accent);
+      }
       header,
       footer {
         border-bottom: 1px solid var(--line);
@@ -52,7 +60,7 @@
       footer {
         border-top: 1px solid var(--line);
         border-bottom: 0;
-        color: rgba(247, 243, 238, 0.58);
+        color: var(--soft);
       }
       .wrap,
       .footer-grid {
@@ -64,10 +72,11 @@
         width: auto;
       }
       main {
-        padding: 96px 24px 120px;
+        padding: 84px 24px 116px;
       }
-      .panel {
-        max-width: 760px;
+      .hero {
+        max-width: 880px;
+        margin-bottom: 52px;
       }
       .eyebrow {
         color: var(--muted);
@@ -77,15 +86,105 @@
         font-weight: 700;
       }
       h1 {
-        margin: 18px 0 20px;
-        font-size: clamp(2.6rem, 7vw, 5rem);
-        line-height: 0.96;
+        margin: 18px 0 22px;
+        font-size: clamp(2.2rem, 8vw, 4.9rem);
+        line-height: 1.02;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
       }
-      p {
+      .standfirst {
         color: var(--muted);
-        font-size: 1.1rem;
-        line-height: 1.7;
+        font-size: clamp(1.08rem, 2vw, 1.28rem);
+        line-height: 1.65;
+        max-width: 780px;
+      }
+      .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 28px;
+        color: var(--soft);
+        font-size: 0.92rem;
+      }
+      .legal-content {
+        max-width: 880px;
+      }
+      .legal-content h2 {
+        margin: 42px 0 14px;
+        font-size: clamp(1.35rem, 2.4vw, 2rem);
+        line-height: 1.15;
+      }
+      .legal-content h3 {
+        margin: 28px 0 10px;
+        font-size: 1.05rem;
+        line-height: 1.35;
+        color: var(--ink);
+      }
+      .legal-content p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.75;
+        margin: 0 0 16px;
+      }
+      .legal-content ul {
+        color: var(--muted);
+        margin: 0 0 20px 1.2rem;
+        padding: 0;
+        line-height: 1.72;
+      }
+      .legal-content li {
+        margin: 0 0 8px;
+      }
+      .legal-content strong,
+      .legal-content b {
+        color: var(--ink);
+        font-weight: 650;
+      }
+      .table-wrap {
+        overflow-x: auto;
+        margin: 24px 0 32px;
+        border: 1px solid var(--line);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 620px;
+      }
+      td {
+        border: 1px solid var(--line);
+        padding: 14px;
+        color: var(--muted);
+        vertical-align: top;
+        line-height: 1.55;
+      }
+      tr:first-child td {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      td p {
         margin: 0;
+      }
+      .doc-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 32px 0 44px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        padding: 22px;
+        background: rgba(247, 243, 238, 0.03);
+      }
+      .doc-card h2 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+      .doc-card p {
+        margin: 0 0 16px;
+      }
+      .doc-card a {
+        color: var(--accent);
+        font-weight: 650;
       }
       .footer-grid {
         display: flex;
@@ -94,10 +193,24 @@
         flex-wrap: wrap;
         font-size: 0.92rem;
       }
+      @media (max-width: 720px) {
+        header,
+        footer {
+          padding: 20px;
+        }
+        main {
+          padding: 64px 20px 88px;
+        }
+        .doc-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- Draft legal placeholder. Replace with approved legal content before indexing. -->
     <header>
       <div class="wrap">
         <a href="/" aria-label="Nineteen Point Two home">
@@ -110,12 +223,100 @@
       </div>
     </header>
     <main>
-      <div class="wrap panel">
-        <div class="eyebrow">Legal</div>
-        <h1>Website Terms</h1>
-        <p>This page is being prepared and will be published shortly.</p>
+      <div class="wrap">
+        <section class="hero">
+          <div class="eyebrow">Legal</div>
+          <h1>Website Terms of Use</h1>
+          <p class="standfirst">
+            Terms that apply to use of the Nineteen Point Two website.
+          </p>
+          <div class="meta-row">
+            <span>Last updated: 27 May 2026</span>
+            <span>Version: 1.0</span>
+          </div>
+        </section>
+        <section class="legal-content">
+          <p>
+            These Website Terms of Use apply to your use of the Nineteen Point
+            Two website.
+          </p>
+          <p>
+            By using the website, you agree to use it lawfully and in line with
+            these terms.
+          </p>
+          <h2>1. Who we are</h2>
+          <p>This website is operated by Nineteen Point Two.</p>
+          <p>
+            <b>Legal entity:</b> Nineteen Point Two Limited<br />
+            <b>Company number:</b> 15905276<br />
+            <b>Registered address:</b> C/O James Todd &amp; Co Furzehall Farm,
+            110 Wickham Road, Fareham, Hampshire, United Kingdom, PO16 7JH<br />
+            <b>Contact:</b> ben@nineteenpointtwo.com
+          </p>
+          <h2>2. Website content</h2>
+          <p>
+            The content on this website is provided for general business
+            information only.
+          </p>
+          <p>
+            It does not constitute legal, financial, HR, regulatory, security or
+            professional advice. You should obtain appropriate professional
+            advice before relying on any information for a specific decision.
+          </p>
+          <h2>3. Intellectual property</h2>
+          <p>
+            Unless otherwise stated, Nineteen Point Two owns or licenses the
+            content, design, structure, copy, frameworks, graphics and materials
+            on this website.
+          </p>
+          <p>
+            You may view and download website content for your own internal
+            business review, but you must not copy, reproduce, adapt, republish,
+            sell or commercially exploit it without written permission.
+          </p>
+          <h2>4. Acceptable use</h2>
+          <p>You must not:</p>
+          <ul>
+            <li>use the website unlawfully</li>
+            <li>attempt to gain unauthorised access</li>
+            <li>interfere with security or availability</li>
+            <li>introduce malware or harmful code</li>
+            <li>scrape or harvest content at scale</li>
+            <li>misrepresent your relationship with Nineteen Point Two</li>
+            <li>use the website to infringe third-party rights</li>
+          </ul>
+          <h2>5. Links to other websites</h2>
+          <p>
+            This website may contain links to third-party websites. These links
+            are provided for convenience only. Nineteen Point Two is not
+            responsible for the content, security, privacy practices or
+            availability of third-party websites.
+          </p>
+          <h2>6. Availability</h2>
+          <p>
+            We aim to keep the website available, but we do not guarantee
+            uninterrupted or error-free access.
+          </p>
+          <p>We may update, suspend or remove website content at any time.</p>
+          <h2>7. Liability</h2>
+          <p>
+            To the fullest extent permitted by law, Nineteen Point Two is not
+            liable for loss arising from use of, or reliance on, website
+            content.
+          </p>
+          <p>
+            Nothing in these terms limits liability that cannot lawfully be
+            limited or excluded.
+          </p>
+          <h2>8. Governing law</h2>
+          <p>These terms are governed by the laws of England and Wales.</p>
+          <p>
+            The courts of England and Wales will have exclusive jurisdiction.
+          </p>
+        </section>
       </div>
     </main>
+
     <footer>
       <div class="footer-grid">
         <span>&copy; 2026 Nineteen Point Two</span>
