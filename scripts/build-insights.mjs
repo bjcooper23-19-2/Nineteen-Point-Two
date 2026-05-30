@@ -449,33 +449,43 @@ footer a {
     font-size: 0.82rem;
   }
 @media (max-width: 760px) {
-  .nav-links {
-    display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-    justify-content: center;
-    gap: 18px;
-    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-    background: rgba(12, 13, 28, 0.96);
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    overflow-x: auto;
+  .nav {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
   }
 
-  .nav-links .nav-group,
+  .nav-links {
+    order: 3;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-links .nav-group {
+    display: flex;
+    flex: 0 0 auto;
+  }
+
   .nav-links .nav-menu {
-    display: contents;
+    display: none;
   }
 
   .nav-links a {
     white-space: nowrap;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
   }
 
-  body {
-    padding-bottom: 80px;
+  .brand {
+    max-width: 136px;
+  }
+
+  .brand-logo {
+    height: 32px;
   }
 }
   .brand {
