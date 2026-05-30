@@ -31,6 +31,7 @@ jobs:
           test -f workplace-ai-academy/index.html
           test -f insights/index.html
           test -f insights/cost-of-ai-is-becoming-visible/index.html
+          test -f insights/hidden-cost-of-workplace-ai/index.html
           test -f insights/hidden-cost-of-fragmented-ai-adoption/index.html
           test -f insights/operational-strain-beneath-workplace-ai-adoption/index.html
           test -f insights/shadow-ai-workplace-ai-adoption/index.html
