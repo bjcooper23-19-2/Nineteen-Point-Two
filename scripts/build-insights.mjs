@@ -363,6 +363,41 @@ h3 {
   margin: 0 0 28px;
   padding-left: 22px;
 }
+.article-body .table-wrap {
+  margin: 26px 0 34px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(247, 243, 238, 0.035);
+}
+.article-body table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+.article-body th,
+.article-body td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  vertical-align: top;
+}
+.article-body th {
+  color: var(--ink);
+  font-weight: 700;
+  background: rgba(247, 243, 238, 0.04);
+}
+.article-body th:last-child,
+.article-body td:last-child {
+  border-right: 0;
+}
+.article-body tr:last-child td {
+  border-bottom: 0;
+}
 .article-body a {
   color: var(--ink);
   border-bottom: 1px solid rgba(13, 115, 119, 0.7);
@@ -497,6 +532,7 @@ const markdownToHtml = (markdown) => {
   const blocks = [];
   let paragraph = [];
   let list = [];
+  let table = [];
 
   const flushParagraph = () => {
     if (!paragraph.length) return;
@@ -512,33 +548,78 @@ const markdownToHtml = (markdown) => {
     list = [];
   };
 
+  const parseTableRow = (line) =>
+    line
+      .trim()
+      .replace(/^\|/, "")
+      .replace(/\|$/, "")
+      .split("|")
+      .map((cell) => cell.trim());
+
+  const isTableSeparator = (line) =>
+    /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(line.trim());
+
+  const flushTable = () => {
+    if (!table.length) return;
+    const [header, ...rows] = table;
+    const thead = `<thead><tr>${header
+      .map((cell) => `<th>${inlineMarkdown(cell)}</th>`)
+      .join("")}</tr></thead>`;
+    const tbody = rows.length
+      ? `<tbody>${rows
+          .map(
+            (row) =>
+              `<tr>${row.map((cell) => `<td>${inlineMarkdown(cell)}</td>`).join("")}</tr>`,
+          )
+          .join("")}</tbody>`
+      : "";
+    blocks.push(
+      `<div class="table-wrap"><table>${thead}${tbody}</table></div>`,
+    );
+    table = [];
+  };
+
   for (const line of lines) {
     const trimmed = line.trim();
 
     if (!trimmed) {
       flushParagraph();
       flushList();
+      flushTable();
       continue;
     }
 
     if (trimmed.startsWith("## ")) {
       flushParagraph();
       flushList();
+      flushTable();
       blocks.push(`<h2>${inlineMarkdown(trimmed.slice(3))}</h2>`);
       continue;
     }
 
     if (trimmed.startsWith("- ")) {
       flushParagraph();
+      flushTable();
       list.push(trimmed.slice(2));
       continue;
     }
 
+    if (trimmed.includes("|") && trimmed.startsWith("|")) {
+      flushParagraph();
+      flushList();
+      if (!isTableSeparator(trimmed)) {
+        table.push(parseTableRow(trimmed));
+      }
+      continue;
+    }
+
+    flushTable();
     paragraph.push(trimmed);
   }
 
   flushParagraph();
   flushList();
+  flushTable();
   return blocks.join("\n");
 };
 
