@@ -118,7 +118,9 @@ Even modest improvements in AI use consistency can generate meaningful avoided c
 | 25%                      | £11,100      | £27,000  | £51,000       |
 | 50%                      | £22,200      | £54,000  | £102,000      |
 
+<p class="table-note">
 These figures are illustrative and should be replaced with organisation-specific assumptions before being used for decision-making.
+</p>
 
 These figures demonstrate the potential financial benefits of targeted management efforts to reduce AI-related labour drag.
 
