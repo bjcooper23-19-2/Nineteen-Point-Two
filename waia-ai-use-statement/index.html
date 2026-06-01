@@ -52,24 +52,126 @@
       a:hover {
         color: var(--accent);
       }
-      header,
-      footer {
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(18px);
+        background: rgba(16, 16, 31, 0.76);
         border-bottom: 1px solid var(--line);
-        padding: 24px;
       }
       footer {
         border-top: 1px solid var(--line);
-        border-bottom: 0;
+        padding: 24px;
         color: var(--soft);
       }
       .wrap,
-      .footer-grid {
+      .footer-grid,
+      .nav {
         max-width: var(--max);
         margin: 0 auto;
+      }
+      .nav {
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        line-height: 0;
+        max-width: 42vw;
       }
       .brand-logo {
         height: 36px;
         width: auto;
+        max-width: 100%;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .nav-group {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 0;
+      }
+      .nav-group > a::after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-left: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: translateY(-2px) rotate(45deg);
+      }
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 8px);
+        min-width: 190px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(16, 16, 31, 0.96);
+        display: grid;
+        gap: 2px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+          opacity 160ms ease,
+          transform 160ms ease,
+          visibility 160ms ease;
+      }
+      .nav-group:hover .nav-menu,
+      .nav-group:focus-within .nav-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+      .nav-menu a {
+        padding: 9px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+      .nav-menu a:hover {
+        background: rgba(247, 243, 238, 0.08);
+      }
+      .nav-cta,
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(247, 243, 238, 0.22);
+        border-radius: 999px;
+        background: rgba(247, 243, 238, 0.06);
+        color: var(--ink);
+        padding: 10px 14px;
+        font: inherit;
+        font-size: 0.86rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .nav-toggle {
+        display: none;
+      }
+      .nav-cta:hover,
+      .nav-cta:focus-visible,
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible {
+        border-color: rgba(247, 243, 238, 0.38);
+        outline: none;
       }
       main {
         padding: 84px 24px 116px;
@@ -193,8 +295,94 @@
         flex-wrap: wrap;
         font-size: 0.92rem;
       }
+      @media (max-width: 900px) {
+        .nav {
+          gap: 12px;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+        .brand-logo {
+          height: 30px;
+        }
+        .nav-links {
+          gap: 9px;
+          font-size: 0.76rem;
+        }
+        .nav-cta {
+          padding: 10px 13px;
+          font-size: 0.82rem;
+        }
+      }
+      @media (max-width: 760px) {
+        .nav {
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 10px;
+          justify-content: flex-start;
+          min-height: 44px;
+        }
+        .brand {
+          order: 2;
+          max-width: 128px;
+        }
+        .brand-logo {
+          height: 32px;
+        }
+        .nav-toggle {
+          order: 1;
+          display: inline-flex !important;
+          margin-left: 0;
+        }
+        .nav-links {
+          order: 4;
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 4px;
+          padding-top: 12px;
+          border-top: 1px solid rgba(247, 243, 238, 0.1);
+          font-size: 0.88rem;
+        }
+        .nav-links.is-open {
+          display: flex;
+        }
+        .nav-group {
+          display: grid;
+          align-items: stretch;
+          padding: 0;
+        }
+        .nav-group > a::after {
+          display: none;
+        }
+        .nav-menu {
+          position: static;
+          min-width: 0;
+          padding: 0 0 8px 14px;
+          border: 0;
+          border-radius: 0;
+          background: transparent;
+          display: grid;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          transform: none;
+          transition: none;
+        }
+        .nav-menu a,
+        .nav-links > a,
+        .nav-group > a {
+          padding: 9px 0;
+          white-space: normal;
+        }
+        .nav-menu a:hover {
+          background: transparent;
+        }
+        .nav-cta {
+          display: none;
+        }
+      }
       @media (max-width: 720px) {
-        header,
         footer {
           padding: 20px;
         }
@@ -212,15 +400,45 @@
   </head>
   <body>
     <header>
-      <div class="wrap">
-        <a href="/" aria-label="Nineteen Point Two home">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="/" aria-label="Nineteen Point Two home">
           <img
             class="brand-logo"
             src="/assets/logo/logo-horizontal.svg"
             alt="Nineteen Point Two"
           />
         </a>
-      </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          Menu
+        </button>
+        <div class="nav-links" id="site-navigation">
+          <div class="nav-group">
+            <a href="/workplace-ai/">Workplace AI</a>
+            <div class="nav-menu" aria-label="Workplace AI pages">
+              <a href="/workplace-ai/">Shadow AI overview</a>
+              <a href="/workplace-ai-academy/">WAIA platform</a>
+              <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+            </div>
+          </div>
+          <div class="nav-group">
+            <a href="/#diagnostics">Diagnostics</a>
+            <div class="nav-menu" aria-label="Operational diagnostics">
+              <a href="/workplace-ai-academy/#operational-diagnostic"
+                >Workplace AI diagnostic</a
+              >
+              <a href="/#stress-test">Revenue Stress Test</a>
+            </div>
+          </div>
+          <a href="/insights/">Insights</a>
+          <a href="/#operating-lens">Operating Lens</a>
+        </div>
+        <a class="nav-cta" href="/workplace-ai-academy/">Ask to see WAIA</a>
+      </nav>
     </header>
     <main>
       <div class="wrap">
@@ -387,5 +605,32 @@
         >
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".nav").forEach((nav) => {
+        const toggle = nav.querySelector(".nav-toggle");
+        const menu = nav.querySelector(".nav-links");
+
+        if (!toggle || !menu) return;
+
+        const closeMenu = () => {
+          toggle.setAttribute("aria-expanded", "false");
+          menu.classList.remove("is-open");
+        };
+
+        toggle.addEventListener("click", () => {
+          const isOpen = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", String(!isOpen));
+          menu.classList.toggle("is-open", !isOpen);
+        });
+
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeMenu();
+        });
+      });
+    </script>
   </body>
 </html>
