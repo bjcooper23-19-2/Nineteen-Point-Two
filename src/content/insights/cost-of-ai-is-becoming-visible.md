@@ -89,7 +89,7 @@ This is also where governance needs to be understood properly. Good governance s
 
 The organisations that get this right won’t be the ones with the most slogans about AI. They will be the ones who can see how AI is changing work, where it’s creating value and where it is quietly adding cost.
 
-[Workplace AI Academy](/workplace-ai-academy/) is designed around this practical operating layer: shared standards, manager support, role-aware guidance and visible adoption signals for workplace AI adoption.
+[WAIA](/workplace-ai-academy/) is designed around this practical operating layer: shared standards, manager support, role-aware guidance and visible adoption signals for workplace AI adoption.
 
 ## Closing point
 

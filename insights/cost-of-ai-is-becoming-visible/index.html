@@ -458,10 +458,45 @@
           padding: 10px 13px;
           font-size: 0.82rem;
         }
-      }
-      @media (max-width: 760px) {
-        .nav-links {
-          display: none;
+        @media (max-width: 760px) {
+          .nav {
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .nav-links {
+            order: 3;
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            gap: 16px;
+            overflow-x: auto;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+          }
+
+          .nav-links .nav-group {
+            display: flex;
+            flex: 0 0 auto;
+          }
+
+          .nav-links .nav-menu {
+            display: none;
+          }
+
+          .nav-links a {
+            white-space: nowrap;
+            font-size: 0.78rem;
+          }
+
+          .brand {
+            max-width: 136px;
+          }
+
+          .brand-logo {
+            height: 32px;
+          }
         }
         .brand {
           max-width: 136px;
@@ -541,7 +576,7 @@
             <a href="/insights/">Insights</a>
             <a href="/#operating-lens">Operating Lens</a>
           </div>
-          <a class="nav-cta" href="/workplace-ai-academy/">Explore WAIA</a>
+          <a class="nav-cta" href="/workplace-ai-academy/">Ask to see WAIA</a>
         </nav>
       </header>
 
@@ -794,10 +829,10 @@
                 quietly adding cost.
               </p>
               <p>
-                <a href="/workplace-ai-academy/">Workplace AI Academy</a> is
-                designed around this practical operating layer: shared
-                standards, manager support, role-aware guidance and visible
-                adoption signals for workplace AI adoption.
+                <a href="/workplace-ai-academy/">WAIA</a> is designed around
+                this practical operating layer: shared standards, manager
+                support, role-aware guidance and visible adoption signals for
+                workplace AI adoption.
               </p>
               <h2>Closing point</h2>
               <p>
@@ -856,15 +891,16 @@
             <h2>Make AI adoption visible enough to manage.</h2>
             <p>
               Explore the operating risk behind workplace AI adoption, or see
-              how WAIA helps organisations turn policy intent into shared
-              standards, manager support and visible behaviour change.
+              how WAIA helps organisations establish a baseline, identify
+              operational drag and focus manager support with evidence-led
+              follow-up.
             </p>
             <div
               class="hero-actions"
               style="justify-content: center; margin-bottom: 0"
             >
               <a class="btn primary" href="/workplace-ai-academy/"
-                >Explore WAIA</a
+                >Ask to see WAIA</a
               >
               <a class="btn secondary" href="/workplace-ai/"
                 >Shadow AI overview</a

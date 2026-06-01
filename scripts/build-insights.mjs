@@ -31,7 +31,7 @@ const nav = `
       <a href="/insights/">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
     </div>
-    <a class="nav-cta" href="/workplace-ai-academy/">Explore WAIA</a>
+    <a class="nav-cta" href="/workplace-ai-academy/">Ask to see WAIA</a>
   </nav>
 </header>`;
 
@@ -774,7 +774,7 @@ const renderIndex = (articles) => {
               operating realities.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="/workplace-ai-academy/">Explore WAIA</a>
+              <a class="btn primary" href="/workplace-ai-academy/">Ask to see WAIA</a>
               <a class="btn secondary" href="/workplace-ai/">Explore Shadow AI</a>
             </div>
           </div>
@@ -832,11 +832,11 @@ const renderArticle = (article) =>
             <h2>Make AI adoption visible enough to manage.</h2>
             <p>
               Explore the operating risk behind workplace AI adoption, or see how
-              WAIA helps organisations turn policy intent into
-              shared standards, manager support and visible behaviour change.
+              WAIA helps organisations establish a baseline, identify operational
+              drag and focus manager support with evidence-led follow-up.
             </p>
             <div class="hero-actions" style="justify-content: center; margin-bottom: 0">
-              <a class="btn primary" href="/workplace-ai-academy/">Explore WAIA</a>
+              <a class="btn primary" href="/workplace-ai-academy/">Ask to see WAIA</a>
               <a class="btn secondary" href="/workplace-ai/">Shadow AI overview</a>
             </div>
           </div>
