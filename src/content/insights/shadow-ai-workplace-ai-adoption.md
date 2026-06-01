@@ -10,7 +10,7 @@ Leadership teams often believe they understand how AI is currently being used by
 
 This is not primarily a technology problem. Most organisations already have access to AI tools. What they lack is consistent workplace behaviour, clear expectations, visible management, and coherent ownership around AI usage.
 
-AI is not a strategy, it’s a tool.
+AI is not a strategy, it's a tool.
 
 The problem is what happens once real teams start folding those tools into live work.
 
@@ -72,7 +72,7 @@ Most organisations already have a gap between how leaders think AI is being used
 
 The [Revenue Stress Test](https://rstapp.nineteenpointtwo.com/) is a practical operational diagnostic designed to identify gaps between leadership assumptions and day-to-day operational reality in the revenue plan. It surfaces visibility and alignment gaps across people, process and data.
 
-The [Workplace AI Academy](/workplace-ai-academy/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, role-aware learning, organisation guidance, learner acknowledgement and admin visibility.
+[WAIA](/workplace-ai-academy/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
 
 Organisational AI maturity grows from the ground up. Leadership visibility, manager confidence, and workflow alignment matter more than tools or policies. That quiet, operationally embedded Shadow AI sits behind much of the variability in scaling SaaS and professional services businesses right now.
 
