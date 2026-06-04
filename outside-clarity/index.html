@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+      if (location.hostname === "nineteenpointtwo.com") {
+        location.replace("https://www.nineteenpointtwo.com/outside-clarity/");
+      }
+    </script>
+    <link
+      rel="canonical"
+      href="https://www.nineteenpointtwo.com/outside-clarity/"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outside Clarity | Nineteen Point Two</title>
+    <meta
+      name="description"
+      content="A structured outside view before the plan becomes action. Outside Clarity helps assess what is strong, assumed, exposed and worth doing next before implementation."
+    />
+    <link
+      rel="icon"
+      href="../assets/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <style>
+      :root {
+        --ink: #f7f3ee;
+        --muted: rgba(247, 243, 238, 0.72);
+        --muted-2: rgba(247, 243, 238, 0.54);
+        --softer: rgba(247, 243, 238, 0.055);
+        --charcoal: #1a1a2e;
+        --cyan: #0d7377;
+        --line: rgba(247, 243, 238, 0.14);
+        --max: 1180px;
+        --radius-xl: 36px;
+        --radius-lg: 28px;
+        --radius-md: 18px;
+        --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(
+            circle at 72% 4%,
+            rgba(13, 115, 119, 0.24),
+            transparent 32rem
+          ),
+          radial-gradient(
+            circle at 0% 40%,
+            rgba(247, 243, 238, 0.07),
+            transparent 28rem
+          ),
+          linear-gradient(180deg, var(--charcoal) 0%, #111120 54%, #0b0b15 100%);
+        color: var(--ink);
+        line-height: 1.55;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .noise {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.045;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+        z-index: 0;
+      }
+
+      .site {
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(18px);
+        background: rgba(16, 16, 31, 0.76);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        line-height: 0;
+        max-width: 42vw;
+      }
+
+      .brand-logo {
+        display: block;
+        width: auto;
+        height: 36px;
+        max-width: 100%;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--ink);
+      }
+
+      .nav-group {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 0;
+      }
+
+      .nav-group > a::after {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-left: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: translateY(-2px) rotate(45deg);
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 8px);
+        min-width: 190px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(16, 16, 31, 0.96);
+        box-shadow: var(--shadow);
+        display: grid;
+        gap: 2px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition:
+          opacity 160ms ease,
+          transform 160ms ease,
+          visibility 160ms ease;
+      }
+
+      .nav-group:hover .nav-menu,
+      .nav-group:focus-within .nav-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(-50%, 0);
+      }
+
+      .nav-menu a {
+        padding: 9px 10px;
+        border-radius: 12px;
+        white-space: nowrap;
+      }
+
+      .nav-menu a:hover {
+        background: rgba(247, 243, 238, 0.08);
+      }
+
+      .nav-cta,
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        padding: 12px 18px;
+        border: 1px solid rgba(247, 243, 238, 0.22);
+        font-weight: 700;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+        cursor: pointer;
+      }
+
+      .nav-cta {
+        background: rgba(247, 243, 238, 0.08);
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+
+      .nav-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(247, 243, 238, 0.22);
+        border-radius: 999px;
+        background: rgba(247, 243, 238, 0.06);
+        color: var(--ink);
+        padding: 10px 14px;
+        font: inherit;
+        font-size: 0.86rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .nav-toggle:hover,
+      .nav-toggle:focus-visible {
+        border-color: rgba(247, 243, 238, 0.38);
+        outline: none;
+      }
+
+      .btn.primary {
+        background: var(--ink);
+        color: #111120;
+        border-color: transparent;
+        box-shadow: 0 20px 60px rgba(247, 243, 238, 0.14);
+      }
+
+      .btn.secondary {
+        background: rgba(247, 243, 238, 0.06);
+        color: var(--ink);
+      }
+
+      .btn:hover,
+      .nav-cta:hover {
+        transform: translateY(-2px);
+        border-color: rgba(247, 243, 238, 0.42);
+      }
+
+      main {
+        overflow: hidden;
+      }
+
+      section {
+        padding: 92px 24px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: calc(100vh - 73px);
+        display: grid;
+        align-items: center;
+        padding-top: 88px;
+        padding-bottom: 70px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.74fr);
+        gap: 56px;
+        align-items: center;
+      }
+
+      .hero-grid > *,
+      .split > *,
+      .panel-grid > * {
+        min-width: 0;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        color: var(--muted);
+        font-size: 0.84rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: var(--cyan);
+        box-shadow: 0 0 26px var(--cyan);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: clamp(3.35rem, 7.4vw, 7.15rem);
+        line-height: 0.91;
+        letter-spacing: -0.075em;
+        margin-bottom: 28px;
+        max-width: 920px;
+      }
+
+      h2 {
+        font-size: clamp(2.3rem, 4.5vw, 4.6rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+        margin-bottom: 22px;
+      }
+
+      h3 {
+        letter-spacing: -0.025em;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .lede,
+      .section-head p,
+      .large-copy {
+        color: var(--muted);
+        font-size: clamp(1.06rem, 1.55vw, 1.25rem);
+        max-width: 760px;
+      }
+
+      .hero p.lede {
+        font-size: clamp(1.15rem, 1.7vw, 1.42rem);
+        max-width: 720px;
+        margin-bottom: 24px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+        margin-top: 34px;
+      }
+
+      .trust-line {
+        color: rgba(247, 243, 238, 0.58);
+        font-size: 0.95rem;
+        max-width: 640px;
+      }
+
+      .section-head {
+        max-width: 820px;
+        margin-bottom: 42px;
+      }
+
+      .assessment-card,
+      .feature-panel {
+        position: relative;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background:
+          linear-gradient(
+            180deg,
+            rgba(247, 243, 238, 0.09),
+            rgba(247, 243, 238, 0.035)
+          ),
+          radial-gradient(
+            circle at 70% 0%,
+            rgba(13, 115, 119, 0.22),
+            transparent 17rem
+          );
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .assessment-card {
+        padding: 24px;
+      }
+
+      .assessment-card::before,
+      .grid-surface::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(247, 243, 238, 0.055) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(247, 243, 238, 0.055) 1px,
+            transparent 1px
+          );
+        background-size: 34px 34px;
+        mask-image: linear-gradient(180deg, black, transparent 82%);
+        pointer-events: none;
+      }
+
+      .card-inner,
+      .feature-panel > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .snapshot-list {
+        display: grid;
+        gap: 10px;
+        padding: 0;
+        margin: 18px 0 0;
+        list-style: none;
+      }
+
+      .snapshot-list li {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid rgba(247, 243, 238, 0.1);
+        padding-bottom: 10px;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .snapshot-list strong {
+        color: var(--ink);
+        white-space: nowrap;
+      }
+
+      .note {
+        border-radius: 22px;
+        background: rgba(13, 115, 119, 0.16);
+        border: 1px solid rgba(13, 115, 119, 0.46);
+        padding: 18px;
+        margin-top: 20px;
+      }
+
+      .note small {
+        display: block;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 8px;
+      }
+
+      .note strong {
+        display: block;
+        font-size: 1.28rem;
+        line-height: 1.2;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 0.82fr 1.18fr;
+        gap: 48px;
+        align-items: start;
+      }
+
+      .sticky-note {
+        position: sticky;
+        top: 112px;
+        border: 1px solid rgba(13, 115, 119, 0.4);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        background: linear-gradient(
+          180deg,
+          rgba(13, 115, 119, 0.17),
+          rgba(247, 243, 238, 0.045)
+        );
+      }
+
+      .sticky-note p {
+        margin-bottom: 0;
+      }
+
+      .grid,
+      .steps-grid {
+        display: grid;
+        gap: 16px;
+      }
+
+      .grid,
+      .steps-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .card,
+      .step-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: rgba(247, 243, 238, 0.045);
+        padding: 22px;
+      }
+
+      .card {
+        min-height: 138px;
+      }
+
+      .step-card {
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .index {
+        color: rgba(247, 243, 238, 0.38);
+        font-size: 0.85rem;
+      }
+
+      .card h3,
+      .step-card h3 {
+        font-size: 1.12rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+      }
+
+      .step-card p,
+      .card p {
+        margin-bottom: 0;
+        font-size: 0.96rem;
+      }
+
+      .feature-panel {
+        border-radius: var(--radius-xl);
+        padding: clamp(28px, 5vw, 58px);
+      }
+
+      .panel-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.86fr;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 28px 0 0;
+        display: grid;
+        gap: 12px;
+      }
+
+      .check-list li {
+        position: relative;
+        padding-left: 28px;
+        color: var(--muted);
+      }
+
+      .check-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.58em;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--cyan);
+        box-shadow: 0 0 18px var(--cyan);
+      }
+
+      .quote {
+        font-size: clamp(1.65rem, 3vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.05em;
+        margin-bottom: 22px;
+      }
+
+      .form-frame {
+        width: 100%;
+        min-height: 800px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: rgba(247, 243, 238, 0.04);
+        box-shadow: var(--shadow);
+      }
+
+      .important-note {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: rgba(247, 243, 238, 0.035);
+      }
+
+      .important-note p {
+        max-width: 820px;
+        font-size: 1.08rem;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 34px 24px;
+        color: rgba(247, 243, 238, 0.58);
+      }
+
+      .footer-grid {
+        max-width: var(--max);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 1040px) {
+        .nav-links {
+          gap: 14px;
+          font-size: 0.86rem;
+        }
+
+        .grid,
+        .steps-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          gap: 12px;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .brand-logo {
+          height: 30px;
+        }
+
+        .nav-links {
+          gap: 10px;
+          font-size: 0.8rem;
+        }
+
+        .nav-cta {
+          padding: 10px 13px;
+          font-size: 0.82rem;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .hero-grid,
+        .split,
+        .panel-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .assessment-card {
+          width: 100%;
+          max-width: 560px;
+        }
+
+        .sticky-note {
+          position: static;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .nav {
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 10px;
+          padding-left: 18px;
+          padding-right: 18px;
+          justify-content: flex-start;
+          min-height: 44px;
+        }
+
+        .nav-toggle {
+          order: 1;
+          display: inline-flex !important;
+          margin-left: 0;
+        }
+
+        .nav-links {
+          order: 4;
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 4px;
+          padding-top: 12px;
+          border-top: 1px solid rgba(247, 243, 238, 0.1);
+          font-size: 0.88rem;
+        }
+
+        .nav-links.is-open {
+          display: flex;
+        }
+
+        .nav-group {
+          display: grid;
+          align-items: stretch;
+          padding: 0;
+        }
+
+        .nav-group > a::after {
+          display: none;
+        }
+
+        .nav-menu {
+          position: static;
+          min-width: 0;
+          padding: 0 0 8px 14px;
+          border: 0;
+          border-radius: 0;
+          background: transparent;
+          box-shadow: none;
+          display: grid;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          transform: none;
+          transition: none;
+        }
+
+        .nav-menu a,
+        .nav-links > a,
+        .nav-group > a {
+          padding: 9px 0;
+          white-space: normal;
+        }
+
+        .nav-menu a:hover {
+          background: transparent;
+        }
+
+        .nav-cta {
+          display: none;
+        }
+
+        .brand {
+          order: 2;
+          max-width: 128px;
+        }
+
+        .brand-logo {
+          height: 32px;
+        }
+
+        section {
+          padding: 68px 20px;
+          overflow: hidden;
+        }
+
+        .container,
+        .hero-grid,
+        .lede,
+        .trust-line {
+          max-width: 100%;
+        }
+
+        .hero {
+          padding-top: 58px;
+          min-height: auto;
+        }
+
+        h1 {
+          font-size: clamp(2.55rem, 11.5vw, 3.15rem);
+          letter-spacing: -0.045em;
+        }
+
+        .grid,
+        .steps-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .snapshot-list li {
+          display: grid;
+          gap: 4px;
+        }
+
+        .snapshot-list strong {
+          white-space: normal;
+        }
+
+        .form-frame {
+          min-height: 860px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="site">
+      <header>
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="../" aria-label="Nineteen Point Two home">
+            <img
+              class="brand-logo"
+              src="../assets/logo/logo-horizontal.svg"
+              alt="Nineteen Point Two"
+            />
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-navigation"
+          >
+            Menu
+          </button>
+          <div class="nav-links" id="site-navigation">
+            <div class="nav-group">
+              <a href="/workplace-ai/">Workplace AI</a>
+              <div class="nav-menu" aria-label="Workplace AI pages">
+                <a href="/workplace-ai/">Shadow AI overview</a>
+                <a href="/workplace-ai-academy/">WAIA platform</a>
+                <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+              </div>
+            </div>
+            <div class="nav-group">
+              <a href="/#diagnostics">Diagnostics</a>
+              <div class="nav-menu" aria-label="Operational diagnostics">
+                <a href="/workplace-ai-academy/#operational-diagnostic"
+                  >Workplace AI diagnostic</a
+                >
+                <a href="/#stress-test">Revenue Stress Test</a>
+              </div>
+            </div>
+            <a href="/insights/">Insights</a>
+            <a href="/#operating-lens">Operating Lens</a>
+          </div>
+          <a class="nav-cta" href="/workplace-ai-academy/">Ask to see WAIA</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div>
+              <div class="eyebrow">Outside Clarity</div>
+              <h1>
+                Get an outside
+                <br />
+                view before
+                <br />
+                the plan
+                <br />
+                becomes
+                <br />
+                action.
+              </h1>
+              <p class="lede">
+                Outside Clarity gives founders, operators and small teams a
+                structured assessment before they commit time, budget,
+                reputation or operational effort.
+              </p>
+              <p class="trust-line">
+                It is for the moment when the plan feels plausible, but you want
+                a sharper view of what is strong, what is assumed, what is
+                exposed and what should happen next.
+              </p>
+              <div class="hero-actions">
+                <a class="btn primary" href="#submit">Submit your plan</a>
+                <a class="btn secondary" href="#how-it-works">How it works</a>
+              </div>
+            </div>
+
+            <aside
+              class="assessment-card"
+              aria-label="Outside Clarity Snapshot summary"
+            >
+              <div class="card-inner">
+                <div class="eyebrow">Snapshot view</div>
+                <ul class="snapshot-list">
+                  <li><span>Strong</span><strong>What holds up</strong></li>
+                  <li><span>Assumed</span><strong>What needs proof</strong></li>
+                  <li><span>Exposed</span><strong>Where risk sits</strong></li>
+                  <li>
+                    <span>Next</span><strong>What should happen now</strong>
+                  </li>
+                </ul>
+                <div class="note">
+                  <small>Purpose</small>
+                  <strong
+                    >Make the next decision clearer before implementation
+                    begins.</strong
+                  >
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section id="why">
+          <div class="container split">
+            <aside class="sticky-note">
+              <div class="eyebrow">Why it exists</div>
+              <p>
+                A useful outside view should reduce ambiguity before the
+                decision becomes expensive.
+              </p>
+            </aside>
+            <div>
+              <h2>Why Outside Clarity exists</h2>
+              <p class="large-copy">
+                Most plans do not fail because people are careless.
+              </p>
+              <p class="large-copy">
+                They fail because assumptions stay hidden too long.
+              </p>
+              <p>
+                Internal teams often carry optimism, sunk cost, personal
+                attachment or pressure to move forward.
+              </p>
+              <p>
+                Outside Clarity gives you a structured outside view before the
+                decision becomes expensive.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="snapshot">
+          <div class="container feature-panel grid-surface">
+            <div class="panel-grid">
+              <div>
+                <div class="eyebrow">What the Snapshot gives you</div>
+                <h2>What you get</h2>
+                <p class="large-copy">
+                  The Outside Clarity Snapshot is a short, practical first-pass
+                  assessment.
+                </p>
+                <p>It helps you understand:</p>
+                <ul class="check-list">
+                  <li>What is strong.</li>
+                  <li>What is assumed.</li>
+                  <li>Where the plan is exposed.</li>
+                  <li>The most likely failure mode.</li>
+                  <li>The practical next actions.</li>
+                  <li>The decision gate before implementation.</li>
+                </ul>
+              </div>
+              <aside class="assessment-card">
+                <div class="card-inner">
+                  <div class="eyebrow">Decision clarity</div>
+                  <p class="quote">
+                    The purpose is not to make the plan sound good.
+                  </p>
+                  <p>The purpose is to make the next decision clearer.</p>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section id="assess">
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Scope</div>
+              <h2>What Outside Clarity can assess</h2>
+            </div>
+            <div class="grid">
+              <article class="card"><h3>Product ideas</h3></article>
+              <article class="card"><h3>Service propositions</h3></article>
+              <article class="card">
+                <h3>Pricing or packaging changes</h3>
+              </article>
+              <article class="card"><h3>Website or offer pages</h3></article>
+              <article class="card">
+                <h3>Marketing or go-to-market plans</h3>
+              </article>
+              <article class="card"><h3>AI adoption initiatives</h3></article>
+              <article class="card">
+                <h3>Operating model or process changes</h3>
+              </article>
+              <article class="card"><h3>Internal business cases</h3></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="when">
+          <div class="container split">
+            <aside class="sticky-note">
+              <div class="eyebrow">Timing</div>
+              <p>
+                Outside Clarity is most useful when you are about to move from
+                thinking to action.
+              </p>
+            </aside>
+            <div>
+              <h2>Use it before the commitment gets expensive</h2>
+              <p class="large-copy">Examples:</p>
+              <ul class="check-list">
+                <li>Before briefing a developer.</li>
+                <li>Before changing pricing.</li>
+                <li>Before commissioning a website.</li>
+                <li>Before launching a campaign.</li>
+                <li>Before presenting a business case.</li>
+                <li>Before committing budget.</li>
+                <li>Before launching an AI initiative.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works">
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Process</div>
+              <h2>How it works</h2>
+            </div>
+            <div class="steps-grid">
+              <article class="step-card">
+                <span class="index">01</span>
+                <div>
+                  <h3>Submit the intake brief</h3>
+                  <p>Share the outline so the assessment has enough context.</p>
+                </div>
+              </article>
+              <article class="step-card">
+                <span class="index">02</span>
+                <div>
+                  <h3>Share the plan</h3>
+                  <p>
+                    Include the evidence, assumptions and concerns that sit
+                    behind the intended action.
+                  </p>
+                </div>
+              </article>
+              <article class="step-card">
+                <span class="index">03</span>
+                <div>
+                  <h3>Receive a Snapshot</h3>
+                  <p>
+                    Get a structured first-pass view of strength, exposure,
+                    failure mode and next steps.
+                  </p>
+                </div>
+              </article>
+              <article class="step-card">
+                <span class="index">04</span>
+                <div>
+                  <h3>Choose the decision gate</h3>
+                  <p>
+                    Progress, progress with controls, reshape, gather more
+                    evidence or pause.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="submit">
+          <div class="container">
+            <div class="section-head">
+              <div class="eyebrow">Submit your plan</div>
+              <h2>Complete the intake below.</h2>
+              <p>The sharper the input, the sharper the assessment.</p>
+              <p>
+                Outside Clarity is most useful when you include what you are
+                unsure about, not just what you are confident in.
+              </p>
+            </div>
+            <iframe
+              class="form-frame"
+              src="https://tally.so/embed/obzbWP?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+              width="100%"
+              height="800"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Outside Clarity Snapshot Intake"
+            ></iframe>
+            <p class="trust-line" style="margin-top: 18px">
+              If the embedded intake does not load,
+              <a
+                href="https://tally.so/r/obzbWP"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open the form in a new tab</a
+              >.
+            </p>
+          </div>
+        </section>
+
+        <section class="important-note">
+          <div class="container">
+            <div class="eyebrow">Important note</div>
+            <h2>Structured decision support.</h2>
+            <p>
+              Outside Clarity provides structured decision support. It is not
+              legal, financial, investment, tax, employment law or regulated
+              professional advice.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-grid">
+          <span>&copy; 2026 Nineteen Point Two</span>
+          <span
+            >Operating clarity across revenue systems and workplace AI
+            adoption.</span
+          >
+          <span>Safe | Consistent | Evidence-led</span>
+          <span
+            ><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> |
+            <a href="/cookies/">Cookies</a> |
+            <a href="/website-terms/">Website Terms</a> |
+            <a href="/subprocessors/">Subprocessors</a></span
+          >
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelectorAll(".nav").forEach((nav) => {
+        const toggle = nav.querySelector(".nav-toggle");
+        const menu = nav.querySelector(".nav-links");
+
+        if (!toggle || !menu) return;
+
+        const closeMenu = () => {
+          toggle.setAttribute("aria-expanded", "false");
+          menu.classList.remove("is-open");
+        };
+
+        toggle.addEventListener("click", () => {
+          const isOpen = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", String(!isOpen));
+          menu.classList.toggle("is-open", !isOpen);
+        });
+
+        menu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closeMenu();
+        });
+      });
+    </script>
+  </body>
+</html>
