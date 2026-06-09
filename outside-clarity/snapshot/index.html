@@ -3,23 +3,25 @@
   <head>
     <script>
       if (location.hostname === "nineteenpointtwo.com") {
-        location.replace("https://www.nineteenpointtwo.com/outside-clarity/");
+        location.replace(
+          "https://www.nineteenpointtwo.com/outside-clarity/snapshot/",
+        );
       }
     </script>
     <link
       rel="canonical"
-      href="https://www.nineteenpointtwo.com/outside-clarity/"
+      href="https://www.nineteenpointtwo.com/outside-clarity/snapshot/"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outside Clarity | Nineteen Point Two</title>
+    <title>Outside Clarity Snapshot | Nineteen Point Two</title>
     <meta
       name="description"
-      content="A structured outside view before the plan becomes action. Outside Clarity helps assess what is strong, assumed, exposed and worth doing next before implementation."
+      content="Start an Outside Clarity Snapshot. A £99 fixed-fee outside assessment of one plan, idea, offer or decision before it becomes action."
     />
     <link
       rel="icon"
-      href="../assets/favicon/favicon.svg"
+      href="../../assets/favicon/favicon.svg"
       type="image/svg+xml"
     />
     <style>
@@ -503,7 +505,6 @@
       }
 
       .card,
-      .story-card,
       .step-card {
         border: 1px solid var(--line);
         border-radius: var(--radius-md);
@@ -513,11 +514,6 @@
 
       .card {
         min-height: 138px;
-      }
-
-      .story-card {
-        grid-column: span 2;
-        min-height: 280px;
       }
 
       .step-card {
@@ -533,32 +529,16 @@
       }
 
       .card h3,
-      .story-card h3,
       .step-card h3 {
         font-size: 1.12rem;
         line-height: 1.2;
-        margin-bottom: 12px;
-      }
-
-      .step-card p,
-      .card p,
-      .story-card p {
-        font-size: 0.96rem;
-      }
-
-      .card p:last-child,
-      .story-card p:last-child,
-      .step-card p:last-child {
         margin-bottom: 0;
       }
 
-      .price-tag {
-        display: block;
-        color: var(--ink);
-        font-size: clamp(3rem, 8vw, 6rem);
-        line-height: 0.9;
-        letter-spacing: -0.07em;
-        margin: 12px 0 22px;
+      .step-card p,
+      .card p {
+        margin-bottom: 0;
+        font-size: 0.96rem;
       }
 
       .feature-panel {
@@ -826,10 +806,6 @@
           grid-template-columns: 1fr;
         }
 
-        .story-card {
-          grid-column: auto;
-        }
-
         .snapshot-list li {
           display: grid;
           gap: 4px;
@@ -850,10 +826,10 @@
     <div class="site">
       <header>
         <nav class="nav" aria-label="Main navigation">
-          <a class="brand" href="../" aria-label="Nineteen Point Two home">
+          <a class="brand" href="/" aria-label="Nineteen Point Two home">
             <img
               class="brand-logo"
-              src="../assets/logo/logo-horizontal.svg"
+              src="/assets/logo/logo-horizontal.svg"
               alt="Nineteen Point Two"
             />
           </a>
@@ -894,33 +870,24 @@
         <section class="hero">
           <div class="container hero-grid">
             <div>
-              <div class="eyebrow">Outside Clarity</div>
+              <div class="eyebrow">Outside Clarity Snapshot</div>
               <h1>
-                Get an outside
+                Start your
                 <br />
-                view before
-                <br />
-                the plan
-                <br />
-                becomes
-                <br />
-                action.
+                Snapshot.
               </h1>
               <p class="lede">
-                Outside Clarity gives founders, operators and small teams a
-                structured assessment before they commit time, budget,
-                reputation or operational effort.
+                A £99 fixed-fee outside assessment of one plan, idea, offer or
+                decision before it becomes action.
               </p>
               <p class="trust-line">
-                It is for the moment when the plan feels plausible, but you want
-                a sharper view of what is strong, what is assumed, what is
-                exposed and what should happen next.
+                Complete the intake below with concise, non-sensitive decision
+                context. The sharper the input, the sharper the assessment.
               </p>
               <div class="hero-actions">
-                <a class="btn primary" href="/outside-clarity/snapshot/"
-                  >Start your Snapshot</a
+                <a class="btn secondary" href="/outside-clarity/"
+                  >Back to Outside Clarity</a
                 >
-                <a class="btn secondary" href="#how-it-works">How it works</a>
               </div>
             </div>
 
@@ -929,21 +896,14 @@
               aria-label="Outside Clarity Snapshot summary"
             >
               <div class="card-inner">
-                <div class="eyebrow">Snapshot view</div>
+                <div class="eyebrow">Fixed fee</div>
                 <span class="price-tag">£99</span>
-                <ul class="snapshot-list">
-                  <li><span>Strong</span><strong>What holds up</strong></li>
-                  <li><span>Assumed</span><strong>What needs proof</strong></li>
-                  <li><span>Exposed</span><strong>Where risk sits</strong></li>
-                  <li>
-                    <span>Next</span><strong>What should happen now</strong>
-                  </li>
-                </ul>
                 <div class="note">
-                  <small>Purpose</small>
+                  <small>You receive</small>
                   <strong
-                    >Make the next decision clearer before implementation
-                    begins.</strong
+                    >A Clarity Score, clear verdict, exposure map, assumptions
+                    under pressure, top three actions, decision gate and PDF
+                    Snapshot report.</strong
                   >
                 </div>
               </div>
@@ -951,343 +911,73 @@
           </div>
         </section>
 
-        <section id="snapshot">
-          <div class="container feature-panel grid-surface">
-            <div class="panel-grid">
-              <div>
-                <div class="eyebrow">What the Snapshot gives you</div>
-                <h2>What you get</h2>
-                <p class="large-copy">
-                  The Outside Clarity Snapshot is a fixed-fee, structured
-                  first-pass assessment of one plan, idea, offer or decision.
-                </p>
-                <p>It helps you understand:</p>
-                <ul class="check-list">
-                  <li>What is strong.</li>
-                  <li>What is assumed.</li>
-                  <li>Where the plan is exposed.</li>
-                  <li>The most likely failure mode.</li>
-                  <li>The practical next actions.</li>
-                  <li>The decision gate before implementation.</li>
-                </ul>
-              </div>
-              <aside class="assessment-card">
-                <div class="card-inner">
-                  <div class="eyebrow">Decision clarity</div>
-                  <span class="price-tag">£99</span>
-                  <p class="quote">
-                    The purpose is not to make the plan sound good.
-                  </p>
-                  <p>The purpose is to make the next decision clearer.</p>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <section id="moments">
+        <section id="submit">
           <div class="container">
             <div class="section-head">
-              <div class="eyebrow">Decision moments</div>
-              <h2>The moments Outside Clarity was built for</h2>
+              <div class="eyebrow">Submit your plan</div>
+              <h2>Complete the intake below.</h2>
               <p>
-                Outside Clarity was built for the point where a plan has moved
-                beyond an idea, but has not yet become a commitment.
+                Outside Clarity is most useful when you include what you are
+                unsure about, not just what you are confident in.
               </p>
-              <p>That moment can look different depending on where you are.</p>
             </div>
-            <div class="grid">
-              <article class="story-card">
-                <h3>
-                  Thinking about leaving corporate life to build something of
-                  your own
-                </h3>
-                <p>
-                  You have an idea, offer or plan that keeps coming back. It may
-                  be a consultancy offer, a productised service, a side project,
-                  a platform idea or a first independent business.
-                </p>
-                <p>
-                  The risk is not that the idea is bad. The risk is that
-                  frustration, optimism or personal attachment can make the plan
-                  feel more proven than it is.
-                </p>
-                <p>
-                  Outside Clarity helps separate the idea from the escape
-                  instinct, the evidence from the hope, and the next sensible
-                  step from the big leap.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>About to spend money on something with weak proof</h3>
-                <p>
-                  A new website. A developer brief. A campaign. A product build.
-                  A new offer. A pricing change.
-                </p>
-                <p>
-                  The plan may be sensible, but the commitment is starting to
-                  become real.
-                </p>
-                <p>
-                  Outside Clarity gives you a structured view of what holds up,
-                  what needs proof, where the plan is exposed and what should
-                  happen before more budget goes in.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>Too close to the plan to see the weak point</h3>
-                <p>Internal agreement can feel like evidence.</p>
-                <p>Effort already spent can feel like progress.</p>
-                <p>
-                  A plan can make sense inside the business and still fail when
-                  it meets buyers, users, managers or operational reality.
-                </p>
-                <p>
-                  Outside Clarity gives you a sharper outside view before the
-                  decision becomes expensive.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>Need a decision artefact, not another conversation</h3>
-                <p>
-                  Some decisions do not need a full consultancy project. They
-                  need a fixed-fee, structured assessment that gives you a
-                  verdict, a Clarity Score, the assumptions under pressure, the
-                  main exposure and the next three actions.
-                </p>
-                <p>That is what the Outside Clarity Snapshot is for.</p>
-              </article>
+            <div class="info-block">
+              <h3>Information handling</h3>
+              <p>
+                Outside Clarity is designed to work from concise, non-sensitive
+                decision context.
+              </p>
+              <p>
+                Please do not submit confidential business information, trade
+                secrets, customer data, employee data, credentials, contracts,
+                financial records, legal documents or regulated information
+                through this form.
+              </p>
+              <p>
+                Submissions may be reviewed using AI-supported tools and human
+                quality control to produce the assessment.
+              </p>
+              <p>
+                If your plan requires sensitive material to assess properly,
+                contact Nineteen Point Two first so the right handling approach
+                can be agreed.
+              </p>
             </div>
+            <iframe
+              class="form-frame"
+              src="https://tally.so/embed/obzbWP?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+              width="100%"
+              height="800"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              title="Outside Clarity Snapshot Intake"
+            ></iframe>
+            <p class="trust-line" style="margin-top: 18px">
+              If the embedded intake does not load,
+              <a
+                href="https://tally.so/r/obzbWP"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open the form in a new tab</a
+              >.
+            </p>
           </div>
         </section>
 
-        <section id="use-cases">
+        <section class="important-note">
           <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Use cases</div>
-              <h2>Common Snapshot use cases</h2>
-            </div>
-            <div class="grid">
-              <article class="story-card">
-                <h3>Corporate to independent</h3>
-                <p>
-                  You are considering leaving a role, building a side project,
-                  launching a consultancy offer or turning your experience into
-                  something commercial.
-                </p>
-                <p>
-                  Use Outside Clarity before you trade salary, time or
-                  reputation for an idea that still needs proof.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>New offer or product</h3>
-                <p>
-                  You have an offer, product, service or platform idea that
-                  feels promising, but you need to know whether the audience,
-                  value, urgency and next step are clear enough.
-                </p>
-                <p>
-                  Use Outside Clarity before you build more than the evidence
-                  justifies.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>Pricing or packaging change</h3>
-                <p>
-                  You are thinking about changing pricing, introducing tiers,
-                  repositioning a package or asking customers to move to a
-                  higher-value offer.
-                </p>
-                <p>
-                  Use Outside Clarity before you make a commercial change that
-                  is hard to unwind.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>Website, campaign or go-to-market plan</h3>
-                <p>
-                  You are about to brief a website, launch a campaign, publish a
-                  landing page or take an offer to market.
-                </p>
-                <p>
-                  Use Outside Clarity before you spend money pushing a message
-                  that may not yet be sharp enough.
-                </p>
-              </article>
-              <article class="story-card">
-                <h3>AI or operating decision</h3>
-                <p>
-                  You are considering an AI initiative, process change,
-                  operating model shift or internal business case.
-                </p>
-                <p>
-                  Use Outside Clarity before optimism, urgency or internal
-                  pressure turns an under-tested plan into implementation.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="why-ai">
-          <div class="container feature-panel grid-surface">
-            <div class="panel-grid">
-              <div>
-                <div class="eyebrow">Outside view</div>
-                <h2>Why not just ask an AI tool?</h2>
-                <p class="large-copy">
-                  You can ask an AI tool to review your plan. For some
-                  decisions, that may be enough.
-                </p>
-                <p>
-                  Outside Clarity exists because most people do not challenge
-                  their own thinking hard enough, brief the tool clearly enough,
-                  or turn the output into a decision they can act on.
-                </p>
-                <p>
-                  The Snapshot gives you a structured outside assessment, not a
-                  loose set of suggestions.
-                </p>
-              </div>
-              <aside class="assessment-card">
-                <div class="card-inner">
-                  <div class="eyebrow">Snapshot structure</div>
-                  <p>
-                    It uses a disciplined intake, evidence-led judgement, a
-                    Clarity Score, an exposure map, assumptions under pressure,
-                    an uncomfortable truth and a clear decision gate.
-                  </p>
-                  <p>AI can generate feedback.</p>
-                  <p>
-                    Outside Clarity gives you a structured outside view before
-                    the plan becomes action.
-                  </p>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <section id="how-it-works">
-          <div class="container">
-            <div class="section-head">
-              <div class="eyebrow">Process</div>
-              <h2>How it works</h2>
-            </div>
-            <div class="steps-grid">
-              <article class="step-card">
-                <span class="index">01</span>
-                <div>
-                  <h3>Submit the intake brief</h3>
-                  <p>
-                    Share the plan, context, evidence and the decision you are
-                    trying to make.
-                  </p>
-                </div>
-              </article>
-              <article class="step-card">
-                <span class="index">02</span>
-                <div>
-                  <h3>Share the plan</h3>
-                  <p>
-                    Include the evidence, assumptions and concerns that sit
-                    behind the intended action.
-                  </p>
-                </div>
-              </article>
-              <article class="step-card">
-                <span class="index">03</span>
-                <div>
-                  <h3>Receive a Snapshot</h3>
-                  <p>
-                    Get a structured first-pass view of strength, exposure,
-                    failure mode and next steps.
-                  </p>
-                </div>
-              </article>
-              <article class="step-card">
-                <span class="index">04</span>
-                <div>
-                  <h3>Choose the decision gate</h3>
-                  <p>
-                    Progress, progress with controls, reshape, gather more
-                    evidence or pause.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="pricing">
-          <div class="container">
-            <div class="feature-panel grid-surface">
-              <div class="panel-grid">
-                <div>
-                  <div class="eyebrow">Snapshot price</div>
-                  <h2>Outside Clarity Snapshot</h2>
-                  <span class="price-tag">£99 fixed fee</span>
-                  <p class="large-copy">
-                    A structured first-pass assessment of one plan, idea, offer
-                    or decision.
-                  </p>
-                  <p>
-                    Designed for decisions that are too important to leave to
-                    gut feel, but not yet big enough to justify a consultancy
-                    project.
-                  </p>
-                </div>
-                <aside class="assessment-card">
-                  <div class="card-inner">
-                    <div class="eyebrow">Includes</div>
-                    <ul class="check-list">
-                      <li>Clarity Score.</li>
-                      <li>Clear verdict.</li>
-                      <li>Assumptions under pressure.</li>
-                      <li>Exposure map.</li>
-                      <li>Uncomfortable truth.</li>
-                      <li>Top three actions.</li>
-                      <li>Decision gate.</li>
-                      <li>PDF Snapshot report.</li>
-                    </ul>
-                  </div>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="start">
-          <div class="container feature-panel grid-surface">
-            <div class="panel-grid">
-              <div>
-                <div class="eyebrow">Start the Snapshot</div>
-                <h2>Ready to test the plan before it becomes action?</h2>
-                <p class="large-copy">
-                  The intake sits on a separate Snapshot page so the main page
-                  can stay focused on the decision. You will see the information
-                  handling notice again before the form.
-                </p>
-                <div class="hero-actions">
-                  <a class="btn primary" href="/outside-clarity/snapshot/"
-                    >Start your Snapshot</a
-                  >
-                </div>
-              </div>
-              <aside class="info-block">
-                <h3>Information handling</h3>
-                <p>
-                  Outside Clarity is designed to work from concise,
-                  non-sensitive decision context. Do not submit confidential
-                  business information or personal data through the intake form.
-                </p>
-                <p>
-                  If your plan requires sensitive material to assess properly,
-                  contact Nineteen Point Two first so the right handling
-                  approach can be agreed.
-                </p>
-              </aside>
+            <div class="eyebrow">Important note</div>
+            <h2>Structured decision support.</h2>
+            <p>
+              Outside Clarity provides structured decision support. It is not
+              legal, financial, investment, tax, employment law or regulated
+              professional advice.
+            </p>
+            <div class="hero-actions">
+              <a class="btn secondary" href="/outside-clarity/"
+                >Back to Outside Clarity</a
+              >
             </div>
           </div>
         </section>
