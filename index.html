@@ -42,10 +42,12 @@
 
       html {
         scroll-behavior: smooth;
+        overflow-x: clip;
       }
 
       body {
         margin: 0;
+        overflow-x: clip;
         font-family:
           Inter,
           ui-sans-serif,
@@ -284,6 +286,18 @@
         padding-bottom: 70px;
       }
 
+      .hero-grid > *,
+      .panel-grid > *,
+      .split > *,
+      .proof-grid > *,
+      .article-grid > *,
+      .products-grid > *,
+      .pillars > *,
+      .problem-grid > *,
+      .steps-grid > * {
+        min-width: 0;
+      }
+
       .hero-grid {
         display: grid;
         grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.72fr);
@@ -316,6 +330,12 @@
       h3,
       p {
         margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        overflow-wrap: anywhere;
       }
 
       h1 {
@@ -1038,11 +1058,46 @@
         section {
           padding: 68px 20px;
         }
+        .assessment-card,
+        .feature-panel,
+        .panel-grid {
+          width: 100%;
+          max-width: min(100%, calc(100vw - 64px));
+        }
+
         .hero {
           padding-top: 58px;
         }
         h1 {
-          font-size: clamp(3rem, 16vw, 4.6rem);
+          font-size: clamp(2.85rem, 15vw, 4.25rem);
+          max-width: 100%;
+        }
+        .container,
+        .hero-grid,
+        .panel-grid,
+        .split,
+        .diagnostic-card,
+        .assessment-card,
+        .feature-panel,
+        .mini-report,
+        .lede,
+        .trust-line,
+        .section-head p,
+        .large-copy {
+          width: 100%;
+          max-width: min(100%, calc(100vw - 64px));
+        }
+
+        .hero p.lede,
+        .lede,
+        .trust-line,
+        .direct-contact {
+          max-width: min(100%, 270px);
+        }
+
+        .section-head p,
+        .large-copy {
+          max-width: min(100%, calc(100vw - 64px));
         }
         .problem-grid,
         .pillars,
@@ -1069,10 +1124,10 @@
     <div class="site">
       <header>
         <nav class="nav" aria-label="Main navigation">
-          <a class="brand" href="#top" aria-label="Nineteen Point Two home">
+          <a class="brand" href="/" aria-label="Nineteen Point Two home">
             <img
               class="brand-logo"
-              src="./assets/logo/logo-horizontal.svg"
+              src="/assets/logo/logo-horizontal.svg"
               alt="Nineteen Point Two"
             />
           </a>
@@ -1094,17 +1149,17 @@
               </div>
             </div>
             <div class="nav-group">
-              <a href="#diagnostics">Diagnostics</a>
+              <a href="/#diagnostics">Diagnostics</a>
               <div class="nav-menu" aria-label="Operational diagnostics">
                 <a href="/workplace-ai-academy/#operational-diagnostic"
                   >Workplace AI diagnostic</a
                 >
-                <a href="#stress-test">Revenue Stress Test</a>
+                <a href="/#stress-test">Revenue Stress Test</a>
                 <a href="/outside-clarity/">Outside Clarity</a>
               </div>
             </div>
             <a href="/insights/">Insights</a>
-            <a href="#operating-lens">Operating Lens</a>
+            <a href="/#operating-lens">Operating Lens</a>
           </div>
           <a class="nav-cta" href="/workplace-ai-academy/">Ask to see WAIA</a>
         </nav>
@@ -1191,7 +1246,7 @@
           <div class="container">
             <div class="section-head">
               <div class="eyebrow">Shadow AI</div>
-              <h2>The risk is not AI use. It is invisible variation.</h2>
+              <h2>The risk isn't AI use. It is invisible variation.</h2>
               <p>
                 Shadow AI is unmanaged workplace AI adoption. It shows up as
                 quiet changes to how work gets produced, checked, shared and
@@ -1206,7 +1261,7 @@
                   <h3>Undocumented workflows.</h3>
                   <p>
                     Teams improve or shortcut work in ways the operating model
-                    has not yet recognised.
+                    hasn't yet recognised.
                   </p>
                 </div>
               </article>
@@ -1216,7 +1271,7 @@
                   <h3>Inconsistent outputs.</h3>
                   <p>
                     Similar tasks produce different standards because review
-                    expectations are not shared.
+                    expectations aren't shared.
                   </p>
                 </div>
               </article>
@@ -1254,8 +1309,7 @@
               <p>
                 The gap is practical, not theoretical. People use the tools
                 because they help. The organisation falls behind when guidance,
-                review points and management rhythm do not move at the same
-                pace.
+                review points and management rhythm don't move at the same pace.
               </p>
             </div>
 
@@ -1263,7 +1317,7 @@
               <article class="problem-card">
                 <span class="index">01</span>
                 <div>
-                  <h3>Policy is not behaviour.</h3>
+                  <h3>Policy isn't behaviour.</h3>
                   <p>
                     A document may exist, but teams still need practical
                     standards for real work.
@@ -1295,7 +1349,7 @@
                 <div>
                   <h3>Evidence is weak.</h3>
                   <p>
-                    Leaders cannot easily see what has been acknowledged,
+                    Leaders can't easily see what has been acknowledged,
                     completed, reviewed or applied.
                   </p>
                 </div>
@@ -1330,9 +1384,9 @@
               <div class="eyebrow">Controlled adoption</div>
               <h2>Governance should make useful AI easier to use well.</h2>
               <p>
-                The aim is not to slow experimentation down. It is to give
-                people clear standards, managers better visibility and leaders
-                enough evidence to manage adoption.
+                The aim isn't to slow experimentation down. It is to give people
+                clear standards, managers better visibility and leaders enough
+                evidence to manage adoption.
               </p>
             </aside>
 
@@ -1476,7 +1530,7 @@
                 Controlled adoption needs signals managers can actually use.
               </h2>
               <p>
-                Leaders are not buying content. They are buying confidence that
+                Leaders aren't buying content. They are buying confidence that
                 teams understand the standards, managers can reinforce them and
                 the organisation can see where adoption is creating progress,
                 friction or follow-up needs.
@@ -1599,7 +1653,7 @@
               <div class="eyebrow">People, process and data</div>
               <h2>The operating lens underneath the work.</h2>
               <p>
-                Workplace AI adoption is not controlled by tool access alone. It
+                Workplace AI adoption isn't controlled by tool access alone. It
                 becomes manageable when people, process and data are visible
                 together.
               </p>

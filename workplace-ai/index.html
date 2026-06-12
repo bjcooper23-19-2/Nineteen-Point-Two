@@ -47,10 +47,12 @@
       }
       html {
         scroll-behavior: smooth;
+        overflow-x: clip;
       }
 
       body {
         margin: 0;
+        overflow-x: clip;
         font-family:
           Inter,
           ui-sans-serif,
@@ -281,6 +283,18 @@
         padding-bottom: 70px;
       }
 
+      .hero-grid > *,
+      .panel-grid > *,
+      .split > *,
+      .proof-grid > *,
+      .article-grid > *,
+      .products-grid > *,
+      .pillars > *,
+      .problem-grid > *,
+      .steps-grid > * {
+        min-width: 0;
+      }
+
       .hero-grid {
         display: grid;
         grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.72fr);
@@ -313,6 +327,12 @@
       h3,
       p {
         margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        overflow-wrap: anywhere;
       }
 
       h1 {
@@ -867,11 +887,24 @@
         section {
           padding: 68px 20px;
         }
+        .assessment-card,
+        .feature-panel,
+        .panel-grid {
+          width: 100%;
+          max-width: min(100%, calc(100vw - 64px));
+        }
+
         .hero {
           padding-top: 58px;
         }
         h1 {
           font-size: clamp(3rem, 16vw, 4.6rem);
+        }
+        .hero p.lede,
+        .lede,
+        .trust-line,
+        .direct-contact {
+          max-width: min(100%, 270px);
         }
         .problem-grid,
         .pillars,
@@ -921,6 +954,7 @@
                   >Workplace AI diagnostic</a
                 >
                 <a href="/#stress-test">Revenue Stress Test</a>
+                <a href="/outside-clarity/">Outside Clarity</a>
               </div>
             </div>
             <a href="/insights/">Insights</a>
@@ -943,7 +977,7 @@
                 Workplace AI adoption is already changing how work happens.
               </h1>
               <p class="lede">
-                AI is not a strategy, it's a tool. The risk is not that people
+                AI is not a strategy, it's a tool. The risk isn't that people
                 use it. The risk is unmanaged adoption: hidden workflow change,
                 inconsistent behaviour, weak management visibility and decisions
                 shaped by evidence nobody has reviewed.
@@ -1029,7 +1063,7 @@
               <article class="problem-card">
                 <span class="index">02</span>
                 <div>
-                  <h3>Training alone does not create consistency.</h3>
+                  <h3>Training alone doesn't create consistency.</h3>
                   <p>
                     People need shared standards, workflow guidance and manager
                     reinforcement in the flow of work.
@@ -1120,7 +1154,7 @@
                 <div>
                   <h3>Who is accountable for the result?</h3>
                   <p>
-                    AI can support work, but it does not own the customer
+                    AI can support work, but it doesn't own the customer
                     outcome, commercial decision or compliance obligation.
                   </p>
                 </div>
@@ -1144,7 +1178,7 @@
           <div class="container feature-panel grid-surface">
             <div class="panel-grid">
               <div>
-                <div class="eyebrow">Why policies are not enough</div>
+                <div class="eyebrow">Why policies aren't enough</div>
                 <h2>
                   A policy can set boundaries. It can't create operating
                   confidence by itself.
@@ -1251,7 +1285,7 @@
               <div class="eyebrow">Maturity model</div>
               <h2>From informal use to organisational enablement.</h2>
               <p>
-                Workplace AI maturity is not about how many tools are available.
+                Workplace AI maturity isn't about how many tools are available.
                 It is about whether behaviour, management visibility, workflow
                 consistency and governance are mature enough to support the way
                 work is actually changing.

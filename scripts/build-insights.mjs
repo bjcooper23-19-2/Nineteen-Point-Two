@@ -27,6 +27,7 @@ const nav = `
         <div class="nav-menu" aria-label="Operational diagnostics">
           <a href="/workplace-ai-academy/#operational-diagnostic">Workplace AI diagnostic</a>
           <a href="/#stress-test">Revenue Stress Test</a>
+          <a href="/outside-clarity/">Outside Clarity</a>
         </div>
       </div>
       <a href="/insights/">Insights</a>
@@ -64,9 +65,11 @@ const styles = `
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 body {
   margin: 0;
+  overflow-x: clip;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -248,6 +251,12 @@ section {
   max-width: var(--max);
   margin: 0 auto;
 }
+.article-grid > *,
+.article-card,
+.cta-box {
+  min-width: 0;
+}
+
 .hero {
   padding-top: 78px;
   padding-bottom: 76px;
@@ -278,6 +287,7 @@ h3 {
   letter-spacing: 0;
   line-height: 0.96;
   color: var(--ink);
+  overflow-wrap: anywhere;
 }
 h1 {
   margin-top: 20px;
@@ -619,6 +629,8 @@ const escapeHtml = (value) =>
 const inlineMarkdown = (value) =>
   escapeHtml(value).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
 
+const tidyHtml = (value) => `${value.replace(/[ \t]+$/gm, "").trimEnd()}\n`;
+
 const parseMarkdown = (source) => {
   const match = source.match(/^---\n([\s\S]+?)\n---\n([\s\S]*)$/);
   if (!match) {
@@ -922,12 +934,18 @@ const renderArticle = (article) =>
 
 const articles = await loadArticles();
 await mkdir(outputDir, { recursive: true });
-await writeFile(path.join(outputDir, "index.html"), renderIndex(articles));
+await writeFile(
+  path.join(outputDir, "index.html"),
+  tidyHtml(renderIndex(articles)),
+);
 
 for (const article of articles) {
   const articleDir = path.join(outputDir, article.slug);
   await mkdir(articleDir, { recursive: true });
-  await writeFile(path.join(articleDir, "index.html"), renderArticle(article));
+  await writeFile(
+    path.join(articleDir, "index.html"),
+    tidyHtml(renderArticle(article)),
+  );
 }
 
 console.log(
