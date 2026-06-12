@@ -1,21 +1,21 @@
 ---
 title: The Cost of AI Is Becoming Visible
 metaTitle: The Cost of AI Is Becoming Visible | Nineteen Point Two
-metaDescription: AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders cannot see where AI is being used, what it costs and whether it creates value.
+metaDescription: AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders can't see where AI is being used, what it costs and whether it creates value.
 ogTitle: The Cost of AI Is Becoming Visible
-ogDescription: The real cost question is not whether AI is worth using. It is whether the business can see enough to know where it is worth using well.
+ogDescription: The real cost question isn't whether AI is worth using. It is whether the business can see enough to know where it is worth using well.
 slug: cost-of-ai-is-becoming-visible
 date: 2026-05-27
 category: Workplace AI
 readingTime: 7 min read
-excerpt: The answer is not to slow adoption. The real issue is unmanaged experimentation: AI use spreading faster than visibility, ownership, review standards and evidence of value.
+excerpt: The answer isn't to slow adoption. The real issue is unmanaged experimentation: AI use spreading faster than visibility, ownership, review standards and evidence of value.
 ---
 
-AI cost is starting to move out of the background. For a while, many organisations could treat AI as experimentation: a few licences, a few pilots, some team-level testing and some useful shortcuts. That phase has not disappeared, and it shouldn’t. But the cost profile is changing.
+AI cost is starting to move out of the background. For a while, many organisations could treat AI as experimentation: a few licences, a few pilots, some team-level testing and some useful shortcuts. That phase hasn't disappeared, and it shouldn’t. But the cost profile is changing.
 
 Gartner forecasts worldwide AI spending will reach $2.59 trillion in 2026, up 47% year on year. That figure needs careful handling because Gartner says much of this spending is dominated by vendors and hyperscalers, rather than direct enterprise operating budgets. Even so, the direction is clear. AI is becoming a much more visible commercial category.
 
-The practical question for leadership teams is no longer whether AI should be explored. It is whether the organisation can see enough of its AI usage to understand where money, effort and attention are actually going. That is not only a finance problem. It is an operating visibility problem.
+The practical question for leadership teams is no longer whether AI should be explored. It is whether the organisation can see enough of its AI usage to understand where money, effort and attention are actually going. That isn't only a finance problem. It is an operating visibility problem.
 
 ## The invoice is only the visible cost
 
@@ -43,7 +43,7 @@ This is one of the hidden cost traps. A business may think it’s paying for AI,
 
 ## AI adoption is spreading faster than operating control
 
-McKinsey’s 2025 State of AI report found that 88% of respondents say their organisations use AI in at least one business function. That sounds like progress, and in many cases it is. But McKinsey also found that most organisations have not yet scaled AI across the enterprise, with roughly only one-third reporting that they have begun to scale their AI programmes.
+McKinsey’s 2025 State of AI report found that 88% of respondents say their organisations use AI in at least one business function. That sounds like progress, and in many cases it is. But McKinsey also found that most organisations haven't yet scaled AI across the enterprise, with roughly only one-third reporting that they have begun to scale their AI programmes.
 
 That gap matters. AI usage is becoming common, but enterprise-level value is still uneven. McKinsey also reports that only 39% of respondents see enterprise-level EBIT impact from AI, which reinforces the distance between activity and measurable commercial return.
 
@@ -63,7 +63,7 @@ When every team experiments separately, the business loses the ability to compar
 
 This is how AI cost builds quietly. Not always through one large, failed programme, but through many small, reasonable decisions that are never joined up. A licence here, a pilot there, a prompt library in one team, a separate tool in another, a new review burden for managers, a few customer communications that need correcting, a few reports that look polished but contain assumptions nobody checked.
 
-Gartner reported that in infrastructure and operations, only 28% of AI use cases fully succeed and meet ROI expectations, while 20% fail outright. That finding is specific to infrastructure and operations, so it shouldn’t be treated as a universal claim about every AI project. But the underlying message is still useful: AI does not deliver value simply because it exists. It delivers value when it fits the work, has clear ownership, is reviewed properly and is measured against outcomes that matter.
+Gartner reported that in infrastructure and operations, only 28% of AI use cases fully succeed and meet ROI expectations, while 20% fail outright. That finding is specific to infrastructure and operations, so it shouldn’t be treated as a universal claim about every AI project. But the underlying message is still useful: AI doesn't deliver value simply because it exists. It delivers value when it fits the work, has clear ownership, is reviewed properly and is measured against outcomes that matter.
 
 The related [19.2 Insights article on fragmented AI adoption](/insights/hidden-cost-of-fragmented-ai-adoption/) explores how this variation becomes commercially visible through inconsistent behaviours, weak manager visibility and hidden operational strain.
 

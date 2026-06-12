@@ -62,9 +62,11 @@
       }
       html {
         scroll-behavior: smooth;
+        overflow-x: clip;
       }
       body {
         margin: 0;
+        overflow-x: clip;
         font-family:
           Inter,
           ui-sans-serif,
@@ -259,6 +261,12 @@
         max-width: var(--max);
         margin: 0 auto;
       }
+      .article-grid > *,
+      .article-card,
+      .cta-box {
+        min-width: 0;
+      }
+
       .hero {
         padding-top: 78px;
         padding-bottom: 76px;
@@ -289,6 +297,7 @@
         letter-spacing: 0;
         line-height: 0.96;
         color: var(--ink);
+        overflow-wrap: anywhere;
       }
       h1 {
         margin-top: 20px;
@@ -630,6 +639,7 @@
                   >Workplace AI diagnostic</a
                 >
                 <a href="/#stress-test">Revenue Stress Test</a>
+                <a href="/outside-clarity/">Outside Clarity</a>
               </div>
             </div>
             <a href="/insights/">Insights</a>
@@ -688,9 +698,8 @@
               </p>
               <p>At the core, AI is not a strategy, it's a tool.</p>
               <p>
-                The challenge now is not whether people are using AI, but
-                whether that use is creating leverage or hidden operational
-                friction.
+                The challenge now isn't whether people are using AI, but whether
+                that use is creating leverage or hidden operational friction.
               </p>
               <h2>Why AI adoption metrics can be misleading</h2>
               <p>
@@ -731,8 +740,8 @@
                 operational drag unless actively managed.
               </p>
               <p>
-                AI amplifies existing work patterns but does not replace the
-                need for clear standards, ownership and leadership oversight.
+                AI amplifies existing work patterns but doesn't replace the need
+                for clear standards, ownership and leadership oversight.
               </p>
               <p>
                 Unmanaged AI use creates operational noise and friction,
@@ -855,7 +864,7 @@
                 patterns common in SMBs.
               </p>
               <p>
-                The purpose of this model is not to prove a specific cost. It’s
+                The purpose of this model isn't to prove a specific cost. It’s
                 to help leaders ask better questions.
               </p>
               <ul>
@@ -917,14 +926,14 @@
                 These figures demonstrate the potential financial benefits of
                 targeted management efforts to reduce AI-related labour drag.
               </p>
-              <h2>Why training alone is not enough</h2>
+              <h2>Why training alone isn't enough</h2>
               <p>
                 While training improves awareness and baseline skills, it rarely
                 solves the core behavioural and operational issues that drive
                 friction.
               </p>
               <p>
-                Training does not clarify ownership structures or standardise
+                Training doesn't clarify ownership structures or standardise
                 workflows to limit duplicated effort. It rarely reduces manager
                 review burdens without complementary controls. Shadow AI usage
                 and unmanaged tool proliferation often continue unchecked.

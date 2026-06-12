@@ -17,12 +17,12 @@
     <title>The Cost of AI Is Becoming Visible | Nineteen Point Two</title>
     <meta
       name="description"
-      content="AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders cannot see where AI is being used, what it costs and whether it creates value."
+      content="AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders can't see where AI is being used, what it costs and whether it creates value."
     />
     <meta property="og:title" content="The Cost of AI Is Becoming Visible" />
     <meta
       property="og:description"
-      content="The real cost question is not whether AI is worth using. It is whether the business can see enough to know where it is worth using well."
+      content="The real cost question isn't whether AI is worth using. It is whether the business can see enough to know where it is worth using well."
     />
     <meta
       property="og:url"
@@ -35,7 +35,7 @@
     <meta name="twitter:title" content="The Cost of AI Is Becoming Visible" />
     <meta
       name="twitter:description"
-      content="The real cost question is not whether AI is worth using. It is whether the business can see enough to know where it is worth using well."
+      content="The real cost question isn't whether AI is worth using. It is whether the business can see enough to know where it is worth using well."
     />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
     <style>
@@ -56,9 +56,11 @@
       }
       html {
         scroll-behavior: smooth;
+        overflow-x: clip;
       }
       body {
         margin: 0;
+        overflow-x: clip;
         font-family:
           Inter,
           ui-sans-serif,
@@ -253,6 +255,12 @@
         max-width: var(--max);
         margin: 0 auto;
       }
+      .article-grid > *,
+      .article-card,
+      .cta-box {
+        min-width: 0;
+      }
+
       .hero {
         padding-top: 78px;
         padding-bottom: 76px;
@@ -283,6 +291,7 @@
         letter-spacing: 0;
         line-height: 0.96;
         color: var(--ink);
+        overflow-wrap: anywhere;
       }
       h1 {
         margin-top: 20px;
@@ -624,6 +633,7 @@
                   >Workplace AI diagnostic</a
                 >
                 <a href="/#stress-test">Revenue Stress Test</a>
+                <a href="/outside-clarity/">Outside Clarity</a>
               </div>
             </div>
             <a href="/insights/">Insights</a>
@@ -640,7 +650,7 @@
               <div class="eyebrow">Workplace AI</div>
               <h1>The Cost of AI Is Becoming Visible</h1>
               <p class="lede">
-                The answer is not to slow adoption. The real issue is unmanaged
+                The answer isn't to slow adoption. The real issue is unmanaged
                 experimentation: AI use spreading faster than visibility,
                 ownership, review standards and evidence of value.
               </p>
@@ -653,7 +663,7 @@
                 AI cost is starting to move out of the background. For a while,
                 many organisations could treat AI as experimentation: a few
                 licences, a few pilots, some team-level testing and some useful
-                shortcuts. That phase has not disappeared, and it shouldn’t. But
+                shortcuts. That phase hasn't disappeared, and it shouldn’t. But
                 the cost profile is changing.
               </p>
               <p>
@@ -668,8 +678,8 @@
                 The practical question for leadership teams is no longer whether
                 AI should be explored. It is whether the organisation can see
                 enough of its AI usage to understand where money, effort and
-                attention are actually going. That is not only a finance
-                problem. It is an operating visibility problem.
+                attention are actually going. That isn't only a finance problem.
+                It is an operating visibility problem.
               </p>
               <h2>The invoice is only the visible cost</h2>
               <p>
@@ -739,7 +749,7 @@
                 McKinsey’s 2025 State of AI report found that 88% of respondents
                 say their organisations use AI in at least one business
                 function. That sounds like progress, and in many cases it is.
-                But McKinsey also found that most organisations have not yet
+                But McKinsey also found that most organisations haven't yet
                 scaled AI across the enterprise, with roughly only one-third
                 reporting that they have begun to scale their AI programmes.
               </p>
@@ -806,7 +816,7 @@
                 20% fail outright. That finding is specific to infrastructure
                 and operations, so it shouldn’t be treated as a universal claim
                 about every AI project. But the underlying message is still
-                useful: AI does not deliver value simply because it exists. It
+                useful: AI doesn't deliver value simply because it exists. It
                 delivers value when it fits the work, has clear ownership, is
                 reviewed properly and is measured against outcomes that matter.
               </p>

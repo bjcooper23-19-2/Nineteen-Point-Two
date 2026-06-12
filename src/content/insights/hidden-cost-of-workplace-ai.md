@@ -24,7 +24,7 @@ Training alone rarely eliminates these hidden costs, so leaders should measure a
 
 At the core, AI is not a strategy, it's a tool.
 
-The challenge now is not whether people are using AI, but whether that use is creating leverage or hidden operational friction.
+The challenge now isn't whether people are using AI, but whether that use is creating leverage or hidden operational friction.
 
 ## Why AI adoption metrics can be misleading
 
@@ -42,7 +42,7 @@ These factors impose labour costs often invisible in headline productivity or fi
 
 Leadership often underestimates these hidden costs, assuming AI is inherently a productivity gain rather than a potential operational drag unless actively managed.
 
-AI amplifies existing work patterns but does not replace the need for clear standards, ownership and leadership oversight.
+AI amplifies existing work patterns but doesn't replace the need for clear standards, ownership and leadership oversight.
 
 Unmanaged AI use creates operational noise and friction, generating labour drag and unpredictable costs. The commercial impact comes not from the technology itself but from inconsistent behavioural execution.
 
@@ -98,7 +98,7 @@ Annual labour drag reaches £132,000, almost 3 FTE equivalents, with direct spen
 
 This thought experiment is not a universal benchmark or precise forecast. It uses illustrative assumptions to surface the potential scale of hidden costs tied to AI use behaviour patterns common in SMBs.
 
-The purpose of this model is not to prove a specific cost. It’s to help leaders ask better questions.
+The purpose of this model isn't to prove a specific cost. It’s to help leaders ask better questions.
 
 - How much rework exists today?
 - How much management review is occurring?
@@ -124,11 +124,11 @@ These figures are illustrative and should be replaced with organisation-specific
 
 These figures demonstrate the potential financial benefits of targeted management efforts to reduce AI-related labour drag.
 
-## Why training alone is not enough
+## Why training alone isn't enough
 
 While training improves awareness and baseline skills, it rarely solves the core behavioural and operational issues that drive friction.
 
-Training does not clarify ownership structures or standardise workflows to limit duplicated effort. It rarely reduces manager review burdens without complementary controls. Shadow AI usage and unmanaged tool proliferation often continue unchecked.
+Training doesn't clarify ownership structures or standardise workflows to limit duplicated effort. It rarely reduces manager review burdens without complementary controls. Shadow AI usage and unmanaged tool proliferation often continue unchecked.
 
 Managers require support through clearer standards, better visibility tools and operational controls beyond training to reduce friction sustained by inconsistent AI use.
 

@@ -8,11 +8,11 @@ excerpt: Workplace AI adoption is exposing management visibility gaps, workflow 
 
 Most organisations discussing AI strategies today are actually facing a more familiar problem: an operating model unfit for rapid workplace-level behavioural change.
 
-AI is not the cause of fragmentation and inconsistency. It’s simply the accelerant exposing weaknesses already embedded in systems, workflows, and leadership visibility.
+AI isn't the cause of fragmentation and inconsistency. It’s simply the accelerant exposing weaknesses already embedded in systems, workflows, and leadership visibility.
 
 Across customer success, sales, support, professional services delivery, and RevOps, a pattern repeats. Teams solving similar customer challenges are adopting AI-enabled approaches in different ways.
 
-Workplace AI adoption does not exist in isolation. It quietly reshapes workflows without formal acknowledgement. Employees build personal prompt libraries, customised shortcuts, and informal process workarounds that live outside official playbooks. These evolving behaviours compound hidden dependencies and drive uneven execution quality at scale.
+Workplace AI adoption doesn't exist in isolation. It quietly reshapes workflows without formal acknowledgement. Employees build personal prompt libraries, customised shortcuts, and informal process workarounds that live outside official playbooks. These evolving behaviours compound hidden dependencies and drive uneven execution quality at scale.
 
 None of this is dramatic. It’s operationally normal and entirely understandable. In one SaaS business, customer success managers in different regions began using tailored AI tools to summarise call notes and draft next steps; each team developed their own process, tools, style and therefore, quality. Leadership assumed consistent delivery because the metrics tracked activity rather than output. The result was customers receiving noticeably different experiences between teams that no one spotted. The management systems were not designed to capture this kind of behavioural drift.
 

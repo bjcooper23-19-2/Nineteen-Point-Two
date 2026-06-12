@@ -44,10 +44,12 @@
 
       html {
         scroll-behavior: smooth;
+        overflow-x: clip;
       }
 
       body {
         margin: 0;
+        overflow-x: clip;
         font-family:
           Inter,
           ui-sans-serif,
@@ -317,6 +319,12 @@
       h3,
       p {
         margin-top: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        overflow-wrap: anywhere;
       }
 
       h1 {
@@ -808,7 +816,21 @@
         .hero-grid,
         .lede,
         .trust-line {
-          max-width: 100%;
+          width: 100%;
+          max-width: min(100%, calc(100vw - 64px));
+        }
+
+        .hero p.lede,
+        .lede,
+        .trust-line {
+          max-width: min(100%, 270px);
+        }
+
+        .assessment-card,
+        .feature-panel,
+        .panel-grid {
+          width: 100%;
+          max-width: min(100%, calc(100vw - 64px));
         }
 
         .hero {
@@ -881,6 +903,7 @@
                   >Workplace AI diagnostic</a
                 >
                 <a href="/#stress-test">Revenue Stress Test</a>
+                <a href="/outside-clarity/">Outside Clarity</a>
               </div>
             </div>
             <a href="/insights/">Insights</a>
@@ -976,7 +999,7 @@
                   <div class="eyebrow">Decision clarity</div>
                   <span class="price-tag">£99</span>
                   <p class="quote">
-                    The purpose is not to make the plan sound good.
+                    The purpose isn't to make the plan sound good.
                   </p>
                   <p>The purpose is to make the next decision clearer.</p>
                 </div>
@@ -992,7 +1015,7 @@
               <h2>The moments Outside Clarity was built for</h2>
               <p>
                 Outside Clarity was built for the point where a plan has moved
-                beyond an idea, but has not yet become a commitment.
+                beyond an idea, but hasn't yet become a commitment.
               </p>
               <p>That moment can look different depending on where you are.</p>
             </div>
@@ -1008,7 +1031,7 @@
                   a platform idea or a first independent business.
                 </p>
                 <p>
-                  The risk is not that the idea is bad. The risk is that
+                  The risk isn't that the idea is bad. The risk is that
                   frustration, optimism or personal attachment can make the plan
                   feel more proven than it is.
                 </p>
@@ -1050,7 +1073,7 @@
               <article class="story-card">
                 <h3>Need a decision artefact, not another conversation</h3>
                 <p>
-                  Some decisions do not need a full consultancy project. They
+                  Some decisions don't need a full consultancy project. They
                   need a fixed-fee, structured assessment that gives you a
                   verdict, a Clarity Score, the assumptions under pressure, the
                   main exposure and the next three actions.
@@ -1141,7 +1164,7 @@
                   decisions, that may be enough.
                 </p>
                 <p>
-                  Outside Clarity exists because most people do not challenge
+                  Outside Clarity exists because most people don't challenge
                   their own thinking hard enough, brief the tool clearly enough,
                   or turn the output into a decision they can act on.
                 </p>
