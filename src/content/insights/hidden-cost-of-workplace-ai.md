@@ -163,4 +163,4 @@ Responsible AI adoption demands measured management of behaviours, workflows and
 
 ## Related
 
-[WAIA](/workplace-ai-academy/) supports organisations seeking greater visibility into workplace AI adoption, behaviour and operational risk.
+[WAIA](/waia/) supports organisations seeking greater visibility into workplace AI adoption, behaviour and operational risk.

@@ -28,7 +28,7 @@ Fragmentation already exists in many businesses. AI adoption simply accelerates 
 
 Many organisations underestimate how quickly frontline workflows change once AI tools enter daily use. One RevOps team tried rolling out AI-assisted forecasting while different regional sales teams used their own modified techniques for pipeline notes and deal reviews. The aggregate reporting looked stable. The detail told a different story; one of widening variation that totally undermined decision confidence.
 
-This operational disconnect is exactly the kind of gap the [Revenue Stress Test](https://www.nineteenpointtwo.com/#stress-test) helps surface. It provides a structured way for leadership to expose assumption-versus-reality differences, identify hidden workflow strain, and focus on the line-of-sight managers need to be successful. [WAIA](https://www.nineteenpointtwo.com/workplace-ai-academy/) complements this by supporting managers with practical guidance to steward consistent AI use across teams.
+This operational disconnect is exactly the kind of gap the [Revenue Stress Test](https://www.nineteenpointtwo.com/#stress-test) helps surface. It provides a structured way for leadership to expose assumption-versus-reality differences, identify hidden workflow strain, and focus on the line-of-sight managers need to be successful. [WAIA](https://www.nineteenpointtwo.com/waia/) complements this by supporting managers with practical guidance to steward consistent AI use across teams.
 
 AI is not a strategy. It is a tool that amplifies the need for operational consistency, visibility, and strong frontline management. Execution quality and behavioural consistency matter far more than enthusiasm for the latest AI innovation. Without clear visibility and management discipline, teams gradually drift into different ways of working and commercial inconsistency follows.
 
@@ -38,7 +38,7 @@ Organisations that notice these shifts early, reflect honestly on manager visibi
 
 For others, the strain will continue to build quietly; unsettled, unresolved and painful.
 
-For leadership teams that want to examine this strain in their own operating context, the [Workplace AI Operational Diagnostic](/workplace-ai-academy/#operational-diagnostic) is a structured conversation for seeing where workplace AI adoption is affecting execution, visibility and consistency before WAIA turns that insight into practical enablement.
+For leadership teams that want to examine this strain in their own operating context, the [Workplace AI Operational Diagnostic](/waia/#ai-adoption-diagnostic) is a structured conversation for seeing where workplace AI adoption is affecting execution, visibility and consistency before WAIA turns that insight into practical enablement.
 
 ## Further exploration
 
