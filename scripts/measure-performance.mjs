@@ -14,7 +14,7 @@ const routes = (
   [
     "/",
     "/workplace-ai/",
-    "/workplace-ai-academy/",
+    "/waia/",
     "/outside-clarity/",
     "/outside-clarity/snapshot/",
     "/insights/",

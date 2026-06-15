@@ -71,6 +71,10 @@ a {
   z-index: 1;
 }
 
+.mobile-only {
+  display: none;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -507,6 +511,10 @@ h3 {
   gap: 16px;
 }
 
+.capability-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .product-card,
 .step-card,
 .outcome-card,
@@ -757,6 +765,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .products-grid,
+  .capability-grid,
   .steps-grid,
   .outcomes-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -863,8 +872,14 @@ footer {
   .hero {
     padding-top: 58px;
   }
+  .mobile-only {
+    display: block;
+  }
   h1 {
-    font-size: clamp(3rem, 16vw, 4.6rem);
+    max-width: calc(100vw - 40px);
+    font-size: clamp(2rem, 8.5vw, 2.35rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
   }
   .hero p.lede,
   .lede,
@@ -873,6 +888,7 @@ footer {
     max-width: min(100%, 270px);
   }
   .products-grid,
+  .capability-grid,
   .steps-grid,
   .outcomes-grid,
   .metric-row {

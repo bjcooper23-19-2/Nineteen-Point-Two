@@ -72,10 +72,10 @@ Most organisations already have a gap between how leaders think AI is being used
 
 The [Revenue Stress Test](https://rstapp.nineteenpointtwo.com/) is a practical operational diagnostic designed to identify gaps between leadership assumptions and day-to-day operational reality in the revenue plan. It surfaces visibility and alignment gaps across people, process and data.
 
-[WAIA](/workplace-ai-academy/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
+[WAIA](/waia/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
 
 Organisational AI maturity grows from the ground up. Leadership visibility, manager confidence, and workflow alignment matter more than tools or policies. That quiet, operationally embedded Shadow AI sits behind much of the variability in scaling SaaS and professional services businesses right now.
 
 Managing this reality starts with clear-eyed recognition of what is already happening and practical steps to surface and close the gaps. For organisations still clarifying the problem, the [Shadow AI overview](/workplace-ai/) explains why workplace AI adoption is now an operating model issue.
 
-For leadership teams that need a structured conversation rather than a self-serve assessment, the [Workplace AI Operational Diagnostic](/workplace-ai-academy/#operational-diagnostic) surfaces how AI adoption is changing execution, manager visibility and operational consistency so WAIA can be shaped around the right enablement gaps.
+For leadership teams that need a structured conversation rather than a self-serve assessment, the [Workplace AI Operational Diagnostic](/waia/#ai-adoption-diagnostic) surfaces how AI adoption is changing execution, manager visibility and operational consistency so WAIA can be shaped around the right enablement gaps.
