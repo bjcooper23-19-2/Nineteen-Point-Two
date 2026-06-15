@@ -11,6 +11,10 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --shadow: 0 18px 48px rgba(0, 0, 0, 0.3);
+  --product-accent: #d8a247;
+  --product-accent-rgb: 216, 162, 71;
+  --product-accent-soft: rgba(216, 162, 71, 0.16);
+  --product-accent-border: rgba(216, 162, 71, 0.44);
 }
 
 * {
@@ -68,6 +72,34 @@ a {
   z-index: 1;
 }
 
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 22px;
+  padding: 8px 12px;
+  border: 1px solid var(--product-accent-border);
+  border-radius: 999px;
+  background: var(--product-accent-soft);
+  color: var(--ink);
+  box-shadow: 0 0 28px rgba(var(--product-accent-rgb), 0.1);
+}
+
+.product-badge strong {
+  color: var(--product-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.product-badge span {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -112,6 +144,13 @@ header {
 
 .nav-links a:hover {
   color: var(--ink);
+}
+
+.nav-menu a[href="/outside-clarity/"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--product-accent);
+  text-underline-offset: 6px;
 }
 
 .nav-group {
@@ -219,8 +258,8 @@ header {
 .btn.primary {
   background: var(--ink);
   color: #111120;
-  border-color: transparent;
-  box-shadow: 0 20px 60px rgba(247, 243, 238, 0.14);
+  border-color: var(--product-accent-border);
+  box-shadow: 0 20px 60px rgba(var(--product-accent-rgb), 0.16);
 }
 
 .btn.secondary {
@@ -285,8 +324,8 @@ section {
   width: 9px;
   height: 9px;
   border-radius: 999px;
-  background: var(--cyan);
-  box-shadow: 0 0 26px var(--cyan);
+  background: var(--product-accent);
+  box-shadow: 0 0 26px var(--product-accent);
 }
 
 h1,
@@ -371,7 +410,7 @@ p {
     ),
     radial-gradient(
       circle at 70% 0%,
-      rgba(13, 115, 119, 0.22),
+      rgba(var(--product-accent-rgb), 0.2),
       transparent 17rem
     );
   box-shadow: var(--shadow);
@@ -426,8 +465,8 @@ p {
 
 .note {
   border-radius: 22px;
-  background: rgba(13, 115, 119, 0.16);
-  border: 1px solid rgba(13, 115, 119, 0.46);
+  background: var(--product-accent-soft);
+  border: 1px solid var(--product-accent-border);
   padding: 18px;
   margin-top: 20px;
 }
@@ -446,6 +485,15 @@ p {
   line-height: 1.2;
 }
 
+.price-tag {
+  display: block;
+  color: var(--product-accent);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  margin: 12px 0 22px;
+}
+
 .split {
   display: grid;
   grid-template-columns: 0.82fr 1.18fr;
@@ -456,12 +504,12 @@ p {
 .sticky-note {
   position: sticky;
   top: 112px;
-  border: 1px solid rgba(13, 115, 119, 0.4);
+  border: 1px solid var(--product-accent-border);
   border-radius: var(--radius-lg);
   padding: 28px;
   background: linear-gradient(
     180deg,
-    rgba(13, 115, 119, 0.17),
+    rgba(var(--product-accent-rgb), 0.16),
     rgba(247, 243, 238, 0.045)
   );
 }
@@ -552,8 +600,8 @@ p {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: var(--cyan);
-  box-shadow: 0 0 18px var(--cyan);
+  background: var(--product-accent);
+  box-shadow: 0 0 18px var(--product-accent);
 }
 
 .quote {
@@ -573,9 +621,9 @@ p {
 }
 
 .info-block {
-  border: 1px solid rgba(13, 115, 119, 0.36);
+  border: 1px solid var(--product-accent-border);
   border-radius: var(--radius-md);
-  background: rgba(13, 115, 119, 0.1);
+  background: var(--product-accent-soft);
   padding: 22px;
   margin-bottom: 22px;
   max-width: 880px;
@@ -812,6 +860,13 @@ footer {
 }
 
 @media (max-width: 760px) {
+  .product-badge {
+    display: grid;
+    width: 100%;
+    align-items: start;
+    border-radius: 18px;
+  }
+
   .noise,
   body::before {
     display: none;
