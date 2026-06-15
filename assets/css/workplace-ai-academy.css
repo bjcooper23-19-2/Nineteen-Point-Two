@@ -15,6 +15,10 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --shadow: 0 18px 48px rgba(0, 0, 0, 0.3);
+  --product-accent: #5fe2ff;
+  --product-accent-rgb: 95, 226, 255;
+  --product-accent-soft: rgba(95, 226, 255, 0.16);
+  --product-accent-border: rgba(95, 226, 255, 0.42);
 }
 
 * {
@@ -75,6 +79,34 @@ a {
   display: none;
 }
 
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-bottom: 22px;
+  padding: 8px 12px;
+  border: 1px solid var(--product-accent-border);
+  border-radius: 999px;
+  background: var(--product-accent-soft);
+  color: var(--ink);
+  box-shadow: 0 0 28px rgba(var(--product-accent-rgb), 0.1);
+}
+
+.product-badge strong {
+  color: var(--product-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.product-badge span {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -119,6 +151,13 @@ header {
 
 .nav-links a:hover {
   color: var(--ink);
+}
+
+.nav-links > a[href="/waia/"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--product-accent);
+  text-underline-offset: 8px;
 }
 
 .nav-group {
@@ -226,8 +265,8 @@ header {
 .btn.primary {
   background: var(--ink);
   color: #111120;
-  border-color: transparent;
-  box-shadow: 0 20px 60px rgba(247, 243, 238, 0.14);
+  border-color: var(--product-accent-border);
+  box-shadow: 0 20px 60px rgba(var(--product-accent-rgb), 0.16);
 }
 
 .btn.secondary {
@@ -297,8 +336,8 @@ section {
   width: 9px;
   height: 9px;
   border-radius: 999px;
-  background: var(--cyan);
-  box-shadow: 0 0 26px var(--cyan);
+  background: var(--product-accent);
+  box-shadow: 0 0 26px var(--product-accent);
 }
 
 h1,
@@ -399,7 +438,7 @@ h3 {
     ),
     radial-gradient(
       circle at 70% 0%,
-      rgba(13, 115, 119, 0.22),
+      rgba(var(--product-accent-rgb), 0.2),
       transparent 17rem
     );
   box-shadow: var(--shadow);
@@ -433,7 +472,7 @@ h3 {
 }
 
 .metric {
-  border: 1px solid var(--line);
+  border: 1px solid var(--product-accent-border);
   border-radius: 18px;
   padding: 16px;
   background: rgba(10, 10, 20, 0.34);
@@ -454,8 +493,8 @@ h3 {
 
 .status {
   border-radius: 22px;
-  background: rgba(13, 115, 119, 0.16);
-  border: 1px solid rgba(13, 115, 119, 0.46);
+  background: var(--product-accent-soft);
+  border: 1px solid var(--product-accent-border);
   padding: 18px;
   margin: 18px 0;
 }
@@ -578,7 +617,7 @@ h3 {
   background: var(--softer);
   display: grid;
   place-items: center;
-  color: var(--cyan);
+  color: var(--product-accent);
   padding: 0 10px;
   font-weight: 800;
   font-size: 0.9rem;
@@ -594,12 +633,12 @@ h3 {
 .sticky-note {
   position: sticky;
   top: 112px;
-  border: 1px solid rgba(13, 115, 119, 0.4);
+  border: 1px solid var(--product-accent-border);
   border-radius: var(--radius-lg);
   padding: 28px;
   background: linear-gradient(
     180deg,
-    rgba(13, 115, 119, 0.17),
+    rgba(var(--product-accent-rgb), 0.16),
     rgba(247, 243, 238, 0.045)
   );
 }
@@ -625,7 +664,7 @@ h3 {
 }
 
 .timeline-item span {
-  color: var(--cyan);
+  color: var(--product-accent);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -672,8 +711,8 @@ h3 {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: var(--cyan);
-  box-shadow: 0 0 18px var(--cyan);
+  background: var(--product-accent);
+  box-shadow: 0 0 18px var(--product-accent);
 }
 
 .quote {
@@ -900,6 +939,13 @@ footer {
 }
 
 @media (max-width: 760px) {
+  .product-badge {
+    display: grid;
+    width: 100%;
+    align-items: start;
+    border-radius: 18px;
+  }
+
   .noise,
   body::before {
     display: none;
