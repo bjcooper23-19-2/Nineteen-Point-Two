@@ -8,6 +8,52 @@
       data-blockingmode="auto"
       type="text/javascript"
     ></script>
+    <script>
+      (function () {
+        function initApollo() {
+          if (window.__apolloTrackerLoaded) return;
+          window.__apolloTrackerLoaded = true;
+
+          var n = Math.random().toString(36).substring(7);
+          var o = document.createElement("script");
+
+          o.src =
+            "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" +
+            n;
+          o.async = true;
+          o.defer = true;
+
+          o.onload = function () {
+            if (window.trackingFunctions && window.trackingFunctions.onLoad) {
+              window.trackingFunctions.onLoad({
+                appId: "6a2893312f53de001c40adf9",
+              });
+            }
+          };
+
+          document.head.appendChild(o);
+        }
+
+        function loadApolloIfMarketingConsent() {
+          if (
+            window.Cookiebot &&
+            window.Cookiebot.consent &&
+            window.Cookiebot.consent.marketing
+          ) {
+            initApollo();
+          }
+        }
+
+        window.addEventListener(
+          "CookiebotOnLoad",
+          loadApolloIfMarketingConsent,
+        );
+        window.addEventListener(
+          "CookiebotOnAccept",
+          loadApolloIfMarketingConsent,
+        );
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Notice | Nineteen Point Two</title>
