@@ -198,6 +198,13 @@ const documentShell = ({
 }) => `<!doctype html>
 <html lang="en-GB">
   <head>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="d3681788-35b5-42d2-93ae-c48167aa30cd"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
     <script>
       if (location.hostname === "nineteenpointtwo.com") {
         location.replace("${canonical}");
