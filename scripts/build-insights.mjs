@@ -34,7 +34,7 @@ const nav = `
       <a href="/insights/">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
     </div>
-    <a class="nav-cta" href="mailto:ben@nineteenpointtwo.com?subject=WAIA%20fit%20call" target="_blank" rel="noopener noreferrer">Book a WAIA fit call</a>
+    <a class="nav-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Book a WAIA fit call</a>
   </nav>
 </header>`;
 
