@@ -16,14 +16,6 @@ const nav = `
     <div class="nav-links" id="site-navigation">
       <a href="/waia/">WAIA</a>
       <div class="nav-group">
-        <a href="/workplace-ai/">Workplace AI</a>
-        <div class="nav-menu" aria-label="Workplace AI pages">
-          <a href="/workplace-ai/">Shadow AI overview</a>
-          <a href="/waia/">WAIA product</a>
-          <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
-        </div>
-      </div>
-      <div class="nav-group">
         <a href="/#diagnostics">Diagnostics</a>
         <div class="nav-menu" aria-label="Operational diagnostics">
           <a href="/waia/#ai-adoption-diagnostic">AI adoption diagnostic</a>
@@ -33,8 +25,10 @@ const nav = `
       </div>
       <a href="/insights/">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
+      <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+      <a class="nav-mobile-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Ask to see WAIA</a>
     </div>
-    <a class="nav-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Book a WAIA fit call</a>
+    <a class="nav-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Ask to see WAIA</a>
   </nav>
 </header>`;
 
