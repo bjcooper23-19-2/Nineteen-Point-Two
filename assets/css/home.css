@@ -127,13 +127,6 @@ header {
   color: var(--ink);
 }
 
-.nav-links > a[href="/waia/"] {
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--waia-accent);
-  text-underline-offset: 8px;
-}
-
 .nav-group {
   position: relative;
   display: inline-flex;
@@ -862,6 +855,13 @@ h3 {
   --product-accent-border: rgba(95, 226, 255, 0.46);
 }
 
+.product-route.product-diagnostic {
+  --product-accent: #8fb8ff;
+  --product-accent-rgb: 143, 184, 255;
+  --product-accent-soft: rgba(143, 184, 255, 0.13);
+  --product-accent-border: rgba(143, 184, 255, 0.4);
+}
+
 .product-route.product-outside {
   --product-accent: var(--outside-accent);
   --product-accent-rgb: var(--outside-accent-rgb);
@@ -962,6 +962,31 @@ h3 {
 .waia-mini-loop strong {
   background: rgba(var(--waia-accent-rgb), 0.16);
   color: var(--waia-accent);
+}
+
+.diagnostic-mini-signals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.diagnostic-mini-signals span {
+  display: grid;
+  min-height: 68px;
+  place-items: center;
+  padding: 10px 8px;
+  border: 1px solid var(--product-accent-border);
+  border-radius: 16px;
+  background: rgba(var(--product-accent-rgb), 0.08);
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.diagnostic-mini-signals span:last-child {
+  background: var(--product-accent-soft);
+  color: var(--product-accent);
+  font-weight: 800;
 }
 
 .outside-mini-review {

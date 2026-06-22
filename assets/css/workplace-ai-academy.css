@@ -792,6 +792,53 @@ h3 {
   font-size: 0.97rem;
 }
 
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.fit-card {
+  min-height: 100%;
+  padding: clamp(24px, 3vw, 34px);
+}
+
+.fit-card-good {
+  border-color: rgba(var(--product-accent-rgb), 0.42);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(var(--product-accent-rgb), 0.14),
+      rgba(247, 243, 238, 0.04) 58%
+    ),
+    rgba(247, 243, 238, 0.035);
+}
+
+.fit-card-good .eyebrow {
+  color: var(--product-accent);
+}
+
+.fit-card-boundary {
+  border-color: rgba(247, 243, 238, 0.2);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(247, 243, 238, 0.075),
+      rgba(9, 9, 20, 0.16) 62%
+    ),
+    rgba(247, 243, 238, 0.03);
+}
+
+.fit-card-boundary .eyebrow {
+  color: rgba(247, 243, 238, 0.64);
+}
+
+.fit-card .quote {
+  max-width: 18ch;
+  font-size: clamp(1.55rem, 2.6vw, 2.45rem);
+}
+
 .product-top {
   display: flex;
   justify-content: space-between;
@@ -1147,6 +1194,10 @@ footer {
     background: rgba(247, 243, 238, 0.1);
     color: var(--ink);
     font-weight: 700;
+  }
+
+  .fit-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .brand {
