@@ -25,10 +25,11 @@ const nav = `
       </div>
       <a href="/insights/">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
-      <a href="https://waia.nineteenpointtwo.com/login">Sign in</a>
-      <a class="nav-mobile-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Ask to see WAIA</a>
     </div>
-    <a class="nav-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Ask to see WAIA</a>
+    <div class="nav-actions">
+      <a class="nav-sign-in" href="https://waia.nineteenpointtwo.com/login">Sign in</a>
+      <a class="nav-cta" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Ask to see WAIA</a>
+    </div>
   </nav>
 </header>`;
 
