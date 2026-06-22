@@ -506,6 +506,94 @@ h3 {
   gap: 16px;
 }
 
+.maturity-path {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  padding-top: 30px;
+}
+
+.maturity-path::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: 7%;
+  left: 7%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 243, 238, 0.2),
+    var(--cyan),
+    rgba(247, 243, 238, 0.2)
+  );
+}
+
+.maturity-stage {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding: 62px 20px 22px;
+  border-left: 1px solid var(--line);
+}
+
+.maturity-stage:last-child {
+  border-right: 1px solid var(--line);
+}
+
+.maturity-stage .index {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--charcoal);
+}
+
+.maturity-risk {
+  background: rgba(247, 243, 238, 0.035);
+}
+
+.maturity-risk .index {
+  border-color: rgba(247, 243, 238, 0.3);
+}
+
+.maturity-control {
+  border-color: rgba(13, 115, 119, 0.55);
+  background: rgba(13, 115, 119, 0.15);
+}
+
+.maturity-control .index,
+.maturity-enabled .index {
+  border-color: var(--cyan);
+  color: var(--ink);
+  background: var(--cyan);
+}
+
+.maturity-enabled {
+  border-right-color: rgba(13, 115, 119, 0.55);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 115, 119, 0.18),
+    rgba(247, 243, 238, 0.035)
+  );
+}
+
+.maturity-stage h3 {
+  font-size: 1.02rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.maturity-stage p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
 .problem-card,
 .pillar-card,
 .step-card,
@@ -772,6 +860,31 @@ footer {
   .sticky-note {
     position: static;
   }
+
+  .maturity-path {
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 0;
+  }
+
+  .maturity-path::before {
+    top: 28px;
+    bottom: 28px;
+    left: 21px;
+    width: 2px;
+    height: auto;
+  }
+
+  .maturity-stage {
+    min-height: 130px;
+    padding: 22px 22px 22px 72px;
+    border-top: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+  }
+
+  .maturity-stage .index {
+    top: 22px;
+    left: 0;
+  }
 }
 
 @media (max-width: 760px) {
@@ -885,6 +998,11 @@ footer {
   }
   .timeline-item {
     grid-template-columns: 1fr;
+  }
+
+  .maturity-path {
+    width: 100%;
+    max-width: min(100%, calc(100vw - 64px));
   }
 }
 
