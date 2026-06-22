@@ -168,6 +168,10 @@ header {
   color: var(--ink);
   font-size: 0.9rem;
 }
+
+.nav-mobile-cta {
+  display: none;
+}
 .nav-toggle {
   display: none;
   align-items: center;
@@ -513,6 +517,19 @@ footer a {
   .nav-cta {
     display: none;
   }
+
+  .nav-links .nav-mobile-cta {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 8px;
+    padding: 11px 14px;
+    border: 1px solid rgba(247, 243, 238, 0.28);
+    border-radius: 999px;
+    background: rgba(247, 243, 238, 0.1);
+    color: var(--ink);
+    font-weight: 700;
+  }
+
   section {
     padding: 68px 20px;
   }
