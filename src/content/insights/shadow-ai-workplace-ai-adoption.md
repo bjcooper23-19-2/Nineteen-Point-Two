@@ -70,7 +70,7 @@ Most organisations already have a gap between how leaders think AI is being used
 
 ## Leadership visibility, operational readiness and managing the gap
 
-The [Revenue Stress Test](https://rstapp.nineteenpointtwo.com/) is a practical operational diagnostic designed to identify gaps between leadership assumptions and day-to-day operational reality in the revenue plan. It surfaces visibility and alignment gaps across people, process and data.
+The [Revenue Stress Test](https://rstapp.nineteenpointtwo.com/) is a fast commercial reality check for seeing whether a revenue target is supported by the current sales model. It tests the assumptions behind the number across people, process and data before leaders add more activity.
 
 [WAIA](/waia/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
 
