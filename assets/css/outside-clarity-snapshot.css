@@ -634,12 +634,21 @@ p {
 }
 
 .form-frame {
+  display: block;
   width: 100%;
+  max-width: 980px;
   min-height: 800px;
-  border: 1px solid rgba(197, 138, 42, 0.35);
+  margin: 48px auto 0;
+  border: 1px solid rgba(197, 138, 42, 0.25);
   border-radius: var(--radius-lg);
   background: #f6f1e8;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+}
+
+.form-frame + .trust-line {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .info-block {
