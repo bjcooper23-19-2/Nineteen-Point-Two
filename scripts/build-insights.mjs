@@ -16,11 +16,10 @@ const nav = `
     <div class="nav-links" id="site-navigation">
       <a href="/waia/">WAIA</a>
       <div class="nav-group">
-        <a href="/#diagnostics">Diagnostics</a>
-        <div class="nav-menu" aria-label="Operational diagnostics">
-          <a href="/waia/#ai-adoption-diagnostic">AI Adoption Diagnostic</a>
-          <a href="/#stress-test">Revenue Stress Test</a>
+        <a href="/#tools">Tools</a>
+        <div class="nav-menu" aria-label="Operating tools">
           <a href="/outside-clarity/">Outside Clarity</a>
+          <a href="/#stress-test">Revenue Stress Test</a>
         </div>
       </div>
       <a href="/insights/">Insights</a>
@@ -38,7 +37,7 @@ const footer = `
   <div class="footer-grid">
     <span>&copy; 2026 Nineteen Point Two</span>
     <span>Operating clarity across revenue systems and workplace AI adoption.</span>
-    <span><a href="/insights/">Insights</a> | <a href="/workplace-ai/">Shadow AI overview</a> | <a href="/waia/">WAIA product</a></span>
+    <span><a href="/waia/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/#stress-test">Revenue Stress Test</a> | <a href="/insights/">Insights</a></span>
     <span><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> | <a href="/cookies/">Cookies</a> | <a href="/website-terms/">Website Terms</a> | <a href="/subprocessors/">Subprocessors</a></span>
   </div>
 </footer>`;

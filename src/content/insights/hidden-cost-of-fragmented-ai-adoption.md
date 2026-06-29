@@ -134,13 +134,13 @@ Operational adoption means AI use is embedded into work in a way that is consist
 
 That is a different challenge from deployment.
 
-A useful way to view this is through stages of operational AI maturity.
+A useful way to view this is through stages of operational AI adoption.
 
-Many organisations begin with awareness: people know AI tools exist and are beginning to explore them. They then move, often unintentionally, into Shadow AI: employees and teams use tools informally, outside clear standards or visibility. The next stage is controlled adoption, where acceptable use, review expectations and governance principles are defined. From there, mature organisations move towards workflow integration, where AI is deliberately built into processes, handoffs and performance measures. The most advanced stage is organisational enablement, where managers, teams and governance mechanisms support consistent AI operating behaviours across the business.
+Many organisations begin with awareness: people know AI tools exist and are beginning to explore them. They then move, often unintentionally, into Shadow AI: employees and teams use tools informally, outside clear standards or visibility. The next stage is controlled adoption, where acceptable use, review expectations and governance principles are defined. From there, organisations with stronger operating discipline move towards workflow integration, where AI is deliberately built into processes, handoffs and performance measures. The most advanced stage is organisational enablement, where managers, teams and governance mechanisms support consistent AI operating behaviours across the business.
 
 Most organisations are somewhere between awareness, Shadow AI and early controlled adoption, even if their public narrative suggests they are further ahead.
 
-This isn't a criticism. It is a practical recognition of where the operational work sits. The risk isn't immaturity itself. The risk is failing to recognise immaturity and mistaking activity for control.
+This isn't a criticism. It is a practical recognition of where the operational work sits. The risk isn't early-stage adoption itself. The risk is failing to recognise it and mistaking activity for control.
 
 ## Why manager enablement matters
 
@@ -196,7 +196,7 @@ Leaders should pay attention to the everyday signs:
 - Are governance mechanisms helping people work safely, or simply creating uncertainty?
 - Are employees developing habits that the organisation hasn't intentionally designed?
 
-These questions aren't theoretical. They’re indicators of operational maturity.
+These questions aren't theoretical. They’re indicators of operational consistency.
 
 The organisations that answer them honestly will be better placed to move beyond fragmented experimentation. They will be able to distinguish useful local innovation from risky inconsistency. They will be able to support managers before poor habits harden. They will be able to connect AI use to commercial outcomes rather than treating it as a general productivity activity.
 
@@ -214,7 +214,7 @@ Fragmented AI adoption won't always announce itself as a major risk. More often,
 
 Those are commercial issues.
 
-The next stage of AI maturity will belong to organisations that treat AI as an operational discipline, not a technology event. They won't rely on enthusiasm alone. They will build the conditions for safe, consistent and measurable use across teams.
+The next stage of AI adoption will belong to organisations that treat AI as an operational discipline, not a technology event. They won't rely on enthusiasm alone. They will build the conditions for safe, consistent and measurable use across teams.
 
 AI is a tool. Operational adoption is the capability.
 

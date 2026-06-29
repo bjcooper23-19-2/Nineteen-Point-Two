@@ -147,7 +147,7 @@ Regular measurement enables leadership to see hidden risks and prioritise focuse
 
 ## Practical next steps for SMB leaders
 
-- Conduct a cross-team audit of AI use behaviours and tools to identify inconsistencies and fragmentation
+- Conduct a cross-team review of AI use behaviours and tools to identify inconsistencies and fragmentation
 - Engage managers to quantify AI-related review and rework time
 - Review AI tool spend, including subscriptions outside standard procurement
 - Apply scenario modelling with organisation-specific assumptions to estimate exposure

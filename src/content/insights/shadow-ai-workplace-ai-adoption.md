@@ -50,9 +50,9 @@ A better model treats governance as an enabler. Policies should provide clarity 
 
 The emphasis should be on practical rules that facilitate execution, reduce friction, and increase predictable outcomes.
 
-## A practical workplace AI maturity model
+## A practical workplace AI adoption path
 
-Organisations exhibit different levels of workplace AI maturity that reflect operational reality rather than technology ambition:
+Organisations move through different stages of workplace AI adoption that reflect operational reality rather than technology ambition:
 
 - Awareness: General recognition that AI tools exist, but without widespread operational use.
 - Shadow AI: Informal, unmonitored AI usage embedded in fragmented team behaviours and workflow inconsistencies.
@@ -64,7 +64,7 @@ This model is a check on behaviour, visibility, and execution, not about tool co
 
 ## Consistency matters more than enthusiasm
 
-Enthusiasm or volume of AI tool usage doesn't equal maturity. Without operational consistency, AI enthusiasm only increases variability and risk. Attention to how teams integrate AI into workflows and how managers guide usage drives reliable commercial outcomes.
+Enthusiasm or volume of AI tool usage doesn't equal operating consistency. Without shared guidance, enthusiasm only increases variability and risk. Attention to how teams integrate AI into workflows and how managers guide usage drives reliable commercial outcomes.
 
 Most organisations already have a gap between how leaders think AI is being used and what teams are actually doing day-to-day. Incomplete visibility, inconsistent team behaviours, and manager enablement deficits place pressure on customer experience and recurring revenue.
 
@@ -74,8 +74,8 @@ The [Revenue Stress Test](https://rstapp.nineteenpointtwo.com/) is a fast commer
 
 [WAIA](/waia/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
 
-Organisational AI maturity grows from the ground up. Leadership visibility, manager confidence, and workflow alignment matter more than tools or policies. That quiet, operationally embedded Shadow AI sits behind much of the variability in scaling SaaS and professional services businesses right now.
+Organisational consistency grows from the ground up. Leadership visibility, manager confidence, and workflow alignment matter more than tools or policies. That quiet, operationally embedded Shadow AI sits behind much of the variability in scaling SaaS and professional services businesses right now.
 
 Managing this reality starts with clear-eyed recognition of what is already happening and practical steps to surface and close the gaps. For organisations still clarifying the problem, the [Shadow AI overview](/workplace-ai/) explains why workplace AI adoption is now an operating model issue.
 
-For leadership teams that need a structured conversation rather than a self-serve assessment, the [Workplace AI Operational Diagnostic](/waia/#ai-adoption-diagnostic) surfaces how AI adoption is changing execution, manager visibility and operational consistency so WAIA can be shaped around the right enablement gaps.
+For leadership teams that need to make current adoption visible, [WAIA](/waia/) combines a baseline view, shared guidance, manager support and evidence-led follow-up around the areas where execution is starting to drift.

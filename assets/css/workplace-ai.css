@@ -403,7 +403,7 @@ h3 {
   margin-bottom: 0;
 }
 
-.diagnostic-card,
+.operating-card,
 .feature-panel {
   position: relative;
   border: 1px solid var(--line);
@@ -424,7 +424,7 @@ h3 {
   overflow: hidden;
 }
 
-.diagnostic-card::before,
+.operating-card::before,
 .grid-surface::before {
   content: "";
   position: absolute;
@@ -528,7 +528,7 @@ h3 {
   gap: 16px;
 }
 
-.maturity-path {
+.adoption-path {
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -536,7 +536,7 @@ h3 {
   padding-top: 30px;
 }
 
-.maturity-path::before {
+.adoption-path::before {
   content: "";
   position: absolute;
   top: 50px;
@@ -551,7 +551,7 @@ h3 {
   );
 }
 
-.maturity-stage {
+.adoption-stage {
   position: relative;
   z-index: 1;
   min-width: 0;
@@ -559,11 +559,11 @@ h3 {
   border-left: 1px solid var(--line);
 }
 
-.maturity-stage:last-child {
+.adoption-stage:last-child {
   border-right: 1px solid var(--line);
 }
 
-.maturity-stage .index {
+.adoption-stage .index {
   position: absolute;
   top: 0;
   left: 20px;
@@ -576,27 +576,27 @@ h3 {
   background: var(--charcoal);
 }
 
-.maturity-risk {
+.adoption-risk {
   background: rgba(247, 243, 238, 0.035);
 }
 
-.maturity-risk .index {
+.adoption-risk .index {
   border-color: rgba(247, 243, 238, 0.3);
 }
 
-.maturity-control {
+.adoption-control {
   border-color: rgba(13, 115, 119, 0.55);
   background: rgba(13, 115, 119, 0.15);
 }
 
-.maturity-control .index,
-.maturity-enabled .index {
+.adoption-control .index,
+.adoption-enabled .index {
   border-color: var(--cyan);
   color: var(--ink);
   background: var(--cyan);
 }
 
-.maturity-enabled {
+.adoption-enabled {
   border-right-color: rgba(13, 115, 119, 0.55);
   background: linear-gradient(
     180deg,
@@ -605,13 +605,13 @@ h3 {
   );
 }
 
-.maturity-stage h3 {
+.adoption-stage h3 {
   font-size: 1.02rem;
   line-height: 1.2;
   margin-bottom: 10px;
 }
 
-.maturity-stage p {
+.adoption-stage p {
   margin: 0;
   font-size: 0.88rem;
 }
@@ -876,19 +876,19 @@ footer {
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .diagnostic-card {
+  .operating-card {
     max-width: 560px;
   }
   .sticky-note {
     position: static;
   }
 
-  .maturity-path {
+  .adoption-path {
     grid-template-columns: minmax(0, 1fr);
     padding-top: 0;
   }
 
-  .maturity-path::before {
+  .adoption-path::before {
     top: 28px;
     bottom: 28px;
     left: 21px;
@@ -896,14 +896,14 @@ footer {
     height: auto;
   }
 
-  .maturity-stage {
+  .adoption-stage {
     min-height: 130px;
     padding: 22px 22px 22px 72px;
     border-top: 1px solid var(--line);
     border-right: 1px solid var(--line);
   }
 
-  .maturity-stage .index {
+  .adoption-stage .index {
     top: 22px;
     left: 0;
   }
@@ -1022,7 +1022,7 @@ footer {
   section {
     padding: 68px 20px;
   }
-  .assessment-card,
+  .summary-card,
   .feature-panel,
   .panel-grid {
     width: 100%;
@@ -1051,7 +1051,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .maturity-path {
+  .adoption-path {
     width: 100%;
     max-width: min(100%, calc(100vw - 64px));
   }

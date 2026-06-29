@@ -38,7 +38,7 @@ Organisations that notice these shifts early, reflect honestly on manager visibi
 
 For others, the strain will continue to build quietly; unsettled, unresolved and painful.
 
-For leadership teams that want to examine this strain in their own operating context, the [Workplace AI Operational Diagnostic](/waia/#ai-adoption-diagnostic) is a structured conversation for seeing where workplace AI adoption is affecting execution, visibility and consistency before WAIA turns that insight into practical enablement.
+For leadership teams that want to make this strain visible in their own operating context, [WAIA](/waia/) provides the baseline view, guidance, manager support and evidence-led follow-up needed to turn recognition into practical enablement.
 
 ## Further exploration
 
