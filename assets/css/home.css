@@ -419,7 +419,7 @@ h3 {
   margin-bottom: 0;
 }
 
-.diagnostic-card {
+.operating-card {
   position: relative;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -439,7 +439,7 @@ h3 {
   overflow: hidden;
 }
 
-.diagnostic-card::before,
+.operating-card::before,
 .grid-surface::before {
   content: "";
   position: absolute;
@@ -826,6 +826,7 @@ h3 {
 }
 
 .featured-entry {
+  grid-column: 1 / -1;
   border-color: var(--product-accent-border);
 }
 
@@ -855,7 +856,7 @@ h3 {
   --product-accent-border: rgba(95, 226, 255, 0.46);
 }
 
-.product-route.product-diagnostic {
+.product-route.product-operating-view {
   --product-accent: #8fb8ff;
   --product-accent-rgb: 143, 184, 255;
   --product-accent-soft: rgba(143, 184, 255, 0.13);
@@ -964,13 +965,13 @@ h3 {
   color: var(--waia-accent);
 }
 
-.diagnostic-mini-signals {
+.operating-mini-signals {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
-.diagnostic-mini-signals span {
+.operating-mini-signals span {
   display: grid;
   min-height: 68px;
   place-items: center;
@@ -983,7 +984,7 @@ h3 {
   text-align: center;
 }
 
-.diagnostic-mini-signals span:last-child {
+.operating-mini-signals span:last-child {
   background: var(--product-accent-soft);
   color: var(--product-accent);
   font-weight: 800;
@@ -1251,7 +1252,7 @@ footer {
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .diagnostic-card {
+  .operating-card {
     max-width: 560px;
   }
   .sticky-note {
@@ -1378,7 +1379,7 @@ footer {
   section {
     padding: 68px 20px;
   }
-  .assessment-card,
+  .summary-card,
   .feature-panel,
   .panel-grid {
     width: 100%;
@@ -1396,8 +1397,8 @@ footer {
   .hero-grid,
   .panel-grid,
   .split,
-  .diagnostic-card,
-  .assessment-card,
+  .operating-card,
+  .summary-card,
   .feature-panel,
   .mini-report,
   .lede,

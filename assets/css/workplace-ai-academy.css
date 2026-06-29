@@ -446,7 +446,7 @@ h3 {
   margin-bottom: 0;
 }
 
-.diagnostic-card,
+.product-summary-card,
 .feature-panel {
   position: relative;
   border: 1px solid var(--line);
@@ -467,7 +467,7 @@ h3 {
   overflow: hidden;
 }
 
-.diagnostic-card::before,
+.product-summary-card::before,
 .grid-surface::before {
   content: "";
   position: absolute;
@@ -1053,7 +1053,7 @@ footer {
   .outcomes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .diagnostic-card {
+  .product-summary-card {
     max-width: 560px;
   }
   .sticky-note {
@@ -1210,7 +1210,7 @@ footer {
   section {
     padding: 68px 20px;
   }
-  .assessment-card,
+  .summary-card,
   .feature-panel,
   .panel-grid {
     width: 100%;

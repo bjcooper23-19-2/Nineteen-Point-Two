@@ -419,7 +419,7 @@ p {
   margin-bottom: 42px;
 }
 
-.assessment-card,
+.overview-card,
 .feature-panel {
   position: relative;
   border: 1px solid var(--line);
@@ -439,11 +439,11 @@ p {
   overflow: hidden;
 }
 
-.assessment-card {
+.overview-card {
   padding: 24px;
 }
 
-.assessment-card::before,
+.overview-card::before,
 .grid-surface::before {
   content: "";
   position: absolute;
@@ -1092,7 +1092,7 @@ p {
 }
 
 .review-option > span,
-.diagnostic-compare article > span {
+.tool-compare article > span {
   display: block;
   margin-bottom: 18px;
   color: var(--product-accent);
@@ -1112,13 +1112,13 @@ p {
   margin-bottom: 0;
 }
 
-.diagnostic-compare {
+.tool-compare {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.diagnostic-compare article {
+.tool-compare article {
   min-width: 0;
   padding: clamp(24px, 3vw, 34px);
   border: 1px solid var(--line);
@@ -1126,25 +1126,25 @@ p {
   background: rgba(247, 243, 238, 0.035);
 }
 
-.diagnostic-compare article.is-current {
+.tool-compare article.is-current {
   border-color: var(--product-accent-border);
   background: var(--product-accent-soft);
 }
 
-.diagnostic-compare h3 {
+.tool-compare h3 {
   min-height: 2.4em;
   margin-bottom: 12px;
   font-size: clamp(1.25rem, 2vw, 1.65rem);
   line-height: 1.2;
 }
 
-.diagnostic-compare p {
+.tool-compare p {
   min-height: 3.1em;
   margin-bottom: 22px;
 }
 
-.diagnostic-compare a,
-.diagnostic-compare strong,
+.tool-compare a,
+.tool-compare strong,
 .waia-relationship a {
   color: var(--ink);
   font-size: 0.88rem;
@@ -1324,7 +1324,7 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .assessment-card {
+  .overview-card {
     width: 100%;
     max-width: 560px;
   }
@@ -1347,12 +1347,12 @@ footer {
     grid-column: auto;
   }
 
-  .diagnostic-compare {
+  .tool-compare {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .diagnostic-compare h3,
-  .diagnostic-compare p {
+  .tool-compare h3,
+  .tool-compare p {
     min-height: 0;
   }
 
@@ -1498,7 +1498,7 @@ footer {
     max-width: min(100%, 270px);
   }
 
-  .assessment-card,
+  .overview-card,
   .feature-panel,
   .panel-grid {
     width: 100%;
