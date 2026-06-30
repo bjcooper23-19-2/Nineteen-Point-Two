@@ -15,7 +15,7 @@ AI cost is starting to move out of the background. For a while, many organisatio
 
 Gartner forecasts worldwide AI spending will reach $2.59 trillion in 2026, up 47% year on year. That figure needs careful handling because Gartner says much of this spending is dominated by vendors and hyperscalers, rather than direct enterprise operating budgets. Even so, the direction is clear. AI is becoming a much more visible commercial category.
 
-The practical question for leadership teams is no longer whether AI should be explored. It is whether the organisation can see enough of its AI usage to understand where money, effort and attention are actually going. That isn't only a finance problem. It is an operating visibility problem.
+The practical question for leadership teams is no longer whether AI should be explored. It's whether the organisation can see enough of its AI usage to understand where money, effort and attention are actually going. That isn't only a finance problem. It's an operating visibility problem.
 
 ## The invoice is only the visible cost
 

@@ -3,7 +3,7 @@ title: The operational reality behind workplace AI adoption and Shadow AI
 slug: shadow-ai-workplace-ai-adoption
 date: 2026-05-13
 category: Workplace AI
-excerpt: Shadow AI isn't a cyber scare story. It is the operating condition created when people change how work gets done faster than leadership can see, guide or support it.
+excerpt: Shadow AI isn't a cyber scare story. It's the operating condition created when people change how work gets done faster than leadership can see, guide or support it.
 ---
 
 Leadership teams often believe they understand how AI is currently being used by their people. In practice, the opposite is usually true. AI usage in SaaS and professional services organisations today exists in operational blind spots, hidden within daily workflow inconsistencies, fragmented team behaviours, and unmonitored workarounds. The mismatch between leadership assumptions and what actually happens day-to-day is a significant driver of customer experience variation, manager uncertainty, and inconsistent execution.
@@ -24,7 +24,7 @@ These behaviours create fragmented ownership and uneven visibility. They quietly
 
 ## Shadow AI: an operational state, not a buzzword
 
-Shadow AI isn't a flashy new concept or a compliance alarm. It is a useful way to describe the status quo in many organisations. The reality where AI usage happens beyond formal channels and management review. Where leadership assumes control and consistency, but day-to-day behaviours tell a different story.
+Shadow AI isn't a flashy new concept or a compliance alarm. It's a useful way to describe the status quo in many organisations. The reality where AI usage happens beyond formal channels and management review. Where leadership assumes control and consistency, but day-to-day behaviours tell a different story.
 
 The issue usually isn’t the tool. It’s that nobody really sees how work is changing underneath them. It’s the gap between what leaders think they see and what teams actually do. It’s about workplace behaviour, workflow inconsistency, unclear expectations, and weak line-of-sight.
 

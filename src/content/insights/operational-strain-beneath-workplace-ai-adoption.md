@@ -30,7 +30,7 @@ Many organisations underestimate how quickly frontline workflows change once AI 
 
 This operational disconnect is also what the [Revenue Stress Test](https://www.nineteenpointtwo.com/#stress-test) is built to test inside the revenue plan: whether the target is supported by how the business sells, converts, forecasts and delivers. [WAIA](https://www.nineteenpointtwo.com/waia/) complements this by supporting managers with practical guidance to steward consistent AI use across teams.
 
-AI is not a strategy. It is a tool that amplifies the need for operational consistency, visibility, and strong frontline management. Execution quality and behavioural consistency matter far more than enthusiasm for the latest AI innovation. Without clear visibility and management discipline, teams gradually drift into different ways of working and commercial inconsistency follows.
+AI is not a strategy, it's a tool. It amplifies the need for operational consistency, visibility, and strong frontline management. Execution quality and behavioural consistency matter far more than enthusiasm for the latest AI innovation. Without clear visibility and management discipline, teams gradually drift into different ways of working and commercial inconsistency follows.
 
 In many businesses, managers are now responsible for workflows they can no longer fully see. The uncomfortable truth is that many leadership teams assume more control than they actually have once AI begins shaping operational rhythm at scale. Most organisations don’t even notice the gap as it’s being created. They notice it later through customer complaints, uneven renewals, slower onboarding, forecasting noise, or just teams operating differently from one another.
 

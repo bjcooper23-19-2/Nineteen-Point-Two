@@ -38,7 +38,7 @@ Many organisations believe they are adopting AI strategically when they are actu
 
 The distinction is important. One team using AI effectively doesn’t mean the organisation has an AI operating model. A group of employees achieving efficiency gains doesn’t mean managers can consistently supervise AI-assisted work. A policy document doesn’t mean governance is understood or usable in the flow of work.
 
-The real adoption challenge sits beneath the technology. It is behavioural and operational.
+The real adoption challenge sits beneath the technology. It's behavioural and operational.
 
 How are people using AI? For which tasks? With what level of review? Under whose supervision? With what standards? In which workflows? With what impact on quality, speed, risk, customer experience and commercial outcomes?
 
@@ -50,7 +50,7 @@ Fragmented adoption is often visible long before it is measured.
 
 It shows up in small patterns of inconsistency. One team uses AI to summarise customer calls. Another chooses not to. One manager encourages AI-generated first drafts. Another rejects them. One department has created informal prompt libraries. Another relies on individual judgement. Some employees paste customer or commercial information into tools without fully understanding the implications. Others avoid AI because they are unsure what is allowed.
 
-The result isn't just uneven adoption. It is uneven execution. These are operational signals, not abstract AI concerns.
+The result isn't just uneven adoption. It's uneven execution. These are operational signals, not abstract AI concerns.
 
 Common signs include:
 
@@ -68,7 +68,7 @@ This leaves them caught between employee experimentation and leadership expectat
 
 ## Why fragmentation becomes a commercial problem
 
-It is easy to treat fragmented AI adoption as a governance issue. Governance matters, but the commercial consequences are broader.
+It's easy to treat fragmented AI adoption as a governance issue. Governance matters, but the commercial consequences are broader.
 
 The first impact is customer experience inconsistency.
 
@@ -96,7 +96,7 @@ The fourth impact is decision quality variation.
 
 AI can support better decisions when used with appropriate context, challenge and judgement. But when practices are inconsistent, decision support becomes uneven. Some teams may use AI to test assumptions, compare options and summarise evidence. Others may use it to produce confident-sounding recommendations without enough scrutiny.
 
-This can lead to inconsistent judgement across pricing, hiring, prioritisation, customer handling, forecasting or operational planning. The issue isn't that AI produces decisions. It is that AI-assisted inputs can shape decisions in ways that aren't always visible to managers or leadership.
+This can lead to inconsistent judgement across pricing, hiring, prioritisation, customer handling, forecasting or operational planning. The issue isn't that AI produces decisions. It's that AI-assisted inputs can shape decisions in ways that aren't always visible to managers or leadership.
 
 The fifth impact is commercial unpredictability.
 
@@ -140,7 +140,7 @@ Many organisations begin with awareness: people know AI tools exist and are begi
 
 Most organisations are somewhere between awareness, Shadow AI and early controlled adoption, even if their public narrative suggests they are further ahead.
 
-This isn't a criticism. It is a practical recognition of where the operational work sits. The risk isn't early-stage adoption itself. The risk is failing to recognise it and mistaking activity for control.
+This isn't a criticism. It's a practical recognition of where the operational work sits. The risk isn't early-stage adoption itself. The risk is failing to recognise it and mistaking activity for control.
 
 ## Why manager enablement matters
 
@@ -178,7 +178,7 @@ Effective governance needs to do more than prevent misuse. It needs to enable sa
 
 Good governance reduces ambiguity. Poor governance increases avoidance or workarounds.
 
-For operational leaders, the key question isn't simply, “Do we have an AI policy?” It is, “Can our teams use that policy to make better decisions in the flow of work?”
+For operational leaders, the key question isn't simply, “Do we have an AI policy?” It's this: “Can our teams use that policy to make better decisions in the flow of work?”
 
 If the answer is no, governance exists on paper but not in the operating rhythm.
 
