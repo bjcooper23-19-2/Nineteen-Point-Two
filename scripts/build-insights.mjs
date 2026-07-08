@@ -194,7 +194,7 @@ const documentShell = ({
   <head>
     <link rel="preconnect" href="https://consent.cookiebot.com" crossorigin />
     <link rel="dns-prefetch" href="//consent.cookiebot.com" />
-    <link rel="preload" href="/assets/css/insights.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/insights.css" />
     <script
       id="Cookiebot"
       src="https://consent.cookiebot.com/uc.js"
@@ -266,7 +266,6 @@ const documentShell = ({
     <meta name="twitter:title" content="${escapeHtml(ogTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(ogDescription)}" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="stylesheet" href="/assets/css/insights.css" />
   </head>
   <body>
     <div class="site">
