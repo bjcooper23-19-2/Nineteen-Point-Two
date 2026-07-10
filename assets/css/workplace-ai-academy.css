@@ -167,6 +167,13 @@ header {
   text-underline-offset: 8px;
 }
 
+.nav-links a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--product-accent);
+  text-underline-offset: 8px;
+}
+
 .nav-group {
   position: relative;
   display: inline-flex;
@@ -317,6 +324,12 @@ section {
 main > section:not(.hero) {
   content-visibility: auto;
   contain-intrinsic-size: auto 760px;
+}
+
+.compact-hero {
+  min-height: auto;
+  padding-top: 104px;
+  padding-bottom: 88px;
 }
 
 .container {
@@ -1010,6 +1023,39 @@ h3 {
   color: #3f4b58;
 }
 
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid rgba(24, 38, 48, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  color: #182630;
+}
+
+th,
+td {
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(24, 38, 48, 0.11);
+  text-align: left;
+}
+
+th {
+  color: rgba(24, 38, 48, 0.72);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
 .light-check-list li::before {
   background: #0d7377;
   box-shadow: 0 0 14px rgba(13, 115, 119, 0.24);
@@ -1182,6 +1228,83 @@ h3 {
   margin: 0;
   color: var(--muted);
   font-size: 0.96rem;
+}
+
+.waia-commercial-section .feature-panel {
+  border-color: rgba(95, 226, 255, 0.28);
+}
+
+.waia-price-card {
+  align-self: stretch;
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  min-height: 260px;
+  border: 1px solid rgba(95, 226, 255, 0.34);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(95, 226, 255, 0.18),
+      transparent 14rem
+    ),
+    rgba(8, 18, 28, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.waia-price-card span,
+.waia-price-card small {
+  color: var(--muted);
+}
+
+.waia-price-card strong {
+  color: var(--ink);
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  border: 1px solid rgba(24, 38, 48, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #182630;
+  box-shadow: 0 18px 46px rgba(24, 38, 48, 0.08);
+}
+
+.pricing-card.featured {
+  border-color: rgba(95, 226, 255, 0.42);
+  box-shadow: 0 22px 60px rgba(95, 226, 255, 0.12);
+}
+
+.pricing-card > span {
+  color: rgba(24, 38, 48, 0.68);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pricing-card h3,
+.pricing-card strong {
+  margin: 0;
+  color: #182630;
+}
+
+.pricing-card p,
+.pricing-card li {
+  color: rgba(24, 38, 48, 0.72);
 }
 
 .product-top {
@@ -1453,6 +1576,10 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
   .waia-start-steps article::after {
     display: none;
   }
@@ -1543,6 +1670,10 @@ footer {
 
   .nav-menu a:hover {
     background: transparent;
+  }
+
+  table {
+    min-width: 520px;
   }
 
   header {

@@ -33,7 +33,11 @@ Then confirm:
 
 Nineteen Point Two helps leaders create operational clarity and controlled workplace AI adoption across people, process and data.
 
-WAIA is the flagship workplace AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the public thinking layer. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone paid outside view before one important commitment. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the public thinking layer. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
+
+The public navigation is direct product links: WAIA, Outside Clarity, Revenue Review, Insights and Operating Lens. The Tools dropdown has been retired.
+
+WAIA prospect CTAs use `https://tally.so/r/gDgbQP`. Outside Clarity CTAs use `/outside-clarity/snapshot/`, which contains the `obzbWP` intake form. Revenue Review routes locally first to `/revenue-review/`, then links to the external Revenue Stress Test app.
 
 Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source. If a request conflicts with the doctrine, flag the conflict before making positioning changes.
 
@@ -50,6 +54,7 @@ Keep CTAs consultative. The sign in link for Workplace AI Academy is access for 
 - Mobile layout can be fragile because each page carries its own CSS.
 - Navigation is duplicated across pages, so update all active pages consistently when navigation changes are requested.
 - Insights content is stored in `src/content/insights/` and rendered to static pages under `insights/` with `node scripts/build-insights.mjs`.
+- When navigation changes, update `scripts/build-insights.mjs` and rebuild generated Insight pages.
 
 ## Verification
 

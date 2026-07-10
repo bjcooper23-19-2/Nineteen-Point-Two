@@ -96,7 +96,7 @@ Annual labour drag reaches £132,000, almost 3 FTE equivalents, with direct spen
 
 ## Interpreting the model
 
-This thought experiment is not a universal benchmark or precise forecast. It uses illustrative assumptions to surface the potential scale of hidden costs tied to AI use behaviour patterns common in SMBs.
+This thought experiment isn't a universal benchmark or precise forecast. It uses illustrative assumptions to surface the potential scale of hidden costs tied to AI use behaviour patterns common in SMBs.
 
 The purpose of this model isn't to prove a specific cost. It’s to help leaders ask better questions.
 

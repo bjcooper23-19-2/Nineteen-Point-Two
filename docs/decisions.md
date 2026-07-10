@@ -19,9 +19,31 @@ The canonical strategic doctrine is stored at `/docs/19.2-operating-doctrine.md`
 
 The homepage should now lead with operational clarity and controlled workplace AI adoption rather than making Revenue Stress Test feel like the main strategic product.
 
-WAIA is the flagship workplace AI enablement platform. Revenue Stress Test remains important as the diagnostic visibility layer for revenue systems. Insights is the editorial layer for durable operational thinking.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone paid decision product. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer for durable operational thinking.
 
 The main buyer should first recognise Shadow AI: workplace AI adoption moving faster than visibility, evidence, manager confidence or operational consistency. Revenue integrity remains a secondary application of the same people, process and data lens.
+
+## Current commercial route decision
+
+Decision date: 10 July 2026.
+
+The public navigation should use direct product links:
+
+- WAIA
+- Outside Clarity
+- Revenue Review
+- Insights
+- Operating Lens
+
+The Tools navigation category is retired. Do not restore a Tools dropdown unless there is a separate decision to introduce a broader product directory.
+
+The main product pages should answer the commercial questions quickly. Supporting pages should carry package, scope, implementation and FAQ detail:
+
+- `/waia/how-it-works/`
+- `/outside-clarity/how-it-works/`
+- `/revenue-review/`
+
+Revenue Review is the public route label. Revenue Stress Test remains the mechanism used inside that journey.
 
 ## Workplace AI section separation
 
@@ -38,32 +60,31 @@ Primary CTAs should stay consultative and commercially grounded.
 
 Examples visible on the site include:
 
-- Run the Revenue Integrity Stress Test
-- Talk through the constraint
-- Discuss your revenue system
+- Ask to see WAIA
 - Explore WAIA
-- Start the diagnostic conversation
-- Discuss WAIA
-- Discuss AI adoption readiness
+- Submit your plan
+- Run the Revenue Stress Test
+- Explore WAIA
 
 The Workplace AI sign in link is for existing learners or admins. It should not be treated as the primary prospect CTA.
+
+WAIA prospect CTAs should use `https://tally.so/r/gDgbQP`.
+
+Outside Clarity package CTAs should use `/outside-clarity/snapshot/`, which contains the `obzbWP` intake form.
+
+Revenue Review should route users locally first to `/revenue-review/`; the local page carries the direct Revenue Stress Test app CTA.
 
 ## Navigation
 
 The current navigation pattern is:
 
-- Workplace AI
-- Diagnostics
+- WAIA
+- Outside Clarity
+- Revenue Review
 - Insights
 - Operating Lens
 
-The Workplace AI dropdown labels are:
-
-- Shadow AI overview
-- WAIA platform
-- Sign in
-
-Keep routes unchanged unless there is an explicit route change request.
+The logo is the home route. Keep Sign in and Ask to see WAIA as global actions.
 
 ## Insights section
 

@@ -3,7 +3,7 @@ title: The Cost of AI Is Becoming Visible
 metaTitle: The Cost of AI Is Becoming Visible | Nineteen Point Two
 metaDescription: AI experimentation should continue, but unmanaged AI use creates hidden operational cost when leaders can't see where AI is being used, what it costs and whether it creates value.
 ogTitle: The Cost of AI Is Becoming Visible
-ogDescription: The real cost question isn't whether AI is worth using. It is whether the business can see enough to know where it is worth using well.
+ogDescription: The real cost question isn't whether AI is worth using. It's whether the business can see enough to know where it's worth using well.
 slug: cost-of-ai-is-becoming-visible
 date: 2026-05-27
 category: Workplace AI
@@ -39,21 +39,21 @@ If the data is inconsistent, duplicated, incomplete or poorly understood, AI doe
 
 It can help people move faster with the wrong input. It can produce more polished versions of flawed assumptions. It can spread weak data into more places, and it can make a poor process look more efficient than it really is.
 
-This is one of the hidden cost traps. A business may think it’s paying for AI, when in reality it is also paying for unresolved data issues, unclear workflows, inconsistent review standards and weak ownership. The tool is new. The operating problems are often not.
+This is one of the hidden cost traps. A business may think it’s paying for AI, when in reality it’s also paying for unresolved data issues, unclear workflows, inconsistent review standards and weak ownership. The tool is new. The operating problems are often not.
 
 ## AI adoption is spreading faster than operating control
 
-McKinsey’s 2025 State of AI report found that 88% of respondents say their organisations use AI in at least one business function. That sounds like progress, and in many cases it is. But McKinsey also found that most organisations haven't yet scaled AI across the enterprise, with roughly only one-third reporting that they have begun to scale their AI programmes.
+McKinsey’s 2025 State of AI report found that 88% of respondents say their organisations use AI in at least one business function. That sounds like progress, and in many cases that progress is real. But McKinsey also found that most organisations haven't yet scaled AI across the enterprise, with roughly only one-third reporting that they have begun to scale their AI programmes.
 
 That gap matters. AI usage is becoming common, but enterprise-level value is still uneven. McKinsey also reports that only 39% of respondents see enterprise-level EBIT impact from AI, which reinforces the distance between activity and measurable commercial return.
 
-This is where leadership teams need to be careful. Activity can look like adoption. Adoption can look like value. Value can look obvious until someone asks where it is actually being measured.
+This is where leadership teams need to be careful. Activity can look like adoption. Adoption can look like value. Value can look obvious until someone asks where it's actually being measured.
 
 Inside the business, the picture is often less tidy. One team uses AI to write first drafts. Another uses it to summarise meetings. Another uses it to analyse customer feedback. Another has quietly built a useful workaround that nobody else knows about. Another avoids AI completely because the manager is unsure what is allowed.
 
 The organisation may be “using AI”, but that doesn’t mean it has a clear operating view. It may not know which workflows have improved. It may not know which tools are duplicated. It may not know which outputs are being reviewed properly. It may not know where AI has actually reduced effort and where it has simply moved effort into checking, correcting and explaining.
 
-That’s the real cost question. Not just how much AI costs, but whether the business can see what it is getting back.
+That’s the real cost question. Not just how much AI costs, but whether the business can see what it's getting back.
 
 ## Unmanaged experimentation creates hidden costs
 
@@ -87,7 +87,7 @@ These are practical operating questions. They sit close to the work. They show w
 
 This is also where governance needs to be understood properly. Good governance shouldn’t be a brake on useful AI use. It should make useful AI use easier to repeat. It should help people understand what’s allowed, what needs review, what should be escalated and what good looks like in the flow of work.
 
-The organisations that get this right won’t be the ones with the most slogans about AI. They will be the ones who can see how AI is changing work, where it’s creating value and where it is quietly adding cost.
+The organisations that get this right won’t be the ones with the most slogans about AI. They’ll be the ones who can see how AI is changing work, where it’s creating value and where it’s quietly adding cost.
 
 [WAIA](/waia/) is designed around this practical operating layer: shared standards, manager support, role-aware guidance and visible adoption signals for workplace AI adoption.
 
@@ -97,7 +97,7 @@ The answer isn’t to slow useful AI adoption. The answer is to stop treating ex
 
 AI is not a strategy, it's a tool.
 
-Like any tool, it needs context, ownership and evidence of value. The organisations that manage this well won’t simply be the ones that spend more carefully. They’ll be the ones that can see where AI is helping, where it’s duplicating effort, where it is increasing review burden and where it is changing work faster than the operating model can support.
+Like any tool, it needs context, ownership and evidence of value. The organisations that manage this well won’t simply be the ones that spend more carefully. They’ll be the ones that can see where AI is helping, where it’s duplicating effort, where it’s increasing review burden and where it’s changing work faster than the operating model can support.
 
 That’s the real cost question now.
 
