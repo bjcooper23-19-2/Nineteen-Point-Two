@@ -1094,6 +1094,31 @@ h3 {
   color: #3f4b58;
 }
 
+.waia-light-section .outcome-card,
+.waia-light-section .waia-start-steps article {
+  border-color: rgba(24, 38, 48, 0.13);
+  background: rgba(255, 255, 255, 0.74);
+  color: #182630;
+  box-shadow: 0 18px 46px rgba(24, 38, 48, 0.08);
+}
+
+.waia-light-section .outcome-card h3,
+.waia-light-section .waia-start-steps h3 {
+  color: #182630;
+}
+
+.waia-light-section .outcome-card p,
+.waia-light-section .outcome-card li,
+.waia-light-section .waia-start-steps p {
+  color: rgba(24, 38, 48, 0.78);
+}
+
+.waia-light-section .waia-start-steps span {
+  border-color: rgba(13, 115, 119, 0.3);
+  background: rgba(13, 115, 119, 0.08);
+  color: #0d7377;
+}
+
 .table-wrap {
   width: 100%;
   overflow-x: auto;
@@ -1125,6 +1150,32 @@ th {
 
 tr:last-child td {
   border-bottom: 0;
+}
+
+.package-card-grid-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.package-card-grid-two,
+.package-faq-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.package-step-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.package-card-grid .outcome-card,
+.package-step-grid article {
+  min-height: 100%;
+}
+
+.package-faq-grid .outcome-card {
+  min-height: 220px;
+}
+
+.package-card-grid .check-list li {
+  line-height: 1.48;
 }
 
 .light-check-list li::before {
