@@ -931,6 +931,77 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.fit-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.fit-route-card {
+  display: flex;
+  min-width: 0;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(24px, 3vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(247, 243, 238, 0.035);
+}
+
+.fit-route-card.is-current {
+  border-color: var(--product-accent-border);
+  background:
+    radial-gradient(
+      circle at 88% 0%,
+      rgba(var(--product-accent-rgb), 0.18),
+      transparent 14rem
+    ),
+    var(--product-accent-soft);
+}
+
+.fit-route-label {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--product-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.fit-route-card h3 {
+  min-height: 2.4em;
+  margin-bottom: 12px;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.fit-route-card p {
+  min-height: 3.1em;
+  margin-bottom: 22px;
+}
+
+.fit-route-card .btn,
+.fit-current-label {
+  margin-top: auto;
+}
+
+.fit-current-label {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 0 18px;
+  border: 1px solid var(--product-accent-border);
+  border-radius: 999px;
+  background: rgba(var(--product-accent-rgb), 0.1);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
 .home-light-section {
   position: relative;
   background: #f1f3f4;
@@ -1475,6 +1546,7 @@ footer {
   .problem-grid,
   .pillars,
   .products-grid,
+  .fit-compare-grid,
   .steps-grid,
   .credibility-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1657,6 +1729,7 @@ footer {
   .pillars,
   .products-grid,
   .products-grid.entry-grid,
+  .fit-compare-grid,
   .pricing-grid,
   .steps-grid,
   .outcomes-grid,
@@ -1668,6 +1741,11 @@ footer {
 
   table {
     min-width: 520px;
+  }
+
+  .fit-route-card h3,
+  .fit-route-card p {
+    min-height: 0;
   }
 
   .home-waia-proof {
