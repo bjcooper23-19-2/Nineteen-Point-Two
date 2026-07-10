@@ -28,7 +28,7 @@ Fragmentation already exists in many businesses. AI adoption simply accelerates 
 
 Many organisations underestimate how quickly frontline workflows change once AI tools enter daily use. One RevOps team tried rolling out AI-assisted forecasting while different regional sales teams used their own modified techniques for pipeline notes and deal reviews. The aggregate reporting looked stable. The detail told a different story; one of widening variation that totally undermined decision confidence.
 
-This operational disconnect is also what the [Revenue Stress Test](https://www.nineteenpointtwo.com/#stress-test) is built to test inside the revenue plan: whether the target is supported by how the business sells, converts, forecasts and delivers. [WAIA](https://www.nineteenpointtwo.com/waia/) complements this by supporting managers with practical guidance to steward consistent AI use across teams.
+This operational disconnect is also what [Revenue Review](https://www.nineteenpointtwo.com/revenue-review/) is built to test inside the revenue plan: whether the target is supported by how the business sells, converts, forecasts and delivers. [WAIA](https://www.nineteenpointtwo.com/waia/) complements this by supporting managers with practical guidance to steward consistent AI use across teams.
 
 AI is not a strategy, it's a tool. It amplifies the need for operational consistency, visibility, and strong frontline management. Execution quality and behavioural consistency matter far more than enthusiasm for the latest AI innovation. Without clear visibility and management discipline, teams gradually drift into different ways of working and commercial inconsistency follows.
 
@@ -42,7 +42,7 @@ For leadership teams that want to make this strain visible in their own operatin
 
 ## Further exploration
 
-Revenue Stress Test
+Revenue Review
 
 Check whether the current sales model can carry the number.
 

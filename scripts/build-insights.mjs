@@ -15,14 +15,9 @@ const nav = `
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
     <div class="nav-links" id="site-navigation">
       <a href="/waia/">WAIA</a>
-      <div class="nav-group">
-        <a href="/#tools">Tools</a>
-        <div class="nav-menu" aria-label="Operating tools">
-          <a href="/outside-clarity/">Outside Clarity</a>
-          <a href="/#stress-test">Revenue Stress Test</a>
-        </div>
-      </div>
-      <a href="/insights/">Insights</a>
+      <a href="/outside-clarity/">Outside Clarity</a>
+      <a href="/revenue-review/">Revenue Review</a>
+      <a href="/insights/" aria-current="page">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
     </div>
     <div class="nav-actions">
@@ -37,7 +32,7 @@ const footer = `
   <div class="footer-grid">
     <span>&copy; 2026 Nineteen Point Two</span>
     <span>Operating clarity across revenue systems and workplace AI adoption.</span>
-    <span><a href="/waia/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/#stress-test">Revenue Stress Test</a> | <a href="/insights/">Insights</a></span>
+    <span><a href="/waia/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/revenue-review/">Revenue Review</a> | <a href="/insights/">Insights</a></span>
     <span><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> | <a href="/cookies/">Cookies</a> | <a href="/website-terms/">Website Terms</a> | <a href="/subprocessors/">Subprocessors</a></span>
   </div>
 </footer>`;
@@ -352,7 +347,7 @@ const renderIndex = (articles) => {
               <div class="eyebrow">Latest thinking</div>
               <h2>Calm, practical analysis for operators.</h2>
               <p>
-                These are not generic AI posts. They are working notes on the places
+                These aren't generic AI posts. They are working notes on the places
                 where leadership confidence depends on people, process, data,
                 visibility and decision quality.
               </p>

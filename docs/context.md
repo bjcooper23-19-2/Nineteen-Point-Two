@@ -4,18 +4,24 @@
 
 This repository contains the Nineteen Point Two marketing site. It presents Nineteen Point Two as a premium, operator-led brand for operational clarity and controlled workplace AI adoption.
 
-The homepage should quickly establish the immediate operational problem: unmanaged workplace AI adoption, Shadow AI, weak manager visibility and inconsistent behaviour. Revenue systems remain part of the operating thesis, but Revenue Stress Test should sit as a secondary diagnostic lens rather than the primary homepage story.
+The homepage should quickly establish the immediate operational problem: unmanaged workplace AI adoption, Shadow AI, weak manager visibility and inconsistent behaviour. Revenue systems remain part of the operating thesis, but Revenue Review should sit as a distinct commercial route rather than the primary homepage story.
 
-WAIA is the flagship workplace AI enablement platform. Revenue Stress Test is the diagnostic visibility layer for revenue systems. Insights is the editorial layer that explains the operating doctrine.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is the standalone paid decision product. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer that explains the operating doctrine.
 
-The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, Revenue Stress Test and Workplace AI Academy aligned.
+The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, WAIA, Outside Clarity and Revenue Review aligned.
 
 ## Visible site structure
 
 - `/` is served by `index.html`.
+- `/waia/` is served by `waia/index.html`.
+- `/waia/how-it-works/` is served by `waia/how-it-works/index.html`.
+- `/outside-clarity/` is served by `outside-clarity/index.html`.
+- `/outside-clarity/how-it-works/` is served by `outside-clarity/how-it-works/index.html`.
+- `/outside-clarity/snapshot/` is served by `outside-clarity/snapshot/index.html`.
+- `/revenue-review/` is served by `revenue-review/index.html`.
 - `/insights/` is served by `insights/index.html`.
 - `/workplace-ai/` is served by `workplace-ai/index.html`.
-- `/workplace-ai-academy/` is served by `workplace-ai-academy/index.html`.
+- `/workplace-ai-academy/` is a legacy route that redirects to `/waia/`.
 - Shared visual assets sit under `assets/`.
 - `CNAME` points the GitHub Pages custom domain to `www.nineteenpointtwo.com`.
 
@@ -33,23 +39,24 @@ The core lens is:
 
 ## Main propositions
 
-Revenue Integrity Stress Test:
+Revenue Review:
 
-- The diagnostic visibility layer for revenue systems.
-- Designed to test whether the commercial plan is supported by the operating system underneath it.
+- The buyer-facing route for the Revenue Stress Test journey.
+- Designed to show whether the commercial plan is supported by the operating system underneath it.
 - Should remain important, but should not outweigh WAIA as the flagship scalable product.
+- The Revenue Stress Test result may point to a separate paid Gumroad improvement pack.
 
-Workplace AI readiness:
+Outside Clarity:
 
-- A problem awareness page about hidden AI use, weak visibility, policy gaps, data exposure and decision risk.
-- Should make the buyer aware that AI adoption is becoming an operating model and governance issue.
-- Should avoid detailed course or platform selling until the transition to the Academy.
+- A standalone paid outside view before one important plan or decision becomes a commitment.
+- Should use clear tier language: Snapshot, Deeper View and Debrief.
+- Should not sound like a broad consultancy engagement or workplace AI replacement.
 
-Workplace AI Academy:
+WAIA:
 
-- A product explanation page.
-- Explains the flagship platform for safe, consistent AI adoption at work.
-- Covers organisation setup, role-aware learner access, organisation guidance, learner acknowledgement, admin visibility, progress tracking, completion evidence and certificates.
+- The flagship workplace AI adoption product.
+- Explains the operating layer for guidance, learning, acknowledgement, baseline visibility, application evidence and manager follow-up.
+- Main page stays commercially focused. `/waia/how-it-works/` carries package, pricing and implementation detail.
 
 ## Brand feel
 

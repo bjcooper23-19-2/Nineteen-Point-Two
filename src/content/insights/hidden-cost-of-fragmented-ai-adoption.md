@@ -46,7 +46,7 @@ If those questions are unable to be answered with confidence, the organisation d
 
 ## The signals leaders should recognise
 
-Fragmented adoption is often visible long before it is measured.
+Fragmented adoption is often visible long before it's measured.
 
 It shows up in small patterns of inconsistency. One team uses AI to summarise customer calls. Another chooses not to. One manager encourages AI-generated first drafts. Another rejects them. One department has created informal prompt libraries. Another relies on individual judgement. Some employees paste customer or commercial information into tools without fully understanding the implications. Others avoid AI because they are unsure what is allowed.
 
