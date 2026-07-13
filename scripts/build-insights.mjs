@@ -137,6 +137,14 @@ const markdownToHtml = (markdown) => {
       continue;
     }
 
+    if (trimmed.startsWith("### ")) {
+      flushParagraph();
+      flushList();
+      flushTable();
+      blocks.push(`<h3>${inlineMarkdown(trimmed.slice(4))}</h3>`);
+      continue;
+    }
+
     if (trimmed.startsWith("- ")) {
       flushParagraph();
       flushTable();
