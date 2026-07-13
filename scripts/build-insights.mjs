@@ -14,7 +14,7 @@ const nav = `
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
     <div class="nav-links" id="site-navigation">
-      <a href="/waia/">WAIA</a>
+      <a href="https://waia.co.uk/">WAIA</a>
       <a href="/outside-clarity/">Outside Clarity</a>
       <a href="/revenue-review/">Revenue Review</a>
       <a href="/insights/" aria-current="page">Insights</a>
@@ -32,7 +32,7 @@ const footer = `
   <div class="footer-grid">
     <span>&copy; 2026 Nineteen Point Two</span>
     <span>Operating clarity across revenue systems and workplace AI adoption.</span>
-    <span><a href="/waia/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/revenue-review/">Revenue Review</a> | <a href="/insights/">Insights</a></span>
+    <span><a href="https://waia.co.uk/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/revenue-review/">Revenue Review</a> | <a href="/insights/">Insights</a></span>
     <span><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> | <a href="/cookies/">Cookies</a> | <a href="/website-terms/">Website Terms</a> | <a href="/subprocessors/">Subprocessors</a></span>
   </div>
 </footer>`;
@@ -344,7 +344,7 @@ const renderIndex = (articles) => {
               operating realities.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="/waia/">Explore WAIA</a>
+              <a class="btn primary" href="https://waia.co.uk/">Explore WAIA</a>
               <a class="btn secondary" href="/workplace-ai/">Explore Shadow AI</a>
             </div>
           </div>
@@ -405,7 +405,7 @@ const renderArticle = (article) =>
               adoption visible, guided and manageable.
             </p>
             <div class="hero-actions" style="justify-content: center; margin-bottom: 0">
-              <a class="btn primary" href="/waia/">Explore WAIA</a>
+              <a class="btn primary" href="https://waia.co.uk/">Explore WAIA</a>
               <a class="btn secondary" href="https://tally.so/r/gDgbQP" target="_blank" rel="noopener noreferrer">Talk through adoption</a>
             </div>
           </div>

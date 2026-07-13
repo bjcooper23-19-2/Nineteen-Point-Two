@@ -164,7 +164,7 @@ Without these answers, managers rely on personal judgement. Some will be permiss
 
 That variation flows directly into performance.
 
-[Manager enablement](/waia/) should not be treated as generic training. It needs to be anchored in real work: customer responses, proposals, performance reviews, analysis, reporting, service delivery, compliance-sensitive activity and cross-functional handoffs.
+[Manager enablement](https://waia.co.uk/) should not be treated as generic training. It needs to be anchored in real work: customer responses, proposals, performance reviews, analysis, reporting, service delivery, compliance-sensitive activity and cross-functional handoffs.
 
 The goal isn't to turn every manager into a technical expert. The goal is to give managers enough operational confidence to supervise AI-assisted work effectively.
 
