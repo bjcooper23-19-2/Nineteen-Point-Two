@@ -72,10 +72,10 @@ Most organisations already have a gap between how leaders think AI is being used
 
 [Revenue Review](https://www.nineteenpointtwo.com/revenue-review/) is the local route into the Revenue Stress Test journey: a fast commercial reality check for seeing whether a revenue target is supported by the current sales model. It tests the assumptions behind the number across people, process and data before leaders add more activity.
 
-[WAIA](/waia/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
+[WAIA](https://waia.co.uk/) supports organisations in closing the management and execution gap around workplace AI adoption. It operationalises enablement through shared standards, practical learning, organisation guidance, learner acknowledgement and admin visibility.
 
 Organisational consistency grows from the ground up. Leadership visibility, manager confidence, and workflow alignment matter more than tools or policies. That quiet, operationally embedded Shadow AI sits behind much of the variability in scaling SaaS and professional services businesses right now.
 
 Managing this reality starts with clear-eyed recognition of what is already happening and practical steps to surface and close the gaps. For organisations still clarifying the problem, the [Shadow AI overview](/workplace-ai/) explains why workplace AI adoption is now an operating model issue.
 
-For leadership teams that need to make current adoption visible, [WAIA](/waia/) combines a baseline view, shared guidance, manager support and evidence-led follow-up around the areas where execution is starting to drift.
+For leadership teams that need to make current adoption visible, [WAIA](https://waia.co.uk/) combines a baseline view, shared guidance, manager support and evidence-led follow-up around the areas where execution is starting to drift.

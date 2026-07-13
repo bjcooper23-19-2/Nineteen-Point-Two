@@ -23,7 +23,7 @@ Insights articles are source-controlled markdown files under `/src/content/insig
 
 Current direct navigation routes are:
 
-- `/waia/`
+- `https://waia.co.uk/`
 - `/outside-clarity/`
 - `/revenue-review/`
 - `/insights/`

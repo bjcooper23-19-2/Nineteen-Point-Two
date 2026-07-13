@@ -89,7 +89,7 @@ This is also where governance needs to be understood properly. Good governance s
 
 The organisations that get this right won’t be the ones with the most slogans about AI. They’ll be the ones who can see how AI is changing work, where it’s creating value and where it’s quietly adding cost.
 
-[WAIA](/waia/) is designed around this practical operating layer: shared standards, manager support, role-aware guidance and visible adoption signals for workplace AI adoption.
+[WAIA](https://waia.co.uk/) is designed around this practical operating layer: shared standards, manager support, role-aware guidance and visible adoption signals for workplace AI adoption.
 
 ## Closing point
 
