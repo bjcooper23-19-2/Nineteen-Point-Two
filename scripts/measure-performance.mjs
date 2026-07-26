@@ -15,8 +15,6 @@ const routes = (
     "/",
     "/workplace-ai/",
     "/waia/",
-    "/outside-clarity/",
-    "/outside-clarity/snapshot/",
     "/insights/",
     "/insights/hidden-cost-of-workplace-ai/",
   ].join(",")
@@ -187,7 +185,7 @@ const measureRoute = async (route) => {
         htmlBytes: new Blob([document.documentElement.outerHTML]).size,
         scrollWidth: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth),
         clientWidth: document.documentElement.clientWidth,
-        navHasOutsideClarity: Boolean([...document.querySelectorAll(".nav-links a")].find((a) => a.textContent.trim() === "Outside Clarity" && a.getAttribute("href") === "/outside-clarity/")),
+        navHasOutsideClarity: Boolean([...document.querySelectorAll(".nav-links a")].find((a) => a.textContent.trim() === "Outside Clarity" && a.getAttribute("href") === "https://outsideclarity.co.uk/")),
         mobileMenuButton: Boolean(document.querySelector(".nav-toggle"))
       };
     })()`,

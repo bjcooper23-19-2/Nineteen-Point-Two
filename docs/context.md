@@ -6,7 +6,7 @@ This repository contains the Nineteen Point Two marketing site. It presents Nine
 
 The homepage should quickly establish the immediate operational problem: unmanaged workplace AI adoption, Shadow AI, weak manager visibility and inconsistent behaviour. Revenue systems remain part of the operating thesis, but Revenue Review should sit as a distinct commercial route rather than the primary homepage story.
 
-WAIA is the flagship workplace AI enablement platform. Outside Clarity is the standalone paid decision product. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer that explains the operating doctrine.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is now a standalone product site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer that explains the operating doctrine.
 
 The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, WAIA, Outside Clarity and Revenue Review aligned.
 
@@ -15,9 +15,9 @@ The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`
 - `/` is served by `index.html`.
 - `/waia/` is served by `waia/index.html`.
 - `/waia/how-it-works/` is served by `waia/how-it-works/index.html`.
-- `/outside-clarity/` is served by `outside-clarity/index.html`.
-- `/outside-clarity/how-it-works/` is served by `outside-clarity/how-it-works/index.html`.
-- `/outside-clarity/snapshot/` is served by `outside-clarity/snapshot/index.html`.
+- `/outside-clarity/` is a legacy redirect to `https://outsideclarity.co.uk/`.
+- `/outside-clarity/how-it-works/` is a legacy redirect to `https://outsideclarity.co.uk/`.
+- `/outside-clarity/snapshot/` is a legacy redirect to `https://outsideclarity.co.uk/`.
 - `/revenue-review/` is served by `revenue-review/index.html`.
 - `/insights/` is served by `insights/index.html`.
 - `/workplace-ai/` is served by `workplace-ai/index.html`.
@@ -48,8 +48,8 @@ Revenue Review:
 
 Outside Clarity:
 
-- A standalone paid outside view before one important plan or decision becomes a commitment.
-- Should use clear tier language: Snapshot, Deeper View and Debrief.
+- Owned by the standalone site at `https://outsideclarity.co.uk/`.
+- Nineteen Point Two public links should direct visitors to that domain.
 - Should not sound like a broad consultancy engagement or workplace AI replacement.
 
 WAIA:

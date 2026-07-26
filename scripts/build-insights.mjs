@@ -15,7 +15,7 @@ const nav = `
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
     <div class="nav-links" id="site-navigation">
       <a href="https://waia.co.uk/">WAIA</a>
-      <a href="/outside-clarity/">Outside Clarity</a>
+      <a href="https://outsideclarity.co.uk/">Outside Clarity</a>
       <a href="/revenue-review/">Revenue Review</a>
       <a href="/insights/" aria-current="page">Insights</a>
       <a href="/#operating-lens">Operating Lens</a>
@@ -32,7 +32,7 @@ const footer = `
   <div class="footer-grid">
     <span>&copy; 2026 Nineteen Point Two</span>
     <span>Operating clarity across revenue systems and workplace AI adoption.</span>
-    <span><a href="https://waia.co.uk/">WAIA</a> | <a href="/outside-clarity/">Outside Clarity</a> | <a href="/revenue-review/">Revenue Review</a> | <a href="/insights/">Insights</a></span>
+    <span><a href="https://waia.co.uk/">WAIA</a> | <a href="https://outsideclarity.co.uk/">Outside Clarity</a> | <a href="/revenue-review/">Revenue Review</a> | <a href="/insights/">Insights</a></span>
     <span><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> | <a href="/cookies/">Cookies</a> | <a href="/website-terms/">Website Terms</a> | <a href="/subprocessors/">Subprocessors</a></span>
   </div>
 </footer>`;

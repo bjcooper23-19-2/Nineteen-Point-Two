@@ -8,7 +8,7 @@
 - Review the homepage periodically to make sure WAIA has appropriate flagship product weight while Outside Clarity and Revenue Review remain clear standalone routes.
 - Keep the Revenue Review journey clear: the Revenue Stress Test identifies exposure, and any Gumroad improvement pack is a separate paid purchase.
 - Keep `/waia/how-it-works/` aligned with the current WAIA package, pricing and implementation detail.
-- Keep `/outside-clarity/how-it-works/` aligned with Snapshot, Deeper View, Debrief, upgrade rules and evidence expectations.
+- Keep Outside Clarity links pointed to `https://outsideclarity.co.uk/` unless a separate decision brings any journey back onto the Nineteen Point Two site.
 - If adding more pages, mirror the existing static route pattern with a folder and `index.html`.
 - If adding Insights articles, update markdown under `src/content/insights/`, run `node scripts/build-insights.mjs`, and commit generated static HTML.
 - If adding assets, preserve existing relative path conventions and check nested route paths carefully.
@@ -33,5 +33,5 @@
 - If a future build system is introduced, document the build and deploy commands here.
 - If GitHub Pages settings change from root deployment, document the source branch and directory here.
 - If a contact form replaces mailto CTAs, document the route and required handling.
-- If the Outside Clarity Tally form is updated to capture package selection, document that change before altering public CTA behaviour.
+- If the Outside Clarity product journey changes, update the standalone Outside Clarity site first and keep this site pointed to the canonical product domain.
 - If a confirmed canonical Gumroad improvement-pack link is provided, add it only where the Revenue Review journey needs it.

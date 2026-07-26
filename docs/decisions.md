@@ -37,10 +37,9 @@ The public navigation should use direct product links:
 
 The Tools navigation category is retired. Do not restore a Tools dropdown unless there is a separate decision to introduce a broader product directory.
 
-The main product pages should answer the commercial questions quickly. Supporting pages should carry package, scope, implementation and FAQ detail:
+The main product pages should answer the commercial questions quickly. Supporting pages should carry package, scope, implementation and FAQ detail where the product journey remains on the Nineteen Point Two site:
 
 - `/waia/how-it-works/`
-- `/outside-clarity/how-it-works/`
 - `/revenue-review/`
 
 Revenue Review is the public route label. Revenue Stress Test remains the mechanism used inside that journey.
@@ -70,7 +69,7 @@ The Workplace AI sign in link is for existing learners or admins. It should not 
 
 WAIA prospect CTAs should use `https://tally.so/r/gDgbQP`.
 
-Outside Clarity package CTAs should use `/outside-clarity/snapshot/`, which contains the `obzbWP` intake form.
+Outside Clarity visitor-facing links should use `https://outsideclarity.co.uk/`. The old Nineteen Point Two Outside Clarity pages are legacy redirects.
 
 Revenue Review should route users locally first to `/revenue-review/`; the local page carries the direct Revenue Stress Test app CTA.
 
