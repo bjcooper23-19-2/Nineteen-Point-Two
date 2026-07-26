@@ -148,13 +148,6 @@ header {
   color: var(--ink);
 }
 
-.nav-menu a[href="/outside-clarity/"] {
-  color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--product-accent);
-  text-underline-offset: 6px;
-}
-
 .nav-group {
   position: relative;
   display: inline-flex;

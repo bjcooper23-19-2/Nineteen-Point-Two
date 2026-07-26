@@ -33,11 +33,11 @@ Then confirm:
 
 Nineteen Point Two helps leaders create operational clarity and controlled workplace AI adoption across people, process and data.
 
-WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone paid outside view before one important commitment. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the public thinking layer. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone outside-view product with its own site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the public thinking layer. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
 
 The public navigation is direct product links: WAIA, Outside Clarity, Revenue Review, Insights and Operating Lens. The Tools dropdown has been retired.
 
-WAIA prospect CTAs use `https://tally.so/r/gDgbQP`. Outside Clarity CTAs use `/outside-clarity/snapshot/`, which contains the `obzbWP` intake form. Revenue Review routes locally first to `/revenue-review/`, then links to the external Revenue Stress Test app.
+WAIA prospect CTAs use `https://tally.so/r/gDgbQP`. Outside Clarity visitor-facing links use `https://outsideclarity.co.uk/`. Revenue Review routes locally first to `/revenue-review/`, then links to the external Revenue Stress Test app.
 
 Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source. If a request conflicts with the doctrine, flag the conflict before making positioning changes.
 
