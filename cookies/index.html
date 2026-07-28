@@ -1,62 +1,7 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
-    <link rel="preconnect" href="https://consent.cookiebot.com" crossorigin />
-    <link rel="dns-prefetch" href="//consent.cookiebot.com" />
     <link rel="stylesheet" href="/assets/css/legal.css" />
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="d3681788-35b5-42d2-93ae-c48167aa30cd"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
-    <script>
-      (function () {
-        function initApollo() {
-          if (window.__apolloTrackerLoaded) return;
-          window.__apolloTrackerLoaded = true;
-
-          var n = Math.random().toString(36).substring(7);
-          var o = document.createElement("script");
-
-          o.src =
-            "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" +
-            n;
-          o.async = true;
-          o.defer = true;
-
-          o.onload = function () {
-            if (window.trackingFunctions && window.trackingFunctions.onLoad) {
-              window.trackingFunctions.onLoad({
-                appId: "6a2893312f53de001c40adf9",
-              });
-            }
-          };
-
-          document.head.appendChild(o);
-        }
-
-        function loadApolloIfMarketingConsent() {
-          if (
-            window.Cookiebot &&
-            window.Cookiebot.consent &&
-            window.Cookiebot.consent.marketing
-          ) {
-            initApollo();
-          }
-        }
-
-        window.addEventListener(
-          "CookiebotOnLoad",
-          loadApolloIfMarketingConsent,
-        );
-        window.addEventListener(
-          "CookiebotOnAccept",
-          loadApolloIfMarketingConsent,
-        );
-      })();
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cookie Notice | Nineteen Point Two</title>
@@ -91,7 +36,6 @@
           <a href="https://waia.co.uk/">WAIA</a>
           <a href="https://outsideclarity.co.uk/">Outside Clarity</a>
           <a href="/revenue-review/">Revenue Review</a>
-          <a href="/insights/">Insights</a>
           <a href="/#operating-lens">Operating Lens</a>
         </div>
         <div class="nav-actions">
@@ -164,7 +108,7 @@
                   <td>
                     <p>
                       Login, security, session management, account access, load
-                      balancing, cookie preferences
+                      balancing and essential technical operation
                     </p>
                   </td>
                   <td>
@@ -217,7 +161,7 @@
           <p>
             Strictly necessary cookies are used to provide services you have
             requested, such as secure login, authentication, account access,
-            platform security and remembering cookie preferences.
+            platform security and essential technical operation.
           </p>
           <p>
             These cookies cannot usually be switched off because the service
@@ -234,9 +178,15 @@
             consent has been obtained.
           </p>
           <p>
-            <b>Current analytics tools:</b> Google Search Console only. No
-            Google Analytics, Plausible, LinkedIn Insight Tag, Meta Pixel or
-            advertising pixel is currently known to be active.
+            <b>Current website measurement:</b> Cloudflare Web Analytics is used
+            for privacy-first aggregate website measurement and does not set
+            cookies. We also use Google Search Console to understand how the
+            website appears and performs in Google Search. Search Console does
+            not place cookies or tracking code on this website.
+          </p>
+          <p>
+            No Google Analytics, LinkedIn Insight Tag, Meta Pixel or advertising
+            pixel is currently active.
           </p>
           <h2>5. Marketing cookies</h2>
           <p>
@@ -249,12 +199,13 @@
           </p>
           <h2>6. Managing cookies</h2>
           <p>
-            You can manage your cookie preferences through our cookie banner or
-            settings tool where available.
+            You can control cookies through your browser settings. Where a
+            product or third-party service offers its own settings, those
+            controls may also be available inside that service.
           </p>
           <p>
-            You can also control cookies through your browser settings. Blocking
-            some cookies may affect how the website or WAIA product works.
+            Blocking some cookies may affect how the website or WAIA product
+            works.
           </p>
           <h2>7. Changes to this Cookie Notice</h2>
           <p>
@@ -280,8 +231,7 @@
         <span
           ><a href="https://waia.co.uk/">WAIA</a> |
           <a href="https://outsideclarity.co.uk/">Outside Clarity</a> |
-          <a href="/revenue-review/">Revenue Review</a> |
-          <a href="/insights/">Insights</a></span
+          <a href="/revenue-review/">Revenue Review</a></span
         >
         <span
           ><a href="/legal/">Legal</a> | <a href="/privacy/">Privacy</a> |
