@@ -4,13 +4,13 @@
 
 - Check future positioning work against `/docs/19.2-operating-doctrine.md` before changing public copy.
 - Check deployed GitHub Pages output after each push, especially `/`, `/workplace-ai/` and `/workplace-ai-academy/`.
-- Check `/insights/` and individual insight routes after publishing new articles.
+- Check old `/insights/` routes only as redirects to WAIA Insights.
 - Review the homepage periodically to make sure WAIA has appropriate flagship product weight while Outside Clarity and Revenue Review remain clear standalone routes.
 - Keep the Revenue Review journey clear: the Revenue Stress Test identifies exposure, and any Gumroad improvement pack is a separate paid purchase.
 - Keep `/waia/how-it-works/` aligned with the current WAIA package, pricing and implementation detail.
 - Keep Outside Clarity links pointed to `https://outsideclarity.co.uk/` unless a separate decision brings any journey back onto the Nineteen Point Two site.
 - If adding more pages, mirror the existing static route pattern with a folder and `index.html`.
-- If adding Insights articles, update markdown under `src/content/insights/`, run `node scripts/build-insights.mjs`, and commit generated static HTML.
+- If adding workplace AI Insights, create them in the WAIA Marketing Site repository. Do not restore the retired Nineteen Point Two Insights generator.
 - If adding assets, preserve existing relative path conventions and check nested route paths carefully.
 
 ## Quality checks before commit

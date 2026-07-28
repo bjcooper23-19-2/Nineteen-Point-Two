@@ -7,7 +7,6 @@ The repository is organised as a static site. Routes are represented by folders 
 Current routes visible in the repo:
 
 - `/`
-- `/insights/`
 - `/workplace-ai/`
 - `/workplace-ai-academy/`
 
@@ -19,7 +18,7 @@ The canonical strategic doctrine is stored at `/docs/19.2-operating-doctrine.md`
 
 The homepage should now lead with operational clarity and controlled workplace AI adoption rather than making Revenue Stress Test feel like the main strategic product.
 
-WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone paid decision product. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer for durable operational thinking.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone paid decision product. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Workplace AI Insights are now published on the WAIA site.
 
 The main buyer should first recognise Shadow AI: workplace AI adoption moving faster than visibility, evidence, manager confidence or operational consistency. Revenue integrity remains a secondary application of the same people, process and data lens.
 
@@ -32,7 +31,6 @@ The public navigation should use direct product links:
 - WAIA
 - Outside Clarity
 - Revenue Review
-- Insights
 - Operating Lens
 
 The Tools navigation category is retired. Do not restore a Tools dropdown unless there is a separate decision to introduce a broader product directory.
@@ -80,16 +78,17 @@ The current navigation pattern is:
 - WAIA
 - Outside Clarity
 - Revenue Review
-- Insights
 - Operating Lens
 
 The logo is the home route. Keep Sign in and Ask to see WAIA as global actions.
 
-## Insights section
+## Insights retirement
 
-Insights is the editorial section for durable operational thought leadership. It is not a CMS and should not be called Blog.
+Decision date: 28 July 2026.
 
-Articles are written in markdown under `src/content/insights/` and rendered into static pages under `insights/` with `node scripts/build-insights.mjs`.
+Nineteen Point Two no longer publishes an active Insights section. Workplace AI Insights are now published in the WAIA Marketing Site repository and live at `https://waia.co.uk/insights/`.
+
+The old Nineteen Point Two `/insights/` index and six article routes remain as lightweight GitHub Pages redirects. The markdown source, generator and active Insights stylesheet have been retired from this repository.
 
 ## Copy constraints
 

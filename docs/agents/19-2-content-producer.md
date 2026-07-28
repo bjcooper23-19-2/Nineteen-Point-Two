@@ -27,7 +27,7 @@ It should preserve the distinction between:
 - Nineteen Point Two as the operating thesis and positioning system
 - Workplace AI Academy as the practical enablement response
 - Revenue Stress Test as the broader operational assumption-versus-reality diagnostic
-- Insights as the public thinking layer
+- WAIA Insights as the workplace AI editorial home
 
 ## Workflow Structure
 
@@ -710,7 +710,7 @@ Avoid phrases that sound like:
 
 - Does the content sound like Nineteen Point Two?
 - Does it avoid hype and generic AI commentary?
-- Does it preserve the distinction between WAIA, RST and Insights?
+- Does it preserve the distinction between WAIA, RST and WAIA Insights?
 - Does it use workplace AI consistently?
 - Does it avoid incorrect Revenue Stress Test abbreviations?
 - Does it avoid em dashes?

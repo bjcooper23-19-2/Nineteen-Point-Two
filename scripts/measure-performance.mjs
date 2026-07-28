@@ -10,14 +10,7 @@ const baseUrl = process.env.PERF_BASE_URL || "http://127.0.0.1:8781";
 const viewportWidth = Number(process.env.PERF_VIEWPORT_WIDTH || 0);
 const viewportHeight = Number(process.env.PERF_VIEWPORT_HEIGHT || 1200);
 const routes = (
-  process.env.PERF_ROUTES ||
-  [
-    "/",
-    "/workplace-ai/",
-    "/waia/",
-    "/insights/",
-    "/insights/hidden-cost-of-workplace-ai/",
-  ].join(",")
+  process.env.PERF_ROUTES || ["/", "/workplace-ai/", "/waia/"].join(",")
 )
   .split(",")
   .map((route) => route.trim())

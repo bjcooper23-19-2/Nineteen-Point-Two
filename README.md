@@ -11,7 +11,6 @@ Before making changes, review:
 - /docs/19.2-operating-doctrine.md
 - /docs/context.md
 - /docs/decisions.md
-- /docs/insights.md
 - /docs/next-steps.md
 - /docs/codex-instructions.md
 
@@ -19,12 +18,11 @@ Keep the homepage anchored in the Nineteen Point Two operating thesis. WAIA is t
 
 Use `/docs/19.2-operating-doctrine.md` as the canonical strategic positioning source for Nineteen Point Two, WAIA, Outside Clarity and Revenue Review.
 
-Insights articles are source-controlled markdown files under `/src/content/insights/` and rendered to static HTML with `node scripts/build-insights.mjs`.
+Workplace AI Insights are now published in the WAIA Marketing Site repository and live at `https://waia.co.uk/insights/`. The old Nineteen Point Two Insights routes remain only as GitHub Pages redirect pages.
 
 Current direct navigation routes are:
 
 - `https://waia.co.uk/`
 - `https://outsideclarity.co.uk/`
 - `/revenue-review/`
-- `/insights/`
 - `/#operating-lens`

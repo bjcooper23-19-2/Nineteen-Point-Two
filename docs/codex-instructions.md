@@ -7,7 +7,6 @@ Read these files first:
 - `/docs/19.2-operating-doctrine.md`
 - `/docs/context.md`
 - `/docs/decisions.md`
-- `/docs/insights.md`
 - `/docs/next-steps.md`
 - `/docs/codex-instructions.md`
 
@@ -33,9 +32,9 @@ Then confirm:
 
 Nineteen Point Two helps leaders create operational clarity and controlled workplace AI adoption across people, process and data.
 
-WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone outside-view product with its own site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the public thinking layer. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is a standalone outside-view product with its own site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Workplace AI Insights now live at `https://waia.co.uk/insights/`. Keep the homepage anchored in Shadow AI, manager visibility, operational consistency and the wider operating thesis.
 
-The public navigation is direct product links: WAIA, Outside Clarity, Revenue Review, Insights and Operating Lens. The Tools dropdown has been retired.
+The public navigation is direct product links: WAIA, Outside Clarity, Revenue Review and Operating Lens. The Tools dropdown and active Nineteen Point Two Insights navigation item have been retired.
 
 WAIA prospect CTAs use `https://tally.so/r/gDgbQP`. Outside Clarity visitor-facing links use `https://outsideclarity.co.uk/`. Revenue Review routes locally first to `/revenue-review/`, then links to the external Revenue Stress Test app.
 
@@ -53,8 +52,8 @@ Keep CTAs consultative. The sign in link for Workplace AI Academy is access for 
 - Do not remove or change `CNAME` unless explicitly requested.
 - Mobile layout can be fragile because each page carries its own CSS.
 - Navigation is duplicated across pages, so update all active pages consistently when navigation changes are requested.
-- Insights content is stored in `src/content/insights/` and rendered to static pages under `insights/` with `node scripts/build-insights.mjs`.
-- When navigation changes, update `scripts/build-insights.mjs` and rebuild generated Insight pages.
+- The old Nineteen Point Two Insights publishing system has been retired. Do not restore `src/content/insights/`, `scripts/build-insights.mjs` or `assets/css/insights.css`.
+- New workplace AI Insights must be created in the WAIA Marketing Site repository. The old Nineteen Point Two Insights routes remain as redirect pages only.
 
 ## Verification
 

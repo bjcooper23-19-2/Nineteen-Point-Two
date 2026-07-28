@@ -6,7 +6,7 @@ This repository contains the Nineteen Point Two marketing site. It presents Nine
 
 The homepage should quickly establish the immediate operational problem: unmanaged workplace AI adoption, Shadow AI, weak manager visibility and inconsistent behaviour. Revenue systems remain part of the operating thesis, but Revenue Review should sit as a distinct commercial route rather than the primary homepage story.
 
-WAIA is the flagship workplace AI enablement platform. Outside Clarity is now a standalone product site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Insights is the editorial layer that explains the operating doctrine.
+WAIA is the flagship workplace AI enablement platform. Outside Clarity is now a standalone product site at `https://outsideclarity.co.uk/`. Revenue Review is the buyer-facing route for the Revenue Stress Test journey. Workplace AI Insights now live on the WAIA site at `https://waia.co.uk/insights/`.
 
 The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`. Use it to keep Nineteen Point Two, WAIA, Outside Clarity and Revenue Review aligned.
 
@@ -19,13 +19,13 @@ The canonical strategic positioning source is `/docs/19.2-operating-doctrine.md`
 - `/outside-clarity/how-it-works/` is a legacy redirect to `https://outsideclarity.co.uk/`.
 - `/outside-clarity/snapshot/` is a legacy redirect to `https://outsideclarity.co.uk/`.
 - `/revenue-review/` is served by `revenue-review/index.html`.
-- `/insights/` is served by `insights/index.html`.
+- `/insights/` and the six old article routes are legacy redirects to matching WAIA Insights URLs.
 - `/workplace-ai/` is served by `workplace-ai/index.html`.
 - `/workplace-ai-academy/` is a legacy route that redirects to `/waia/`.
 - Shared visual assets sit under `assets/`.
 - `CNAME` points the GitHub Pages custom domain to `www.nineteenpointtwo.com`.
 
-The site is static HTML with page level CSS. Insights pages are generated from markdown content using `node scripts/build-insights.mjs` and committed as static output.
+The site is static HTML with page level CSS. The old Nineteen Point Two Insights markdown source, generator and active styling have been retired. New workplace AI Insights must be created in the WAIA Marketing Site repository.
 
 ## Positioning
 
