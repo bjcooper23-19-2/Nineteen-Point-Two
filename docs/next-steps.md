@@ -1,3 +1,17 @@
+# Portfolio continuity — 17 August 2026
+
+This repository owns the Nineteen Point Two parent/company layer: `nineteenpointtwo.com`, corporate credibility, portfolio architecture, cross-product routing, Revenue Review and shared commercial infrastructure. It may own WAIA sales, order and implementation collateral where Nineteen Point Two acts as seller/operator.
+
+It does not own WAIA application implementation, WAIA public-site execution or Outside Clarity product implementation. Those belong respectively in `workplace-ai-academy-7ebe4f12`, `WAIA-Marketing-Site` and `Outside-Clarity-Agent-Workflow`.
+
+The current commercial task is to make the portfolio legible and commercially operable without duplicating product backlogs. Settled: WAIA and Outside Clarity have standalone canonical repositories and domains; Outside Clarity Snapshot is the only launch-focused OC product; detailed product funnel measurement stays with each product repository.
+
+Genuinely next: maintain accurate cross-product routing, complete essential WAIA seller/operator collateral, and progress Revenue Review only from confirmed commercial inputs. Parent-site conversion measurement may cover outbound product movement and the Revenue Review journey only.
+
+Do not rebuild product functionality here, resurrect retired product routes, duplicate product marketing execution or publish unconfirmed prices, proof or legal claims.
+
+---
+
 # Next Steps
 
 ## Likely future improvements
